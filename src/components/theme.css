@@ -958,6 +958,7 @@ a.resume-link:hover {
     width: 360px;
   }
   .project-thumb {
+    width: 100%; /* fix for image not displaying with sharp by Sean Lee */
     max-width: 200px;
   }
   .pricing-table td,
@@ -970,6 +971,7 @@ a.resume-link:hover {
     max-width: 250px;
   }
   .project-thumb {
+    width: 100%; /* fix for image not displaying with sharp by Sean Lee */
     max-width: 200px;
   }
 }
@@ -978,6 +980,7 @@ a.resume-link:hover {
     max-width: 400px;
   }
   .project-thumb {
+    width: 100%; /* fix for image not displaying with sharp by Sean Lee */
     max-width: 300px;
   }
 }

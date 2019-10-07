@@ -4,6 +4,9 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../../components/layout"
 
+// webpack feature: function mapping all *.svg paths to the actual data:image
+const reqSvgs = require.context("../../images/webdev-icons", true, /\.svg$/)
+
 const ProjectTemplate = ({ data: { markdownRemark } }) => {
   if (markdownRemark) {
     var {
@@ -22,7 +25,6 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
       },
     } = markdownRemark
   }
-
   return (
     <Layout>
       <section className="cta-section theme-bg-light py-5">
@@ -75,11 +77,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                           alt=""
                           title={tech}
                           className="img-fluid"
-                          src={
-                            "/images/webdev-icons/" +
-                            tech.toLowerCase() +
-                            ".svg"
-                          }
+                          src={reqSvgs(`./${tech.toLowerCase()}.svg`)}
                         />
                       </div>
                     ))}
