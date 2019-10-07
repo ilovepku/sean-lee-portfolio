@@ -1,0 +1,26 @@
+[
+  {
+    "name": "phone",
+    "icon": "phone-square",
+    "url": "tel:#",
+    "content": "+86 139 1106 6746"
+  },
+  {
+    "name": "email",
+    "icon": "envelope-square",
+    "url": "mailto:#",
+    "content": "seanleecoder@gmail.com"
+  },
+  {
+    "name": "website",
+    "icon": "globe",
+    "url": "//",
+    "content": "www.yourwebsite.com"
+  },
+  {
+    "name": "location",
+    "icon": "map-marker-alt",
+    "url": "",
+    "content": "Beijing"
+  }
+]

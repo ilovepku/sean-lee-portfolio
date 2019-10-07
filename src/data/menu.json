@@ -1,0 +1,29 @@
+[
+  {
+    "name": "About Me",
+    "url": "/",
+    "icon": "user"
+  },
+  {
+    "name": "Portfolio",
+    "url": "/portfolio/",
+    "icon": "laptop-code",
+    "deeper": true
+  },
+  {
+    "name": "Resume",
+    "url": "/resume/",
+    "icon": "file-alt"
+  },
+  {
+    "name": "Blog",
+    "url": "/blogs/",
+    "icon": "blog",
+    "deeper": true
+  },
+  {
+    "name": "Contact",
+    "url": "/contact/",
+    "icon": "envelope-open-text"
+  }
+]

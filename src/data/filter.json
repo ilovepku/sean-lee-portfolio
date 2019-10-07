@@ -1,0 +1,30 @@
+[
+  {
+    "name": "All",
+    "keyword": "*"
+  },
+  {
+    "name": "Frontend",
+    "keyword": "frontend"
+  },
+  {
+    "name": "Backend",
+    "keyword": "backend"
+  },
+  {
+    "name": "Dataviz",
+    "keyword": "dataviz"
+  },
+  {
+    "name": "Other",
+    "keyword": "other"
+  },
+  {
+    "name": "Production",
+    "keyword": "production"
+  },
+  {
+    "name": "Practice",
+    "keyword": "practice"
+  }
+]

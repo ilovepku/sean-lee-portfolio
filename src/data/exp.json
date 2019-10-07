@@ -1,0 +1,33 @@
+[
+  {
+    "role": "Role A",
+    "company": "Company A",
+    "start": "2019",
+    "end": "",
+    "desc": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.",
+    "bullets": [
+      "Lorem ipsum dolor sit amet, consectetuer.",
+      "Aenean commodo ligula eget dolor",
+      "Etiam ultricies nisi vel augue."
+    ]
+  },
+  {
+    "role": "Role B",
+    "company": "Company B",
+    "start": "2016",
+    "end": "2019",
+    "desc": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.",
+    "bullets": [
+      "Lorem ipsum dolor sit amet, consectetuer.",
+      "Aenean commodo ligula eget dolor"
+    ]
+  },
+  {
+    "role": "Role C",
+    "company": "Company C",
+    "start": "2014",
+    "end": "2016",
+    "desc": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "bullets": []
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "icons": ["js-square"],
+    "name": "Vanilla JavaScript",
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  },
+  {
+    "icons": ["angular", "react", "vuejs"],
+    "name": "Angular, React & Vue",
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  },
+  {
+    "icons": ["node-js"],
+    "name": "Node.js",
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  },
+  {
+    "name": "Python & Django",
+    "icons": ["python"],
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  },
+  {
+    "name": "PHP",
+    "icons": ["php"],
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  },
+  {
+    "name": "npm, Gulp & Grunt",
+    "icons": ["npm", "gulp", "grunt"],
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  },
+  {
+    "name": "HTML & CSS",
+    "icons": ["html5", "css3-alt"],
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  },
+  {
+    "name": "Sass & LESS",
+    "icons": ["sass", "less"],
+    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+  }
+]
