@@ -4,7 +4,7 @@ date: "2019-05-04"
 type: "frontend production"
 name: "My Portfolio Site"
 intro: "Static site generated with Gatsby"
-pic: "/images/projects/portfolio.jpg"
+pic: ../../images/projects/portfolio.jpg
 client: "Client: myself"
 industry: "Trade"
 size: "100+"

@@ -2,7 +2,7 @@
 path: "/blogs/blog-3"
 date: "Thu Sep 03 2019 12:00:00 GMT+0800 (China Standard Time)"
 title: "Why Every Developer Should Have A Blog"
-pic: "/images/blog-post-thumb-card-1.jpg"
+pic: ../../images/blog-post-thumb-card-1.jpg
 intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient..."
 ---
 

@@ -4,7 +4,7 @@ date: "2019-05-04"
 type: "frontend practice"
 name: "Front End Projects"
 intro: "5 frontend projects, part of freeCodeCamp's curriculum"
-pic: "/images/projects/frontend.jpg"
+pic: ../../images/projects/frontend.jpg
 client: "Practice: freeCodeCamp"
 industry: "Trade"
 size: "100+"

@@ -4,7 +4,7 @@ date: "2019-05-04"
 type: "dataviz practice"
 name: "Data Visualization Projects"
 intro: "5 data visualization projects, part of freeCodeCamp's curriculum"
-pic: "/images/projects/dataviz.jpg"
+pic: ../../images/projects/dataviz.jpg
 client: "Practice: freeCodeCamp"
 industry: "Trade"
 size: "100+"

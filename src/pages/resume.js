@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
+import profile from "../images/profile.png"
 
 const ResumePage = () => {
   const data = useStaticQuery(graphql`
@@ -130,7 +131,7 @@ const ResumePage = () => {
             <div className="media flex-column flex-md-row align-items-center">
               <img
                 className="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded-circle mx-auto"
-                src="/images/profile.png"
+                src={profile}
                 alt=""
               />
               <div className="media-body text-left">

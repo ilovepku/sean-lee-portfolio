@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../../components/layout"
 
@@ -35,10 +36,9 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
       <section className="project px-3 py-5 p-md-5">
         <div className="container">
           <div className="project-meta media flex-column flex-md-row p-4 theme-bg-light">
-            <img
+            <Img
               className="project-thumb mb-3 mb-md-0 mr-md-5 rounded d-none d-md-inline-block"
-              src={pic}
-              alt=""
+              fluid={pic && pic.childImageSharp.fluid}
             />
             <div className="media-body">
               <div className="client-info">
@@ -126,7 +126,13 @@ export const pageQuery = graphql`
         path
         name
         intro
-        pic
+        pic {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         client
         industry
         size

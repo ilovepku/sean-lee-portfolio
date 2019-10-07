@@ -4,7 +4,7 @@ date: "2019-05-04"
 type: "backend practice"
 name: "Back End Projects"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
-pic: "/images/projects/backend.jpg"
+pic: ../../images/projects/backend.jpg
 client: "Practice: freeCodeCamp"
 industry: "Trade"
 size: "100+"

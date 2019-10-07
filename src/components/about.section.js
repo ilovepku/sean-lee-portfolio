@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import profileLg from "../images/profile-lg.jpg"
 
 const AboutSection = () => {
   const data = useStaticQuery(graphql`
@@ -54,7 +55,7 @@ const AboutSection = () => {
           </div>
           <img
             className="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0"
-            src="/images/profile-lg.jpg"
+            src={profileLg}
             alt=""
           />
         </div>

@@ -155,7 +155,13 @@ export const pageQuery = graphql`
           date
           title
           intro
-          pic
+          pic {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

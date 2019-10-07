@@ -17,7 +17,13 @@ const BlogSection = () => {
             date
             title
             intro
-            pic
+            pic {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

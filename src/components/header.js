@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import profile from "../images/profile.png"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -88,7 +89,7 @@ const Header = () => {
               <div className="profile-section pt-3 pt-lg-0">
                 <img
                   className="profile-image mb-3 rounded-circle mx-auto"
-                  src="/images/profile.png"
+                  src={profile}
                   alt=""
                 />
 

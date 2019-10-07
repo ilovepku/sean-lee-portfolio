@@ -4,7 +4,7 @@ date: "2019-05-04"
 type: "other wordpress production"
 name: "Wordpress Website"
 intro: "A wordpress website project for an organization"
-pic: "/images/projects/caeda-wordpress.jpg"
+pic: ../../images/projects/caeda-wordpress.jpg
 client: "Client: China-Asia Economic Development Association"
 industry: "Trade"
 size: "100+"

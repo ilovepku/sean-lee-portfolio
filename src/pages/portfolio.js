@@ -17,7 +17,13 @@ const PortfolioPage = () => {
             path
             name
             intro
-            pic
+            pic {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             client
             type
           }

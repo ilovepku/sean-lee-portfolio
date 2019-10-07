@@ -1,4 +1,5 @@
 import React from "react"
+import promoBanner from "../images/promo-banner.jpg"
 
 const PromoSection = () => {
   return (
@@ -16,7 +17,7 @@ const PromoSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="img-fluid" src="/images/promo-banner.jpg" alt="" />
+            <img className="img-fluid" src={promoBanner} alt="" />
           </a>
         </figure>
       </div>

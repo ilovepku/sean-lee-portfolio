@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const PortfolioItem = ({
@@ -10,7 +11,7 @@ const PortfolioItem = ({
       <div className="card project-card">
         <div className="row no-gutters">
           <div className="col-lg-4 card-img-holder">
-            <img src={pic} className="card-img" alt="" />
+            <Img className="card-img" fluid={pic.childImageSharp.fluid} />
           </div>
           <div className="col-lg-8">
             <div className="card-body">

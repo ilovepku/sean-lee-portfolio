@@ -4,7 +4,7 @@ date: "2019-05-04"
 type: "other python production"
 name: "Python Scrapy Web Scraper"
 intro: "Python Scrapy web scraper for a client"
-pic: "/images/projects/txtbtz-scrapy.png"
+pic: ../../images/projects/txtbtz-scrapy.png
 client: "Client: China-Asia Economic Development Association"
 industry: "Trade"
 size: "100+"
