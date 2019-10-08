@@ -75,7 +75,7 @@ const Header = () => {
 
             <Navbar.Collapse
               id="navigation"
-              className="navbar-collapse flex-column"
+              className="flex-column"
             >
               <div className="profile-section pt-3 pt-lg-0">
                 <img

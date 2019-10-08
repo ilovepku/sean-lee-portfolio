@@ -50,6 +50,15 @@ module.exports = {
       options: {
         // printRejected: true,
         // develop: true,
+        whitelist: [
+          "navbar",
+          "navbar-expand-lg",
+          "navbar-toggler",
+          "navbar-toggler-icon",
+          "collapse",
+          "collapsing",
+          "navbar-collapse",
+        ],
       },
     },
   ],
