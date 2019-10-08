@@ -45,11 +45,11 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    {
+    /* {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        // printRejected: true,
-        // develop: true,
+        printRejected: true,
+        develop: true,
         whitelist: [
           "navbar",
           "navbar-expand-lg",
@@ -58,8 +58,9 @@ module.exports = {
           "collapse",
           "collapsing",
           "navbar-collapse",
+          "svg-inline--fa",
         ],
       },
-    },
+    }, */
   ],
 }
