@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
+import { Navbar } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import profile from "../images/profile.png"
 
@@ -69,22 +70,12 @@ const Header = () => {
             <Link to="/">{author}</Link>
           </h1>
 
-          <nav className="navbar navbar-expand-lg navbar-dark">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navigation"
-              aria-controls="navigation"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+          <Navbar expand="lg" className="navbar-dark">
+            <Navbar.Toggle aria-controls="navigation" />
 
-            <div
+            <Navbar.Collapse
               id="navigation"
-              className="collapse navbar-collapse flex-column"
+              className="navbar-collapse flex-column"
             >
               <div className="profile-section pt-3 pt-lg-0">
                 <img
@@ -155,8 +146,8 @@ const Header = () => {
                   htmlFor="darkmode"
                 ></label>
               </div>
-            </div>
-          </nav>
+            </Navbar.Collapse>
+          </Navbar>
         </div>
       </header>
     </>
