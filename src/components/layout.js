@@ -12,9 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 
-import "./bootstrap.min.css"
-import "./theme.css"
-import "./svg.css"
+import "../css/bootstrap.min.css"
+import "../css/theme.css"
+import "../css/svg.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
