@@ -6,24 +6,19 @@
   },
   {
     "name": "Portfolio",
-    "url": "/portfolio/",
+    "url": "/portfolio",
     "icon": "laptop-code",
     "deeper": true
   },
   {
     "name": "Resume",
-    "url": "/resume/",
+    "url": "/resume",
     "icon": "file-alt"
   },
   {
     "name": "Blog",
-    "url": "/blogs/",
+    "url": "/blogs",
     "icon": "blog",
     "deeper": true
-  },
-  {
-    "name": "Contact",
-    "url": "/contact/",
-    "icon": "envelope-open-text"
   }
 ]

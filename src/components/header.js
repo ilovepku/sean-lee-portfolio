@@ -73,10 +73,7 @@ const Header = () => {
           <Navbar expand="lg" className="navbar-dark">
             <Navbar.Toggle aria-controls="navigation" />
 
-            <Navbar.Collapse
-              id="navigation"
-              className="flex-column"
-            >
+            <Navbar.Collapse id="navigation" className="flex-column">
               <div className="profile-section pt-3 pt-lg-0">
                 <img
                   className="profile-image mb-3 rounded-circle mx-auto"
@@ -126,6 +123,13 @@ const Header = () => {
                   )
                 )}
               </ul>
+
+              <div className="my-2">
+                <Link className="btn btn-primary" to="/contact">
+                  <FontAwesomeIcon icon="envelope-open-text" className="mr-2" />
+                  Contact Me
+                </Link>
+              </div>
 
               <div className="dark-mode-toggle text-center w-100">
                 <hr className="mb-4" />

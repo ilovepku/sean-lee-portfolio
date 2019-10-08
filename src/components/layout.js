@@ -24,7 +24,6 @@ import {
   faFileAlt,
   faBlog,
   faEnvelopeOpenText,
-  faPaperPlane,
   faAdjust,
   faArrowAltCircleRight,
   faEye,
@@ -36,30 +35,35 @@ import {
   faIndustry,
   faUsers,
   faLink,
-  faQuoteLeft,
   faLongArrowAltLeft,
   faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons"
 library.add(
   fab,
+  // menu items
   faUser,
   faLaptopCode,
   faFileAlt,
   faBlog,
+  // contact me button
   faEnvelopeOpenText,
-  faPaperPlane,
+  // dark mode label
   faAdjust,
+  // view portfolio button
   faArrowAltCircleRight,
   faEye,
+  // download pdf button
   faFilePdf,
+  // resume contacts
   faPhoneSquare,
   faEnvelopeSquare,
   faGlobe,
   faMapMarkerAlt,
+  // project overview
   faIndustry,
   faUsers,
   faLink,
-  faQuoteLeft,
+  // blog pagination buttons
   faLongArrowAltLeft,
   faLongArrowAltRight
 )

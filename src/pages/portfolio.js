@@ -73,8 +73,8 @@ const PortfolioPage = () => {
             </p>
           </div>
           <Link to="/contact" className="btn btn-primary">
-            <FontAwesomeIcon icon="paper-plane" className="mr-2" />
-            Hire Me
+            <FontAwesomeIcon icon="envelope-open-text" className="mr-2" />
+            Contact Me
           </Link>
         </div>
       </section>

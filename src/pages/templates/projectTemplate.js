@@ -102,8 +102,8 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
           </p>
           <div className="text-center">
             <Link to="/contact" className="btn btn-primary">
-              <FontAwesomeIcon icon="paper-plane" className="mr-2" />
-              Hire Me
+              <FontAwesomeIcon icon="envelope-open-text" className="mr-2" />
+              Contact Me
             </Link>
           </div>
         </div>
