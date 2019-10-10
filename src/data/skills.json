@@ -1,42 +1,42 @@
 [
   {
-    "icons": ["js-square"],
     "name": "Vanilla JavaScript",
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "techs": ["JavaScript", "TypeScript", "Babel", "Webpack"],
+    "desc": "Solid foundations of vanilla JavaScript, its newest additions (ES6,7,8,9), superset Typescript, and modern workflow (Babel & Webpack)."
   },
   {
-    "icons": ["angular", "react", "vuejs"],
-    "name": "Angular, React & Vue",
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "name": "React Ecosystem",
+    "techs": ["React", "Redux", "Gatsby"],
+    "desc": "Adept at building intereactive, performant, and large-scale applications with React, its latest features (Hooks, Context...) and ecosystem (Redux, Gatsby...)."
   },
   {
-    "icons": ["node-js"],
-    "name": "Node.js",
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "name": "Full Stack with MERN",
+    "techs": ["Node", "Express", "MongoDB", "GraphQL"],
+    "desc": "Seasoned builder of fully functioning back-end REST/GraphQL API that can handle user authentication, CRUD operations, data filtering/sorting..."
   },
   {
-    "name": "Python & Django",
-    "icons": ["python"],
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "name": "Data Visualization",
+    "techs": ["D3"],
+    "desc": "Proficient maker of data-driven, interative, responsive, and real-time updating visualizations (graphs, charts, diagrams) with D3.js or Victory.js."
   },
   {
-    "name": "PHP",
-    "icons": ["php"],
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "name": "LA/NMP & Wordpress",
+    "techs": ["Linux", "PHP", "MySQL", "Wordpress"],
+    "desc": "Customized, deployed and maintained: corporate websites /w Wordpress, an Uni department forum w/ Discuz! and a polling app w/ LimeSurvey, all on LA/NMP."
   },
   {
-    "name": "npm, Gulp & Grunt",
-    "icons": ["npm", "gulp", "grunt"],
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "name": "Serverless & the Cloud",
+    "techs": ["Firebase", "AWS", "GoogleCloud"],
+    "desc": "Familiar with Firebase Auth, Firestore, Functions, and Hosting. Long-time user of AWS, Google Cloud Engine, both for hosting and proxy tunneling."
   },
   {
-    "name": "HTML & CSS",
-    "icons": ["html5", "css3-alt"],
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "name": "CSS Styling",
+    "techs": ["CSS", "MaterialUI", "Bootstrap", "Sass"],
+    "desc": "Competent in vanilla CSS, frameworks (MaterialUI, Bootstrap...), CSS-in-JS with Styled Components or JSS, and the SASS extention."
   },
   {
-    "name": "Sass & LESS",
-    "icons": ["sass", "less"],
-    "desc": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor."
+    "name": "Python Web Scraping",
+    "techs": ["Python", "Scrapy"],
+    "desc": "Experienced with basic Python syntaxes and the Scrapy web crawling framework to scrape multi-layered information with media files attached into a structured database."
   }
 ]

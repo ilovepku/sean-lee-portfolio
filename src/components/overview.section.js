@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+// webpack feature: function mapping all *.svg paths to the actual data:image
+const reqSvgs = require.context("../images/webdev-icons", true, /\.svg$/)
 
 const OverviewSection = () => {
   const data = useStaticQuery(graphql`
@@ -9,7 +11,7 @@ const OverviewSection = () => {
         nodes {
           id
           name
-          icons
+          techs
           desc
         }
       }
@@ -27,15 +29,19 @@ const OverviewSection = () => {
           <Link to="/portfolio">project portfolio</Link>.
         </div>
         <div className="row">
-          {data.allSkillsJson.nodes.map(({ id, name, icons, desc }) => (
+          {data.allSkillsJson.nodes.map(({ id, name, techs, desc }) => (
             <div className="item col-6 col-lg-3" key={id}>
               <div className="item-inner">
                 <div className="item-icon">
-                  {icons.map((icon, idx, arr) => (
-                    <FontAwesomeIcon
-                      icon={["fab", icon]}
-                      className={idx === arr.length - 1 ? "" : "mr-2"}
-                      key={`${id}-icon-${idx}`}
+                  {techs.map((tech, idx, arr) => (
+                    <img
+                      key={id + "_tech_" + idx}
+                      alt=""
+                      title={tech}
+                      className={`tech-icon rounded ${
+                        idx === arr.length - 1 ? "" : "mr-2"
+                      }`}
+                      src={reqSvgs(`./${tech.toLowerCase()}.svg`)}
                     />
                   ))}
                 </div>

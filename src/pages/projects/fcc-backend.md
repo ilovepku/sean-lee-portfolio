@@ -10,7 +10,7 @@ industry: "Trade"
 size: "100+"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
 desc: "Node, Express, and testing with Chai"
-techs: ["NodeJS", "Express", "MongoDB", "JavaScript", "Glitch"]
+techs: ["Node", "Express", "MongoDB", "JavaScript", "Glitch"]
 ---
 
 ## Timestamp Microservice
