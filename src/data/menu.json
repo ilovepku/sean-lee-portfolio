@@ -20,5 +20,10 @@
     "url": "/blogs",
     "icon": "blog",
     "deeper": true
+  },
+  {
+    "name": "Contact Me",
+    "url": "/contact",
+    "icon": "envelope-open-text"
   }
 ]

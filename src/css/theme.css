@@ -375,8 +375,12 @@ hr {
   font-size: 0.875rem;
 }
 .overview-section .item-icon {
-  font-size: 1.875rem;
-  color: #6c51a4;
+  /* font-size: 1.875rem;  
+  color: #6c51a4; 
+  modified by Sean Lee */
+  height: 45px;
+  display: flex;
+  align-items: center;
 }
 .overview-section .item-icon .fa-angular {
   color: #ca3327;
@@ -1119,10 +1123,12 @@ body.dark-mode .header::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 0.5rem;
 }
-body.dark-mode .header .nav-item.active .nav-link {
+body.dark-mode .header .nav-item .nav-link.active {
+  /* modified by Sean Lee */
   color: #6c51a4;
 }
-body.dark-mode .header .nav-item.active .nav-link:hover {
+body.dark-mode .header .nav-item .nav-link.active:hover {
+  /* modified by Sean Lee */
   color: #6c51a4;
 }
 body.dark-mode .header .nav-item .nav-link {
@@ -1364,4 +1370,14 @@ body {
 }
 .config-panel .close .fa {
   color: #fff;
+}
+
+/*!  
+ * Sean Lee's Portfolio
+ * Version: 1.0
+ * Author: Sean Lee
+ * Website: https://seanlee.netlify.com/
+*/
+.overview-section .tech-icon {
+  max-height: 30px;
 }
