@@ -28,6 +28,7 @@ import {
   faArrowAltCircleRight,
   faEye,
   faFilePdf,
+  faQuoteLeft,
   faPhoneSquare,
   faEnvelopeSquare,
   faGlobe,
@@ -54,6 +55,8 @@ library.add(
   faEye,
   // download pdf button
   faFilePdf,
+  // testimonials
+  faQuoteLeft,
   // resume contacts
   faPhoneSquare,
   faEnvelopeSquare,
