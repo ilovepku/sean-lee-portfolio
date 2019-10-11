@@ -10,5 +10,5 @@ industry: "Trade"
 size: "100+"
 url: "/"
 desc: "My personal portfolio site"
-techs: ["Gatsby", "React", "GraphQL", "JavaScript", "Bootstrap", "CSS", "Webpack", "Netlify"]
+techs: ["Gatsby", "React", "GraphQL", "JavaScript", "Bootstrap", "CSS", "Webpack", "Netlify", "MailChimp"]
 ---
