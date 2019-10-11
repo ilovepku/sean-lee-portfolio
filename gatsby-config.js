@@ -44,12 +44,22 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+          },
+          `gatsby-remark-autolink-headers`,
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true,
-        develop: true,
+        // printRejected: true,
+        // develop: true,
         whitelist: [
           "navbar",
           "navbar-expand-lg",

@@ -33,8 +33,7 @@ import {
   faEnvelopeSquare,
   faGlobe,
   faMapMarkerAlt,
-  faIndustry,
-  faUsers,
+  faMugHot,
   faLink,
   faLongArrowAltLeft,
   faLongArrowAltRight,
@@ -63,8 +62,7 @@ library.add(
   faGlobe,
   faMapMarkerAlt,
   // project overview
-  faIndustry,
-  faUsers,
+  faMugHot,
   faLink,
   // blog pagination buttons
   faLongArrowAltLeft,

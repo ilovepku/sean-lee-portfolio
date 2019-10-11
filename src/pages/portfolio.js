@@ -24,7 +24,7 @@ const PortfolioPage = () => {
                 }
               }
             }
-            client
+            madeFor
             type
           }
         }

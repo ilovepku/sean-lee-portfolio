@@ -22,7 +22,7 @@ const PortfolioSection = () => {
                 }
               }
             }
-            client
+            madeFor
           }
         }
       }

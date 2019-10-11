@@ -5,9 +5,7 @@ type: "backend practice"
 name: "Back End Projects"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
 pic: ../../images/projects/backend.jpg
-client: "Practice: freeCodeCamp"
-industry: "Trade"
-size: "100+"
+madeFor: "Practice: freeCodeCamp"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
 desc: "Node, Express, and testing with Chai"
 techs: ["Node", "Express", "MongoDB", "JavaScript", "Glitch"]

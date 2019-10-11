@@ -12,17 +12,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
     var {
       id,
       html,
-      frontmatter: {
-        name,
-        intro,
-        pic,
-        client,
-        industry,
-        size,
-        url,
-        desc,
-        techs,
-      },
+      frontmatter: { name, intro, pic, madeFor, url, desc, techs },
     } = markdownRemark
   }
   return (
@@ -44,17 +34,12 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
             />
             <div className="media-body">
               <div className="client-info">
-                <h3 className="client-name font-weight-bold mb-4">{client}</h3>
+                <h3 className="client-name font-weight-bold mb-4">{name}</h3>
                 <ul className="client-meta list-unstyled">
                   <li className="mb-2">
-                    <FontAwesomeIcon icon="industry" className="fa-fw mr-2" />
-                    <strong>Industry: </strong>
-                    {industry}
-                  </li>
-                  <li className="mb-2">
-                    <FontAwesomeIcon icon="users" className="fa-fw mr-2" />
-                    <strong>Size: </strong>
-                    {size}
+                    <FontAwesomeIcon icon="mug-hot" className="fa-fw mr-2" />
+                    <strong>For: </strong>
+                    {madeFor}
                   </li>
                   <li className="mb-2">
                     <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
@@ -131,9 +116,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        client
-        industry
-        size
+        madeFor
         url
         desc
         techs

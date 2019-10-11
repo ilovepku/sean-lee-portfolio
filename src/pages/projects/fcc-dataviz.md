@@ -5,9 +5,7 @@ type: "dataviz practice"
 name: "Data Visualization Projects"
 intro: "5 data visualization projects, part of freeCodeCamp's curriculum"
 pic: ../../images/projects/dataviz.jpg
-client: "Practice: freeCodeCamp"
-industry: "Trade"
-size: "100+"
+madeFor: "Practice: freeCodeCamp"
 url: "//codepen.io/collection/nMoKdK"
 desc: "Responsive data visualizations with D3.js, Javascript, and CSS"
 techs: ["D3", "JavaScript", "CSS", "Codepen"]

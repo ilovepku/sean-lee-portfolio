@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const PortfolioItem = ({
-  frontmatter: { path, name, intro, pic, client, type },
+  frontmatter: { path, name, intro, pic, madeFor, type },
 }) => {
   return (
     <div className={`filter-item col-md-6 mb-5 ${type}`}>
@@ -22,7 +22,7 @@ const PortfolioItem = ({
               </h5>
               <p className="card-text">{intro}</p>
               <p className="card-text">
-                <small className="text-muted">{client}</small>
+                <small className="text-muted">{madeFor}</small>
               </p>
             </div>
           </div>

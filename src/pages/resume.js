@@ -36,7 +36,7 @@ const ResumePage = () => {
           id
           frontmatter {
             name
-            client
+            madeFor
             desc
           }
         }
@@ -190,14 +190,14 @@ const ResumePage = () => {
                   </h3>
 
                   {data.allMarkdownRemark.nodes.map(
-                    ({ id, frontmatter: { name, client, desc } }) => (
+                    ({ id, frontmatter: { name, madeFor, desc } }) => (
                       <div className="item mb-3" key={id}>
                         <div className="item-heading row align-items-center mb-2">
                           <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
                             {name}
                           </h4>
                           <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                            {client}
+                            {madeFor}
                           </div>
                         </div>
                         <div className="item-content">
