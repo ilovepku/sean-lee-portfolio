@@ -28,7 +28,7 @@ const ContactPage = () => {
           <h2 className="heading">Contact</h2>
           <div className="intro">
             <p>
-              Interested in hiring me for your project or just want to say hi?
+              Thanks for taking the time to reach out. How can I help you today?
               You can fill in the contact form below or send me an email to{" "}
               <a href="mailto:#">{data.site.siteMetadata.email}</a>
             </p>

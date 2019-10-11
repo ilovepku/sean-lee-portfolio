@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import profile from "../images/profile.png"
@@ -77,15 +77,10 @@ const ResumePage = () => {
       <section className="cta-section theme-bg-light py-5">
         <div className="container text-center single-col-max-width">
           <h2 className="heading mb-3">Online Resume</h2>
-          <a
-            className="btn btn-primary"
-            href="https://themes.3rdwavemedia.com/resources/sketch-template/resume-sketch-sketch-resume-template-for-software-developers/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link className="btn btn-primary" to="/">
             <FontAwesomeIcon icon="file-pdf" className="mr-2" />
             Download PDF Version
-          </a>
+          </Link>
         </div>
       </section>
       <div className="container px-3 px-lg-5">
