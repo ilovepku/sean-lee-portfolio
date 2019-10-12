@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import { Carousel } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../../components/layout"
 
@@ -12,7 +13,17 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
     var {
       id,
       html,
-      frontmatter: { name, intro, pic, madeFor, url, desc, techs },
+      frontmatter: {
+        name,
+        intro,
+        pics,
+        madeFor,
+        url,
+        github,
+        desc,
+        highlights,
+        techs,
+      },
     } = markdownRemark
   }
   return (
@@ -28,10 +39,24 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
       <section className="project px-3 py-5 p-md-5">
         <div className="container">
           <div className="project-meta media flex-column flex-md-row p-4 theme-bg-light">
-            <Img
-              className="project-thumb mb-3 mb-md-0 mr-md-5 rounded d-none d-md-inline-block"
-              fluid={pic && pic.childImageSharp.fluid}
-            />
+            {pics && pics.length > 1 ? (
+              <Carousel
+                controls={false}
+                className="project-thumb mb-3 mb-md-0 mr-md-5 rounded d-none d-md-inline-block"
+              >
+                {pics.map((pic, idx) => (
+                  <Carousel.Item key={`${id}-image-${idx}`}>
+                    <Img fluid={pic.childImageSharp.fluid} />
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            ) : (
+              <Img
+                fluid={pics && pics[0].childImageSharp.fluid}
+                className="project-thumb mb-3 mb-md-0 mr-md-5 rounded d-none d-md-inline-block"
+              />
+            )}
+
             <div className="media-body">
               <div className="client-info">
                 <h3 className="client-name font-weight-bold mb-4">{name}</h3>
@@ -48,8 +73,27 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                       {url && url.slice(2)}
                     </a>
                   </li>
+                  <li className="mb-2">
+                    <FontAwesomeIcon
+                      icon={["fab", "git-alt"]}
+                      className="fa-fw mr-2"
+                    />
+                    <strong>Github: </strong>
+                    <a className="theme-link" href={github}>
+                      {github && github.slice(2)}
+                    </a>
+                  </li>
                 </ul>
                 <div className="client-bio mb-4">{desc}</div>
+                <h4 className="subheading mb-3">Technical Highlights</h4>
+                <ul className="mb-4">
+                  {highlights &&
+                    highlights.map((highlight, idx) => (
+                      <li className="mb-2" key={`${id}-highlight-${idx}`}>
+                        {highlight}
+                      </li>
+                    ))}
+                </ul>
                 <h4 className="subheading mb-3">Technologies Used</h4>
                 <div className="webdev-icons row mb-5 align-items-center">
                   {techs &&
@@ -109,7 +153,7 @@ export const pageQuery = graphql`
         path
         name
         intro
-        pic {
+        pics {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
@@ -118,7 +162,9 @@ export const pageQuery = graphql`
         }
         madeFor
         url
+        github
         desc
+        highlights
         techs
       }
     }

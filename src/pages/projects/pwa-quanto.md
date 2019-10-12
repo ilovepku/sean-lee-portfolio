@@ -3,11 +3,25 @@ path: "/portfolio/pwa-quanto"
 date: "2019-05-04"
 type: "frontend backend production"
 name: "PWA Quanto"
-intro: "A PWA time measurement tool for smartphones"
-pic: ../../images/projects/pwa-quanto-charts.png
+intro: "Get handle on where your time goes. PWA Quanto time measurement tool will make it easy."
+pics:
+  [
+    ../../images/projects/pwa-quanto-charts.png,
+    ../../images/projects/pwa-quanto-history.png,
+    ../../images/projects/pwa-quanto-settings.png,
+  ]
 madeFor: "Open Source"
 url: "//pwa-quanto.web.app"
-desc: "Project summary goes here. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus."
+github: "//github.com/ilovepku/pwa-quanto"
+desc: "The classic but long discontinued Natara Quanto for Palm OS remade into a React Progressive Web App for modern mobile devices."
+highlights:
+  [
+    "Interative push notification",
+    "Interative, data-driven charts, filterable with both date range and keywords",
+    "2-level drag-n-drag support for ordering categories",
+    "Lazy loading big list",
+    "Backup/restore data serverlessly with Firebase",
+  ]
 techs: ["React", "Firebase", "MaterialUI"]
 ---
 
@@ -19,16 +33,24 @@ techs: ["React", "Firebase", "MaterialUI"]
 - [Current Activity Bar](#current-activity-bar)
 - [History View](#history-view)
 - [Charts View](#charts-view)
-- [Categories View](#categories-view)
 - [Settings View](#settings-view)
+- [Limitations](#limitations)
+- [Acknowledgment](#acknowledgment)
 
 ### Introduction
 
-Improve your productively or life style by analysing how you spend your time.
-
-- Show your boss (maybe you) why it's hard to get work done on that project.
+- Show your boss why it's hard to get work done on that project.
 - With your crazy schedule are you getting enough sleep?
 - How is your balance of work and family?
+
+PWA Quanto is a time measurement tool that can help you improve your productivity or life balance by analysing how you spend your time.
+
+### Key benefits
+
+- Quickly capture your activities with a minimum of effort.
+- Filterable summary of your time with intuitive charts and statistics.
+- Customizable category names with drag and drop support for easier organizing.
+- Backup and restore your data.
 
 ### Main Views
 
@@ -139,3 +161,19 @@ Note: All your customary category changes wil be undone.
 ### Limitations
 
 - Timing is done with a resolution in minutes.
+
+### Acknowledgment
+
+Special thanks to [Natara Software, Inc](https://twitter.com/natara)'s discontinued original **Quanto for Palm OS** from 2006 for inspritation.
+
+| Libraries                                                               |                                                            For |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------: |
+| [react](https://github.com/facebook/react/)                             |                                                                |
+| [victory](https://github.com/FormidableLabs/victory)                    |                                interactive data visualizations |
+| [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) |                                        list item drag and drop |
+| [react-window](https://github.com/bvaughn/react-window)                 |         lazy loading(efficiently rendering) large list of data |
+| [material-ui](https://github.com/mui-org/material-ui)                   |                                    for UI components and icons |
+| [firebase](https://firebase.google.com/)                                | for serverless authentication, database, and hosting solutions |
+| [date-fns](https://github.com/date-fns/date-fns)                        |                                             date manipulations |
+| [nanoid](https://github.com/ai/nanoid)                                  |                                                 UID generation |
+| [clsx](https://github.com/lukeed/clsx)                                  |                                                                |

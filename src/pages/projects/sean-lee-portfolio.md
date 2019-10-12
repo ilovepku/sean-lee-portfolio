@@ -4,9 +4,22 @@ date: "2019-05-04"
 type: "frontend production"
 name: "My Portfolio Site"
 intro: "Static site generated with Gatsby"
-pic: ../../images/projects/portfolio.jpg
+pics: [../../images/projects/portfolio.jpg]
 madeFor: "Client: myself"
-url: "/"
+url: "//seanlee.netlify.com"
+github: "//"
 desc: "My personal portfolio site"
-techs: ["Gatsby", "React", "GraphQL", "JavaScript", "Bootstrap", "CSS", "Webpack", "Netlify", "MailChimp"]
+highlights: []
+techs:
+  [
+    "Gatsby",
+    "React",
+    "GraphQL",
+    "JavaScript",
+    "Bootstrap",
+    "CSS",
+    "Webpack",
+    "Netlify",
+    "MailChimp",
+  ]
 ---

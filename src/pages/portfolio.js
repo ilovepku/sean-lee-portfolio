@@ -17,7 +17,7 @@ const PortfolioPage = () => {
             path
             name
             intro
-            pic {
+            pics {
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid

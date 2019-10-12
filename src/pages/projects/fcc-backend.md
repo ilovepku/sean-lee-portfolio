@@ -4,10 +4,12 @@ date: "2019-05-04"
 type: "backend practice"
 name: "Back End Projects"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
-pic: ../../images/projects/backend.jpg
+pics: [../../images/projects/backend.jpg]
 madeFor: "Practice: freeCodeCamp"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
+github: "//"
 desc: "Node, Express, and testing with Chai"
+highlights: []
 techs: ["Node", "Express", "MongoDB", "JavaScript", "Glitch"]
 ---
 
