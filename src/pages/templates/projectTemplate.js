@@ -66,23 +66,27 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                     <strong>For: </strong>
                     {madeFor}
                   </li>
-                  <li className="mb-2">
-                    <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
-                    <strong>Link: </strong>
-                    <a className="theme-link" href={url}>
-                      {url && url.slice(2)}
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <FontAwesomeIcon
-                      icon={["fab", "git-alt"]}
-                      className="fa-fw mr-2"
-                    />
-                    <strong>Github: </strong>
-                    <a className="theme-link" href={github}>
-                      {github && github.slice(2)}
-                    </a>
-                  </li>
+                  {url && (
+                    <li className="mb-2">
+                      <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
+                      <strong>Link: </strong>
+                      <a className="theme-link" href={url}>
+                        {url.slice(2)}
+                      </a>
+                    </li>
+                  )}
+                  {github && (
+                    <li className="mb-2">
+                      <FontAwesomeIcon
+                        icon={["fab", "git-alt"]}
+                        className="fa-fw mr-2"
+                      />
+                      <strong>Github: </strong>
+                      <a className="theme-link" href={github}>
+                        {github && github.slice(2)}
+                      </a>
+                    </li>
+                  )}
                 </ul>
                 <div className="client-bio mb-4">{desc}</div>
                 <h4 className="subheading mb-3">Technical Highlights</h4>
