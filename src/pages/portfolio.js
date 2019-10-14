@@ -26,6 +26,7 @@ const PortfolioPage = () => {
             }
             madeFor
             type
+            techs
           }
         }
       }

@@ -4,9 +4,8 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const PortfolioItem = ({
-  frontmatter: { path, name, intro, pics, madeFor, type },
+  frontmatter: { path, name, intro, pics, madeFor, type, techs },
 }) => {
-  console.log(pics)
   return (
     <div className={`filter-item col-md-6 mb-5 ${type}`}>
       <div className="card project-card">
@@ -22,12 +21,19 @@ const PortfolioItem = ({
                 </Link>
               </h5>
               <p className="card-text">{intro}</p>
-              <p className="card-text">
-                <small className="text-muted">{madeFor}</small>
-              </p>
+              <ul className="list-inline">
+                {techs.map((tech, idx) => (
+                  <li className="list-inline-item" key={`tech-${idx}`}>
+                    <span className="badge badge-secondary badge-pill">
+                      {tech}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
+
         <div className="link-mask">
           <div className="link-mask-text">
             <Link to={path} className="btn btn-secondary">

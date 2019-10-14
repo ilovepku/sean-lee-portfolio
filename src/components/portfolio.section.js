@@ -23,6 +23,7 @@ const PortfolioSection = () => {
               }
             }
             madeFor
+            techs
           }
         }
       }
