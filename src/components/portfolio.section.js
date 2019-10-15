@@ -8,6 +8,7 @@ const PortfolioSection = () => {
     query {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { glob: "**/src/pages/projects/*.md" } }
+        limit: 4
       ) {
         nodes {
           id
