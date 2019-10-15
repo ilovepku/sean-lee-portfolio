@@ -1,9 +1,9 @@
 ---
 path: "/portfolio/pwa-quanto"
 date: "2019-05-04"
-type: "frontend backend production"
+type: "frontend dataviz backend production"
 name: "PWA Quanto"
-intro: "Get handle on where your time goes. PWA Quanto time measurement tool will make it easy."
+intro: "Get a handle on where your time goes with this time management tool for the smartphone."
 pics:
   [
     ../../images/projects/pwa-quanto-charts.png,
@@ -21,8 +21,9 @@ highlights:
     "2-level drag-n-drag support for ordering categories",
     "Lazy loading big list",
     "Backup/restore data serverlessly with Firebase",
+    "State management with React Hooks and Context API (replaced Redux)",
   ]
-techs: ["React", "Firebase", "MaterialUI"]
+techs: ["React", "Firebase", "Redux", "MaterialUI"]
 ---
 
 ### Table of Contents
@@ -84,7 +85,7 @@ Tap the Start New Activity toolbar button to finish the current activity and sta
 
 Tap the Interrupt toolbar icon to start the activity interrupt timer. Tap the Resume toolbar icon when the interrupt is over.
 
-###### Interrupt Activity
+##### Interrupt Activity
 
 It is not uncommon to have a longer duration activity interrupted. For example, a phone call might interrupt the review of a long document. Recording these interruptions may help in analysing your productivity.
 
@@ -102,13 +103,13 @@ This view is used to review the sequence of past activities. The start time and 
 
 In addition to changing an activity using the details dialog you can delete or split an activity.
 
-###### Edit Activity
+##### Edit Activity
 
 ![Edit Activity](../../images/projects/pwa-quanto-edit-activity.png "Edit Activity")
 
 This dialog shows the details of a single activity. You can change the activity and details selections. You can also change the start and finish times. When you change the start or finish times the activities that precede or follow the activity are updated so that there is no gap or overlap.
 
-###### Split Activity
+##### Split Activity
 
 ![Split Activity](../../images/projects/pwa-quanto-split-activity.png "Split Activity")
 
@@ -130,29 +131,29 @@ If you want a view that shows how you spent your 'waking hours' use the settings
 
 ![Settings View](../../images/projects/pwa-quanto-settings.png "Settings View")
 
-###### Sign In & Backup/Restore Data
+##### Sign In & Backup/Restore Data
 
 You can backup/restore your activity history, custom categories, and settings to/from the cloud after you sign in.
 
-###### Notification (Android Only)
+##### Notification (Android Only)
 
 By allowing PWA Quanto to send you notifications, you'll be able to check and pause/resume the current activity, or add a new activity without entering the app, from the notification bar or the lock screen.
 
-###### Date Filter
+##### Date Filter
 
 You can limit the Charts (& Statistics) View to a day or date range of your choice here.
 
-###### Keyword Filter
+##### Keyword Filter
 
 You can exclude certain activities from the Charts (& Statistics) View by adding their names as keywords here.
 
-###### Purge History
+##### Purge History
 
 The Purge command is used to remove old activity records from the database. When OK is tapped all activity records that finish on or before the date will be permanently deleted from the database.
 
 You may want to backup the old activity information to the cloud before deleting it.
 
-###### Default Categories
+##### Default Categories
 
 Restore to the default set of activity and detail names that PWA Quanto originally came with.
 
@@ -168,7 +169,8 @@ Special thanks to [Natara Software, Inc](https://twitter.com/natara)'s discontin
 
 | Libraries                                                               |                                                            For |
 | ----------------------------------------------------------------------- | -------------------------------------------------------------: |
-| [react](https://github.com/facebook/react/)                             |                                                                |
+| [react](https://github.com/facebook/react/)                             |                                                   UI interface |
+| [redux](https://github.com/reduxjs/redux)                               |                                               state management |
 | [victory](https://github.com/FormidableLabs/victory)                    |                                interactive data visualizations |
 | [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) |                                        list item drag and drop |
 | [react-window](https://github.com/bvaughn/react-window)                 |         lazy loading(efficiently rendering) large list of data |
