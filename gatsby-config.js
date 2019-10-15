@@ -58,8 +58,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        // printRejected: true,
-        // develop: true,
+        printRejected: true,
+        develop: true,
         whitelist: [
           "navbar",
           "navbar-expand-lg",
@@ -69,6 +69,10 @@ module.exports = {
           "collapsing",
           "navbar-collapse",
           "svg-inline--fa",
+          "metric-name",
+          "metric-data",
+          "unit",
+          "metric-desc",
         ],
         whitelistPatterns: [/^fa-/],
       },
