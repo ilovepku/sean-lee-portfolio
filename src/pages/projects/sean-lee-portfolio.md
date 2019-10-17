@@ -22,4 +22,5 @@ techs:
     "Netlify",
     "MailChimp",
   ]
+testimonial: { text: "" }
 ---

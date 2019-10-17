@@ -15,6 +15,7 @@ highlights:
     "scraped data stored in a MySQL database",
   ]
 techs: ["Python", "Scrapy", "MySQL"]
+testimonial: { text: "" }
 ---
 
 ### The Challenge

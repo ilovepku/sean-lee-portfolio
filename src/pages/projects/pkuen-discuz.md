@@ -11,6 +11,14 @@ github:
 desc: ""
 highlights: ["IPv6 support since early 2012", "Online donation feature"]
 techs: ["Discuz", "Linux", "Apache", "MySQL", "PHP"]
+testimonial:
+  {
+    text: Excellent! We should have had such an online space for discussion sooner. I've already registered and will come to chat with everyone often. The news needs to be emailed to all undergraduate and graduate students (almuni too) to encourage all to visit this forum.",
+    avatar: ../../images/mao.png,
+    person: "Dr. MAO Liang",
+    position: "Associate Chair",
+    company: "English Department, Peking University",
+  }
 ---
 
 ### Overview

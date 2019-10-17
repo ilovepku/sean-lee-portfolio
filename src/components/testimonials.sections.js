@@ -1,9 +1,37 @@
 import React from "react"
-import { Carousel } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import testimonialMale from "../images/testimonials-male.jpg"
+import { useStaticQuery, graphql } from "gatsby"
+import TestimonialItem from "./testimonial.item"
 
 const TestimonialsSection = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { glob: "**/src/pages/projects/*.md" }
+          frontmatter: { testimonial: { text: { ne: "" } } }
+        }
+      ) {
+        nodes {
+          id
+          frontmatter {
+            testimonial {
+              text
+              avatar {
+                childImageSharp {
+                  fixed(width: 60, height: 60) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+              person
+              position
+              company
+            }
+          }
+        }
+      }
+    }
+  `)
   return (
     <>
       <div className="container">
@@ -12,33 +40,17 @@ const TestimonialsSection = () => {
       <section className="testimonials-section p-3 p-lg-5">
         <div className="container">
           <h2 className="section-title font-weight-bold mb-5">Testimonials</h2>
-          <Carousel
-            controls={false}
-            className="testimonial-carousel owl-carousel owl-theme"
-          >
-            {Array.from({ length: 3 }).map((_, i) => (
-              <Carousel.Item className="item" key={i}>
-                <div className="quote-holder">
-                  <blockquote className="quote-content">
-                    Simon is a brilliant software engineer! Lorem ipsum dolor
-                    sit amet, consectetuer adipiscing elit. Aenean commodo
-                    ligula eget dolor. Aenean massa. Cum sociis natoque
-                    penatibus et magnis.
-                  </blockquote>
-                  <FontAwesomeIcon icon="quote-left" />
-                </div>
-                <div className="source-holder">
-                  <div className="source-profile">
-                    <img src={testimonialMale} alt="" />
-                  </div>
-                  <div className="meta">
-                    <div className="name">John Doe</div>
-                    <div className="info">Project Manager, Company</div>
+          <div className="testimonial-carousel row">
+            {data.allMarkdownRemark.nodes.map(
+              ({ id, frontmatter: { testimonial } }, idx) => (
+                <div className="col-md-4 mb-3" key={`${id}-testimonial-${idx}`}>
+                  <div className="item">
+                    <TestimonialItem testimonial={testimonial} />
                   </div>
                 </div>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+              )
+            )}
+          </div>
         </div>
       </section>
     </>

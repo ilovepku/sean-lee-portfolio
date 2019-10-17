@@ -439,6 +439,11 @@ hr {
   background: #fafafa;
   height: 100%;
   position: relative;
+
+  /* added by Sean Lee*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .testimonial-carousel .item:before {
   content: "";
@@ -465,17 +470,20 @@ hr {
 }
 .testimonial-carousel .source-holder {
   position: relative;
-  padding-left: 76px;
+  /* padding-left: 76px; */
   height: 60px;
+  /* added by Sean Lee */
+  display: flex;
+  align-items: center;
 }
 .testimonial-carousel .source-holder .source-profile {
-  position: absolute;
+  /* modified by Sean Lee */
+  width: 60px;
+  /* position: absolute;
   left: 0;
-  top: 0;
+  top: 0; */
 }
-.testimonial-carousel .source-holder .meta {
-  padding-top: 0.5rem;
-}
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #292929;
@@ -856,6 +864,8 @@ a.resume-link:hover {
 .meta {
   color: #8f8f8f;
   font-size: 0.8125rem;
+  /* added by Sean Lee */
+  margin-left: 1rem;
 }
 .meta span {
   display: inline-block;
@@ -1391,4 +1401,8 @@ body {
 
 body.dark-mode .carousel-indicators li {
   background-color: #6c51a4;
+}
+
+.client-quote .source-profile img {
+  border-radius: 50%;
 }

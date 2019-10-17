@@ -21,9 +21,10 @@ highlights:
     "2-level drag-n-drag support for ordering categories",
     "Lazy loading big list",
     "Backup/restore data serverlessly with Firebase",
-    "State management with React Hooks and Context API (replaced Redux)",
+    "State management with React Hooks and Context API (replacing Redux)",
   ]
 techs: ["React", "Firebase", "Redux", "MaterialUI"]
+testimonial: { text: "" }
 ---
 
 ### Table of Contents

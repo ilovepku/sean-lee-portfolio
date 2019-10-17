@@ -11,6 +11,7 @@ github: "//"
 desc: "Responsive data visualizations with D3.js, Javascript, and CSS"
 highlights: []
 techs: ["D3", "JavaScript", "CSS", "Codepen"]
+testimonial: { text: "" }
 ---
 
 ## Choropleth Map

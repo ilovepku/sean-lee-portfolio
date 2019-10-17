@@ -19,11 +19,19 @@ highlights:
   [
     "Multi layered many-to-many, one-to-many related data(speaker-theme-speech-text-audio) stored on Firebase Firestore for easier content updates.",
     "Full control of the player from notification bar/lockscreen with Media Session API",
-    "State management with React Hooks and Context API (replaced Redux)",
+    "State management with React Hooks and Context API (replacing Redux)",
     "Speeches filterable by speaker, theme, or just a custom keyword.",
     "Common features like playlist, favorites list, loop/random toggle, playback speed switch, dark mode",
   ]
 techs: ["React", "Firebase", "Redux", "MaterialUI"]
+testimonial:
+  {
+    text: "Sean opened the doors for me to pursue my new career in web development. He’s been providing constant support in the process of building Eloqua - an app of our joint effort. I’m impressed by the flexibility and tenacity he showed throughout this journey. He has the patience to clarify my silly doubts as a beginner, and the ingenuity to tackle tricky problems. Eloqua would be impossible without Sean’s close instruction and supervision.",
+    avatar: ../../images/layla.jpg,
+    person: "Layla",
+    position: "Web Developer",
+    company: "Part-time Freelancer",
+  }
 ---
 
 ### Table of Contents
@@ -90,7 +98,7 @@ Don’t forget to take better care of your eyes. Toggle dark mode in the Setting
 
 ##### Libraries
 
-[react](https://github.com/facebook/react/)
-[react-player](https://github.com/facebook/react/)
-[material-ui](https://github.com/mui-org/material-ui)
-[redux](https://github.com/reduxjs/redux)
+- [react](https://github.com/facebook/react/)
+- [react-player](https://github.com/facebook/react/)
+- [material-ui](https://github.com/mui-org/material-ui)
+- [redux](https://github.com/reduxjs/redux)

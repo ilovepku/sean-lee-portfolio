@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import { Carousel } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../../components/layout"
+import TestimonialItem from "../../components/testimonial.item"
 
 // webpack feature: function mapping all *.svg paths to the actual data:image
 const reqSvgs = require.context("../../images/webdev-icons", true, /\.svg$/)
@@ -23,6 +24,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
         desc,
         highlights,
         techs,
+        testimonial,
       },
     } = markdownRemark
   }
@@ -122,6 +124,14 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
             className="project-sections py-5"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          {testimonial.text && (
+            <div className="project-section mb-5">
+              <h3 className="project-section-title mb-3">Testimonial</h3>
+              <div className="client-quote">
+                <TestimonialItem testimonial={testimonial} />
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -170,6 +180,19 @@ export const pageQuery = graphql`
         desc
         highlights
         techs
+        testimonial {
+          text
+          avatar {
+            childImageSharp {
+              fixed(width: 60, height: 60) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          person
+          position
+          company
+        }
       }
     }
   }
