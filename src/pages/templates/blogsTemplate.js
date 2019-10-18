@@ -144,7 +144,7 @@ export const pageQuery = graphql`
   query($skip: Int, $limit: Int) {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { glob: "**/src/pages/blogs/*.md" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: ASC }
       skip: $skip
       limit: $limit
     ) {
