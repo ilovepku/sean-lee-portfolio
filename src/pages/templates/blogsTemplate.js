@@ -77,7 +77,7 @@ const BlogsTemplate = props => {
       <section className="cta-section theme-bg-light py-5">
         <div className="container text-center">
           <h2 className="heading">
-            A Blog About Software Development And Life
+            Sean Lee's Blog About Full Stack Development
           </h2>
           <div className="intro">
             Welcome to my blog. Subscribe and get my latest blog post in your

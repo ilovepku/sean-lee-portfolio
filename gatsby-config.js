@@ -55,13 +55,42 @@ module.exports = {
             },
           },
           `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false,
+              },
+            },
+          },
         ],
       },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true,
+        // printRejected: true,
         develop: true,
         whitelist: [
           "navbar",
@@ -85,7 +114,9 @@ module.exports = {
           "metric-data",
           "unit",
           "metric-desc",
+          "client-quote",
         ],
+        ignore: ["prismjs/themes/prism-tomorrow.css"],
         whitelistPatterns: [/^fa-/],
       },
     },
