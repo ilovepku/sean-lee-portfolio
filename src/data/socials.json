@@ -6,26 +6,16 @@
     "iconAlt": "github-square"
   },
   {
-    "name": "linkedin",
-    "url": "//linkedin.com",
-    "icon": "linkedin-in",
-    "iconAlt": "linkedin"
-  },
-  {
-    "name": "twitter",
-    "url": "//twitter.com",
-    "icon": "twitter",
-    "iconAlt": "twitter-square"
-  },
-  {
     "name": "codepen",
     "url": "//codepen.io/ilovepku",
-    "icon": "codepen"
+    "icon": "codepen",
+    "iconAlt": "codepen"
   },
   {
     "name": "glitch",
     "url": "//glitch.com/@ilovepku",
-    "icon": "node-js"
+    "icon": "node-js",
+    "iconAlt": "node-js"
   },
   {
     "name": "free-code-camp",
@@ -36,15 +26,5 @@
     "name": "stack-overflow",
     "url": "//stackoverflow.com/users/10644430/sean-lee",
     "icon": "stack-overflow"
-  },
-  {
-    "name": "instagram",
-    "url": "//instagram.com",
-    "icon": "instagram"
-  },
-  {
-    "name": "medium",
-    "url": "//medium.com",
-    "icon": "medium-m"
   }
 ]

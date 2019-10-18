@@ -31,36 +31,20 @@ const ResumePage = () => {
           bullets
         }
       }
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { glob: "**/src/pages/projects/*.md" }
+          frontmatter: { testimonial: { text: { ne: "" } } }
+        }
+      ) {
         nodes {
           id
           frontmatter {
+            path
             name
             madeFor
             desc
           }
-        }
-      }
-      allEduJson {
-        nodes {
-          id
-          name
-          place
-          start
-          end
-        }
-      }
-      allLangJson {
-        nodes {
-          id
-          name
-          level
-        }
-      }
-      allInterestsJson {
-        nodes {
-          id
-          name
         }
       }
       allSocialsJson(limit: 3) {
@@ -185,12 +169,15 @@ const ResumePage = () => {
                   </h3>
 
                   {data.allMarkdownRemark.nodes.map(
-                    ({ id, frontmatter: { name, madeFor, desc } }) => (
+                    ({ id, frontmatter: { path, name, madeFor, desc } }) => (
                       <div className="item mb-3" key={id}>
                         <div className="item-heading row align-items-center mb-2">
                           <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                            {name}
+                            <Link to={path} className="theme-link">
+                              {name}
+                            </Link>
                           </h4>
+
                           <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
                             {madeFor}
                           </div>
@@ -237,58 +224,86 @@ const ResumePage = () => {
                     Education
                   </h3>
                   <ul className="list-unstyled resume-education-list">
-                    {data.allEduJson.nodes.map(
-                      ({ id, name, place, start, end }, idx, arr) => (
-                        <li
-                          className={idx === arr.length - 1 ? "" : "mb-3"}
-                          key={id}
+                    <li className="mb-3">
+                      <div className="resume-degree font-weight-bold">
+                        Graduate Coursework in English Literature
+                      </div>
+                      <div className="resume-degree-org text-muted">
+                        <a
+                          href="//https://www.topuniversities.com/universities/peking-university"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="theme-link"
                         >
-                          <div className="resume-degree font-weight-bold">
-                            {name}
-                          </div>
-                          <div className="resume-degree-org text-muted">
-                            {place}
-                          </div>
-                          <div className="resume-degree-time text-muted">
-                            {start} - {end}
-                          </div>
-                        </li>
-                      )
-                    )}
+                          Peking University
+                        </a>
+                      </div>
+                      <div className="resume-degree-time text-muted">
+                        2011 - 2014
+                      </div>
+                    </li>
+                    <li className="">
+                      <div className="resume-degree font-weight-bold">
+                        BA in English Literature
+                      </div>
+                      <div className="resume-degree-org text-muted">
+                        <a
+                          href="//https://www.topuniversities.com/universities/peking-university"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="theme-link"
+                        >
+                          Peking University
+                        </a>
+                      </div>
+                      <div className="resume-degree-time text-muted">
+                        2007 - 2011
+                      </div>
+                    </li>
                   </ul>
                 </section>
                 <section className="skills-section py-3">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Languages
                   </h3>
-                  <ul className="list-unstyled resume-lang-list">
-                    {data.allLangJson.nodes.map(
-                      ({ id, name, level }, idx, arr) => (
-                        <li
-                          className={idx === arr.length - 1 ? "" : "mb-2"}
-                          key={id}
-                        >
-                          {name} <span className="text-muted">({level})</span>
-                        </li>
-                      )
-                    )}
-                  </ul>
+                  <div className="item">
+                    <h4 className="item-title">
+                      Chinese<span className="text-muted"> (Native)</span>
+                    </h4>
+                    <ul className="list-unstyled resume-skills-list" />
+                  </div>
+                  <div className="item">
+                    <h4 className="item-title">
+                      English
+                      <span className="text-muted"> (Advanced)</span>
+                    </h4>
+                    <ul className="list-unstyled resume-skills-list">
+                      <li className="mb-2">Bachelor Degree</li>
+                      <li>Graduate Coursework</li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <h4 className="item-title">
+                      German
+                      <span className="text-muted"> (Intermediate)</span>
+                    </h4>
+                    <ul className="list-unstyled resume-skills-list">
+                      <li className="mb-2">
+                        Graduate Level 3rd Language Courses
+                      </li>
+                      <li>Duolingo Course with Full Skill Levels</li>
+                    </ul>
+                  </div>
                 </section>
                 <section className="skills-section py-3">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Interests
                   </h3>
                   <ul className="list-unstyled resume-interests-list mb-0">
-                    {data.allInterestsJson.nodes.map(
-                      ({ id, name }, idx, arr) => (
-                        <li
-                          className={idx === arr.length - 1 ? "" : "mb-2"}
-                          key={id}
-                        >
-                          {name}
-                        </li>
-                      )
-                    )}
+                    <li className="mb-2">Reading</li>
+                    <li className="mb-2">Piano</li>
+                    <li className="mb-2">Chess</li>
+                    <li>Football</li>
                   </ul>
                 </section>
               </aside>

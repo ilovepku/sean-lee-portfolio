@@ -21,9 +21,9 @@ const AboutSection = () => {
             <h2 className="name font-weight-bold mb-1">
               {data.site.siteMetadata.author}
             </h2>
-            <div className="tagline mb-3">Senior Software Engineer</div>
+            <div className="tagline mb-3">Senior Full Stack Developer</div>
             <div className="bio mb-4">
-              I'm a software engineer specialised in frontend and backend
+              I'm an aspiring senior full stack developer specialised in frontend and backend
               development for complex scalable web apps. I write about software
               development on{" "}
               <Link to="/blogs" className="link-on-bg">
