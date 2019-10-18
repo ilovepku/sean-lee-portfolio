@@ -8,6 +8,7 @@ const BlogSection = () => {
     query {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { glob: "**/src/pages/blogs/*.md" } }
+        sort: { fields: [frontmatter___date], order: ASC }
         limit: 3
       ) {
         nodes {
