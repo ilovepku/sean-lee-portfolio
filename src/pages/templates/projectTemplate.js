@@ -124,7 +124,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
             className="project-sections py-5"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          {testimonial.text && (
+          {testimonial && testimonial.text && (
             <div className="project-section mb-5">
               <h3 className="project-section-title mb-3">Testimonial</h3>
               <div className="client-quote">
