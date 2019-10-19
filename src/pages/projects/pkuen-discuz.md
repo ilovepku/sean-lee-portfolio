@@ -19,6 +19,7 @@ testimonial:
     position: "Associate Chair",
     company: "English Department, Peking University",
   }
+featured: false
 ---
 
 ### Overview

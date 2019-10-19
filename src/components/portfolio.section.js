@@ -7,7 +7,11 @@ const PortfolioSection = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { glob: "**/src/pages/projects/*.md" } }
+        filter: {
+          fileAbsolutePath: { glob: "**/src/pages/projects/*.md" }
+          frontmatter: { featured: { ne: false } }
+        }
+
         limit: 4
       ) {
         nodes {

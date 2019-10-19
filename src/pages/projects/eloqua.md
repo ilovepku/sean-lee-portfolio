@@ -32,6 +32,7 @@ testimonial:
     position: "Web Developer",
     company: "Part-time Freelancer",
   }
+featured: true
 ---
 
 ### Table of Contents

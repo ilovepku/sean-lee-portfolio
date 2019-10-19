@@ -25,6 +25,7 @@ highlights:
   ]
 techs: ["React", "Firebase", "Redux", "MaterialUI"]
 testimonial: { text: "" }
+featured: true
 ---
 
 ### Table of Contents

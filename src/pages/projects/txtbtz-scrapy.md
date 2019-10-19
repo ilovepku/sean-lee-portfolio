@@ -16,6 +16,7 @@ highlights:
   ]
 techs: ["Python", "Scrapy", "MySQL"]
 testimonial: { text: "" }
+featured: false
 ---
 
 ### The Challenge

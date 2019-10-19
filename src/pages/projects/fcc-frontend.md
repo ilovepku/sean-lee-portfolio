@@ -12,6 +12,7 @@ desc: "Project summary goes here. Etiam rhoncus. Maecenas tempus, tellus eget co
 highlights: []
 techs: ["React", "Bootstrap", "JavaScript", "CSS", "Codepen"]
 testimonial: { text: "" }
+featured: false
 ---
 
 ## Pomodoro Clock
