@@ -215,9 +215,10 @@ hr {
 .social-list a {
   width: 32px;
   height: 32px;
-  padding-top: 5px;
+  /* padding-top: 5px; modified by Sean Lee */
+  padding-top: 2px;
   display: inline-block;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 50%;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -1162,9 +1163,9 @@ body.dark-mode .header .nav-item .dropdown-menu .dropdown-item.active {
 body.dark-mode .header .btn-primary {
   background: #6c51a4;
 }
-body.dark-mode .social-list a {
+/* body.dark-mode .social-list a {
   background: #6c51a4;
-}
+} deleted by Sean Lee */
 body.dark-mode .social-list a .svg-inline--fa {
   color: #fff;
 }
@@ -1405,4 +1406,8 @@ body.dark-mode .carousel-indicators li {
 
 .client-quote .source-profile img {
   border-radius: 50%;
+}
+
+.cta-section .intro .list-inline img {
+  width: 2em;
 }

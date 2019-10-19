@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import profile from "../images/profile.png"
+import { reqSvgs } from "../utils/svgs.util"
 
 const ResumePage = () => {
   const data = useStaticQuery(graphql`
@@ -50,8 +51,8 @@ const ResumePage = () => {
       allSocialsJson(limit: 3) {
         nodes {
           id
+          name
           url
-          iconAlt
         }
       }
     }
@@ -312,27 +313,26 @@ const ResumePage = () => {
           <hr />
           <div className="resume-footer text-center">
             <ul className="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-              {data.allSocialsJson.nodes.map(
-                ({ id, url, iconAlt }, idx, arr) => (
-                  <li
-                    className={`list-inline-item mb-lg-0 ${
-                      idx === arr.length - 1 ? "mr-lg-3" : "mr-3"
-                    }`}
-                    key={id}
-                  >
-                    <a className="resume-link" href={url}>
-                      <FontAwesomeIcon
-                        icon={["fab", iconAlt]}
-                        className="fa-2x mr-2"
-                        transform="down-4"
-                      />
-                      <span className="d-none d-lg-inline-block text-muted">
-                        {url && url.slice(2)}
-                      </span>
-                    </a>
-                  </li>
-                )
-              )}
+              {data.allSocialsJson.nodes.map(({ id, name, url }, idx, arr) => (
+                <li
+                  className={`list-inline-item mb-lg-0 ${
+                    idx === arr.length - 1 ? "mr-lg-3" : "mr-3"
+                  }`}
+                  key={id}
+                >
+                  <a className="theme-link" href={url}>
+                    <img
+                      alt=""
+                      title={name}
+                      src={reqSvgs(`./${name}.svg`)}
+                      className="mr-2"
+                    />
+                    <span className="d-none d-lg-inline-block">
+                      {url && url.slice(2)}
+                    </span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </article>

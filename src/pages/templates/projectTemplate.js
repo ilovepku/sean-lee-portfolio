@@ -28,6 +28,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
       },
     } = markdownRemark
   }
+  console.log(github)
   return (
     <Layout>
       <section className="cta-section theme-bg-light py-5">
@@ -80,7 +81,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                   {github && (
                     <li className="mb-2">
                       <FontAwesomeIcon
-                        icon={["fab", "git-alt"]}
+                        icon="code-branch"
                         className="fa-fw mr-2"
                       />
                       <strong>Github: </strong>

@@ -17,7 +17,6 @@ import "../css/theme.css"
 import "../css/svg.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { fab } from "@fortawesome/free-brands-svg-icons"
 import {
   faUser,
   faLaptopCode,
@@ -35,11 +34,11 @@ import {
   faMapMarkerAlt,
   faMugHot,
   faLink,
+  faCodeBranch,
   faLongArrowAltLeft,
   faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons"
 library.add(
-  fab,
   // menu items
   faUser,
   faLaptopCode,
@@ -64,6 +63,7 @@ library.add(
   // project overview
   faMugHot,
   faLink,
+  faCodeBranch,
   // blog pagination buttons
   faLongArrowAltLeft,
   faLongArrowAltRight

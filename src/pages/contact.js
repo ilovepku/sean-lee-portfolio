@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
+import { reqSvgs } from "../utils/svgs.util"
 
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
@@ -16,7 +16,6 @@ const ContactPage = () => {
           id
           name
           url
-          icon
         }
       }
     }
@@ -36,13 +35,15 @@ const ContactPage = () => {
               Want to get connected? Follow me on the social channels below.
             </p>
             <ul className="list-inline mb-0">
-              {data.allSocialsJson.nodes.map(({ id, name, url, icon }) => (
-                <li className="list-inline-item mb-3" key={id}>
-                  <a className={name} href={url}>
-                    <FontAwesomeIcon
-                      icon={["fab", icon]}
-                      className="fa-fw fa-lg"
-                    />
+              {data.allSocialsJson.nodes.map(({ id, name, url }, idx, arr) => (
+                <li
+                  className={`list-inline-item ${
+                    idx === arr.length - 1 ? "" : "mr-3"
+                  }`}
+                  key={id}
+                >
+                  <a href={url}>
+                    <img alt="" title={name} src={reqSvgs(`./${name}.svg`)} />
                   </a>
                 </li>
               ))}

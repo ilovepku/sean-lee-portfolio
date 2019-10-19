@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet"
 import { Navbar } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import profile from "../images/profile.png"
+import { reqSvgs } from "../utils/svgs.util"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +20,6 @@ const Header = () => {
           id
           name
           url
-          icon
         }
       }
       allMenuJson {
@@ -56,6 +56,7 @@ const Header = () => {
     setDarkmodeToggle(checked)
     localStorage.setItem("darkmodeToggle", checked)
   }
+
   return (
     <>
       <Helmet>
@@ -86,12 +87,13 @@ const Header = () => {
                   developer. Welcome to my personal website!
                 </div>
                 <ul className="social-list list-inline py-2 mx-auto">
-                  {data.allSocialsJson.nodes.map(({ id, url, icon }) => (
+                  {data.allSocialsJson.nodes.map(({ id, name, url }) => (
                     <li className="list-inline-item" key={id}>
                       <a href={url}>
-                        <FontAwesomeIcon
-                          icon={["fab", icon]}
-                          className="fa-fw"
+                        <img
+                          alt=""
+                          title={name}
+                          src={reqSvgs(`./${name}.svg`)}
                         />
                       </a>
                     </li>
