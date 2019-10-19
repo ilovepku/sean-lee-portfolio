@@ -7,7 +7,7 @@ intro: "5 data visualization projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/dataviz.jpg]
 madeFor: "Practice: freeCodeCamp"
 url: "//codepen.io/collection/nMoKdK"
-github: "//"
+github: 
 desc: "Responsive data visualizations with D3.js, Javascript, and CSS"
 highlights: []
 techs: ["D3", "JavaScript", "CSS", "Codepen"]

@@ -7,7 +7,7 @@ intro: "10 backend projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/backend.jpg]
 madeFor: "Practice: freeCodeCamp"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
-github: "//"
+github: 
 desc: "Node, Express, and testing with Chai"
 highlights: []
 techs: ["Node", "Express", "MongoDB", "JavaScript", "Glitch"]
