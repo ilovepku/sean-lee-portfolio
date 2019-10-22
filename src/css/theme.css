@@ -1411,3 +1411,11 @@ body.dark-mode .carousel-indicators li {
 .cta-section .intro .list-inline img {
   width: 2em;
 }
+
+.social-list a img {
+  width: 1.5em;
+}
+
+a.theme-link img {
+  width: 1.5em;
+}
