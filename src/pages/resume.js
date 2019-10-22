@@ -35,7 +35,7 @@ const ResumePage = () => {
       allMarkdownRemark(
         filter: {
           fileAbsolutePath: { glob: "**/src/pages/projects/*.md" }
-          frontmatter: { testimonial: { text: { ne: "" } } }
+          frontmatter: { featured: { ne: false } }
         }
       ) {
         nodes {

@@ -2,7 +2,7 @@
 path: "/portfolio/eloqua"
 date: "2019-05-04"
 type: "frontend backend production"
-name: "Eloqua"
+name: "Eloqua App"
 intro: "Listen to great speeches on your smartphone."
 pics:
   [
@@ -13,7 +13,7 @@ pics:
   ]
 madeFor: "Open Source"
 url: "//speech-pwa.web.app"
-github: "//github.com/laylapku/speech-log"
+code: "//github.com/laylapku/speech-log"
 desc: "I conceived the idea, planned the features, and have been directing the development of the speech listening app Eloqua, with Layla, the protégé I've been tutoring, doing most of the actual coding, while I conduct code reviews and help crack the occasional hard cases."
 highlights:
   [

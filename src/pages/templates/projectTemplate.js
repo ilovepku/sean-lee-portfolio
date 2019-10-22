@@ -20,7 +20,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
         pics,
         madeFor,
         url,
-        github,
+        code,
         desc,
         highlights,
         techs,
@@ -28,7 +28,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
       },
     } = markdownRemark
   }
-  console.log(github)
+
   return (
     <Layout>
       <section className="cta-section theme-bg-light py-5">
@@ -64,11 +64,13 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
               <div className="client-info">
                 <h3 className="client-name font-weight-bold mb-4">{name}</h3>
                 <ul className="client-meta list-unstyled">
-                  <li className="mb-2">
-                    <FontAwesomeIcon icon="mug-hot" className="fa-fw mr-2" />
-                    <strong>For: </strong>
-                    {madeFor}
-                  </li>
+                  {madeFor && (
+                    <li className="mb-2">
+                      <FontAwesomeIcon icon="mug-hot" className="fa-fw mr-2" />
+                      <strong>For: </strong>
+                      {madeFor}
+                    </li>
+                  )}
                   {url && (
                     <li className="mb-2">
                       <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
@@ -78,31 +80,34 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                       </a>
                     </li>
                   )}
-                  {github && (
+                  {code && (
                     <li className="mb-2">
                       <FontAwesomeIcon
                         icon="code-branch"
                         className="fa-fw mr-2"
                       />
-                      <strong>Github: </strong>
-                      <a className="theme-link" href={github}>
-                        {github && github.slice(2)}
+                      <strong>Code: </strong>
+                      <a className="theme-link" href={code}>
+                        {code && code.slice(2)}
                       </a>
                     </li>
                   )}
                 </ul>
                 <div className="client-bio mb-4">{desc}</div>
-                <h4 className="subheading mb-3">Technical Highlights</h4>
-                <ul className="mb-4">
-                  {highlights &&
-                    highlights.map((highlight, idx) => (
-                      <li className="mb-2" key={`${id}-highlight-${idx}`}>
-                        {highlight}
-                      </li>
-                    ))}
-                </ul>
+                {highlights && (
+                  <>
+                    <h4 className="subheading mb-3">Technical Highlights</h4>
+                    <ul className="mb-4">
+                      {highlights.map((highlight, idx) => (
+                        <li className="mb-2" key={`${id}-highlight-${idx}`}>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
                 <h4 className="subheading mb-3">Technologies Used</h4>
-                <div className="webdev-icons row mb-5 align-items-center">
+                <div className="webdev-icons row align-items-center">
                   {techs &&
                     techs.map((tech, idx) => (
                       <div
@@ -177,7 +182,7 @@ export const pageQuery = graphql`
         }
         madeFor
         url
-        github
+        code
         desc
         highlights
         techs

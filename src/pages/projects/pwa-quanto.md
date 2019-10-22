@@ -2,8 +2,8 @@
 path: "/portfolio/pwa-quanto"
 date: "2019-05-04"
 type: "frontend dataviz backend production"
-name: "PWA Quanto"
-intro: "Get a handle on where your time goes with this time management tool for the smartphone."
+name: "Quanto Time Management App"
+intro: "Get a handle on where your time goes."
 pics:
   [
     ../../images/projects/pwa-quanto-charts.png,
@@ -12,7 +12,7 @@ pics:
   ]
 madeFor: "Open Source"
 url: "//pwa-quanto.web.app"
-github: "//github.com/ilovepku/pwa-quanto"
+code: "//github.com/ilovepku/pwa-quanto"
 desc: "The classic but long discontinued Natara Quanto for Palm OS remade into a React Progressive Web App for modern mobile devices."
 highlights:
   [

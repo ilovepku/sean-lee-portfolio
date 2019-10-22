@@ -2,14 +2,15 @@
 path: "/portfolio/fcc-dataviz"
 date: "2019-05-04"
 type: "dataviz practice"
-name: "Data Visualization Projects"
+name: "FCC Dataviz Practice Projects"
 intro: "5 data visualization projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/dataviz.jpg]
-madeFor: "Practice: freeCodeCamp"
+madeFor: "freeCodeCamp"
 url: "//codepen.io/collection/nMoKdK"
-github: 
-desc: "Responsive data visualizations with D3.js, Javascript, and CSS"
-highlights: []
+code:
+desc: "Responsive, interactive data visualizations with D3.js, Javascript, and CSS"
+highlights:
+  ["Interactive tooltips", "Responsive with viewBox and preserveAspectRatio"]
 techs: ["D3", "JavaScript", "CSS", "Codepen"]
 testimonial: { text: "" }
 featured: false

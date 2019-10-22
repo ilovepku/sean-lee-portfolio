@@ -7,7 +7,7 @@ intro: "Static site generated with Gatsby"
 pics: [../../images/projects/portfolio.jpg]
 madeFor: "Myself"
 url: "//seanlee.netlify.com"
-github: "//github.com/ilovepku/sean-lee-portfolio"
+code: "//github.com/ilovepku/sean-lee-portfolio"
 desc: "This project is the website you are currently visiting."
 highlights:
   [

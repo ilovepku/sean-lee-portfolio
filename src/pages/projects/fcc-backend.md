@@ -2,17 +2,35 @@
 path: "/portfolio/fcc-backend"
 date: "2019-05-04"
 type: "backend practice"
-name: "Back End Projects"
+name: "FCC Back End Practice Projects"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/backend.jpg]
-madeFor: "Practice: freeCodeCamp"
+madeFor: "freeCodeCamp"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
-github: 
-desc: "Node, Express, and testing with Chai"
-highlights: []
-techs: ["Node", "Express", "MongoDB", "JavaScript", "Glitch"]
+code: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
+desc: ""
+highlights:
+  [
+    "3rd party API integration",
+    "CRUD on MongoDB(one-to-many data models) with Mongoose",
+    "Cloud MongoDB instance on mLab",
+    "Unit testing with Chai, Mocha, and Zombie",
+    "Security features with Helmet",
+    "Uploaded file processing",
+  ]
+techs:
+  [
+    "Node",
+    "Express",
+    "MongoDB",
+    "mLab",
+    "Chai",
+    "Mocha",
+    "JavaScript",
+    "Glitch",
+  ]
 testimonial: { text: "" }
-featured: false
+featured: true
 ---
 
 ## Timestamp Microservice
@@ -146,7 +164,7 @@ User Stories
 
 <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
   <iframe
-    src="https://glitch.com/embed/#!/embed/fcc-backend-anonymous-message-board?path=README.md&previewSize=0"
+    src="https://glitch.com/embed/#!/embed/fcc-backend-anonymous-message-board?path=server.js&previewSize=100"
     title="fcc-backend-anonymous-message-board on Glitch"
     allow="geolocation; microphone; camera; midi; vr; encrypted-media"
     style="height: 100%; width: 100%; border: 0;">

@@ -8,19 +8,19 @@ intro: "With a couple of hooks, you can easily make the filter & sort layout lib
 
 ![Isotope](../../images/blogs/isotope.png "Isotope")
 
-### The Challenge
+## The Challenge
 
 [Isotope](https://www.npmjs.com/package/isotope-layout) is a JavaScript library that can provide an animated, filterable/sortabe layout for a list of HTML elements. A demo of the effect can be seen on either its [official website](https://isotope.metafizzy.co/).
 or the portfolio page of [this same very site](/portfolio).
 
 It's a quite handly tool, and the animations look pretty cool, but the problem is that it was quite a dated library, first introduced back in the days of jQuery, hence not as well suited to be used together with a modern front end framework like React. Though the official documentation has chapters on initializing Isotope with both vanilla JS and HTML, nothing on using it with React has been given.
 
-### Previous Takes
+## Previous Takes
 
 There havn't been many discussions on this topic. Some of the top hits that a quick Google search for "isotope and react" returns are ["React.js with Isotope and Flux"](https://developers.redhat.com/blog/2016/01/07/react-js-with-isotope-and-flux/) which is more than 3 years old and involves using an extra library, [
 "How to make Isotope work in a Gatsby site"](https://www.amithraravi.com/articles/tech/how-to-make-isotope-work-in-a-gatsby-site/) which is quite new and somewhat enlightening, but simply has too many repetitive or unnecessary code. [The stackoverflow question "React.js and Isotope.js"](https://stackoverflow.com/questions/25135261/react-js-and-isotope-js) provides several interesting answers, yet again either not working anymore due to datedness or containing no longer recommended methods like `ReactDOM.findDOMNode`. It's certainly time for an easy, up-to-date, and most importantly working solution.
 
-### My Approach & Solution
+## My Approach & Solution
 
 Below is a barebone example of my take on the problem on Codepen using `useState` and `useEffect` hooks, features newly added into React 16.8 this very year.
 
@@ -95,6 +95,6 @@ to change the filterKey state when clicked, and:
 
 the isotope items with their respective filter keywords "fruit" and "vege".
 
-### The Results
+## The Results
 
 A simple, modern solution to using isotope with React that works with both static items or dynamically generated items, you are welcome to give it a try, thank you for your time!
