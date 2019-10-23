@@ -2,13 +2,13 @@
 path: "/portfolio/portfolio"
 date: "2019-05-04"
 type: "frontend production"
-name: "My Portfolio Site"
+name: "Static Portfolio Site"
 intro: "Static site generated with Gatsby"
 pics: [../../images/projects/portfolio.jpg]
 madeFor: "Myself"
 url: "//seanlee.netlify.com"
 code: "//github.com/ilovepku/sean-lee-portfolio"
-desc: "This project is the website you are currently visiting."
+desc: 
 highlights:
   [
     "Dynamically generated pages and blogs from markdowns with Gatsby",
@@ -32,3 +32,5 @@ techs:
 testimonial: { text: "" }
 featured: true
 ---
+
+This project is the website you are currently visiting.

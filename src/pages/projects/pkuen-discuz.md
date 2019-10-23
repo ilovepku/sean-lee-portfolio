@@ -8,7 +8,7 @@ pics: [../../images/projects/pkuen-discuz.png]
 madeFor: "Department of English, Peking University"
 url:
 code:
-desc: ""
+desc: 
 highlights: ["IPv6 support since early 2012", "Online donation feature"]
 techs: ["Discuz", "Linux", "Apache", "MySQL", "PHP"]
 testimonial:

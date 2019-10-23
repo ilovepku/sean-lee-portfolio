@@ -2,13 +2,13 @@
 path: "/portfolio/fcc-backend"
 date: "2019-05-04"
 type: "backend practice"
-name: "FCC Back End Practice Projects"
+name: "FCC Back End Practices"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/backend.jpg]
 madeFor: "freeCodeCamp"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
 code: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
-desc: ""
+desc: 
 highlights:
   [
     "3rd party API integration",

@@ -2,15 +2,15 @@
 path: "/portfolio/d3-firebase"
 date: "2019-05-04"
 type: "dataviz backend practice"
-name: "D3-Firebase Practice Projects"
+name: "D3-Firebase Dataviz Practices"
 intro: "3 mini full-stack data visualization projects"
 pics: [../../images/projects/dataviz.jpg]
 madeFor:
 url: "//codepen.io/collection/XEwQmo/"
 code:
-desc: "Dynamic, interactive, real-time updating, and responsive data visualizations."
+desc: 
 highlights:
-  ["Data stored in Firebase Firestore", "Interactive, real-time updating data and graphs"]
+  ["Interactive, real-time updating data and graphs", "Data stored in Firebase Firestore"]
 techs: ["D3", "Firebase", "Materialize", "JavaScript", "CSS", "Codepen"]
 testimonial: { text: "" }
 featured: false

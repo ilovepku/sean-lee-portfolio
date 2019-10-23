@@ -8,7 +8,7 @@ pics: [../../images/projects/caeda-wordpress.jpg]
 madeFor: "China-Asia Economic Development Association"
 url: "//chinaasia.org"
 code: 
-desc: ""
+desc: 
 highlights: 
 techs: ["Wordpress", "CSS", "AWS", "Ubuntu", "Apache", "MySQL", "PHP"]
 testimonial:

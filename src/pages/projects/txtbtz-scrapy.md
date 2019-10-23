@@ -8,7 +8,7 @@ pics: [../../images/projects/txtbtz-scrapy.png]
 madeFor: "Beijing Broadlink Supply Chain Infotech Co., Ltd"
 url:
 code: "//github.com/ilovepku/scrapy-for-txtbtz.cnca.gov.cn"
-desc: "Challenaged myself to something I had almost no prior experience with (web scraping) but knew was definitly possible, by accepting my first real coding contract job on a tight schedule. Felt a bit crazy at first, but everything began to fall into place once I started with researching and teaching myself the necessary pieces to the puzzle. The whole project turned out to be a great boost to my confidence which made me see myself working in tech related field a possibility. "
+desc:
 highlights:
   [
     "multiple level one-to-many data model",
@@ -18,6 +18,10 @@ techs: ["Python", "Scrapy", "MySQL"]
 testimonial: { text: "" }
 featured: false
 ---
+
+## Overview
+
+Challenaged myself to something I had almost no prior experience with (web scraping) but knew was definitly possible, by accepting my first real coding contract job on a tight schedule. Felt a bit crazy at first, but everything began to fall into place once I started with researching and teaching myself the necessary pieces to the puzzle. The whole project turned out to be a great boost to my confidence which made me see myself working in tech related field a possibility.
 
 ## The Challenge
 

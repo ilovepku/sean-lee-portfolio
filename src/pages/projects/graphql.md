@@ -2,7 +2,7 @@
 path: "/portfolio/graphql"
 date: "2019-05-04"
 type: "backend practice"
-name: "GraphQL Practice Project"
+name: "GraphQL Full-stack Practice"
 intro: "A mini full-stack reading list app."
 pics: [../../images/projects/graphql.jpg]
 madeFor: "freeCodeCamp"

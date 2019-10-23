@@ -2,18 +2,24 @@
 path: "/portfolio/fcc-frontend"
 date: "2019-05-04"
 type: "frontend practice"
-name: "FCC Front End Practice Projects"
+name: "FCC Front End Practices"
 intro: "5 frontend practice projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/frontend.jpg]
 madeFor: "freeCodeCamp"
 url: "//codepen.io/collection/XRgbBK"
 code: "//codepen.io/collection/XRgbBK"
-desc: "Pomodoro Clock, Calculator, Drum Machine, Random Quote Machine, and Markdown Previewer, built with React."
+desc: 
 highlights:
 techs: ["React", "Bootstrap", "JavaScript", "CSS", "Codepen"]
 testimonial: { text: "" }
 featured: false
 ---
+
+- [Pomodoro Clock](#pomodoro-clock)
+- [Calculator](#calculator)
+- [Drum Machine](#drum-machine)
+- [Random Quote Machine](#random-quote-machine)
+- [Markdown Previewer](#markdown-previewer)
 
 ## Pomodoro Clock
 

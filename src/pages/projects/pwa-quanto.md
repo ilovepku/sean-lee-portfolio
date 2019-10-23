@@ -2,7 +2,7 @@
 path: "/portfolio/pwa-quanto"
 date: "2019-05-04"
 type: "frontend dataviz backend production"
-name: "Quanto Time Management App"
+name: "Quanto Time Tracker App"
 intro: "Get a handle on where your time goes."
 pics:
   [
@@ -13,7 +13,7 @@ pics:
 madeFor: "Open Source"
 url: "//pwa-quanto.web.app"
 code: "//github.com/ilovepku/pwa-quanto"
-desc: "The classic but long discontinued Natara Quanto for Palm OS remade into a React Progressive Web App for modern mobile devices."
+desc:
 highlights:
   [
     "Interative push notification",
@@ -28,7 +28,7 @@ testimonial: { text: "" }
 featured: true
 ---
 
-### Table of Contents
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Main Views](#main-views)
@@ -40,7 +40,9 @@ featured: true
 - [Limitations](#limitations)
 - [Acknowledgment](#acknowledgment)
 
-### Introduction
+## Introduction
+
+The classic but long discontinued Natara Quanto for Palm OS remade into a React Progressive Web App for modern mobile devices.
 
 - Show your boss why it's hard to get work done on that project.
 - With your crazy schedule are you getting enough sleep?
@@ -48,14 +50,14 @@ featured: true
 
 PWA Quanto is a time measurement tool that can help you improve your productivity or life balance by analysing how you spend your time.
 
-### Key benefits
+## Key benefits
 
 - Quickly capture your activities with a minimum of effort.
 - Filterable summary of your time with intuitive charts and statistics.
 - Customizable category names with drag and drop support for easier organizing.
 - Backup and restore your data.
 
-### Main Views
+## Main Views
 
 - History view.
 - Charts (& statistics) view.
@@ -64,7 +66,7 @@ PWA Quanto is a time measurement tool that can help you improve your productivit
 
 Switching between the 4 main views is done by tapping one of the bottom navigation bar icons.
 
-### First Time Usage and Categories View
+## First Time Usage and Categories View
 
 We recommend that you customize your list of activities before staring to track your time with PWA Quanto.
 The list of activity names that you use will depend on what aspect of you life you are analysing. PWA Quanto installs with a default set of activity and detail names. By customizing the lists you can get the most out of the application.
@@ -77,7 +79,7 @@ Tip: Place more frequently used categories towards the top of the list to speed 
 
 Note: Changing the names in this categories list does not affect existing activity history.
 
-### Current Activity Bar
+## Current Activity Bar
 
 ![Current Activity Bar](../../images/projects/pwa-quanto-current-activity.png "Current Activity Bar")
 
@@ -97,7 +99,7 @@ PWA Quanto has a shortcut to accomplish this sequence of steps. Tap the Interrup
 
 Tip: If the interrupt was started by accident, or does not last long enough to matter, delete the interruption activity.
 
-### History View
+## History View
 
 ![History View](../../images/projects/pwa-quanto-history.png "History View")
 
@@ -117,7 +119,7 @@ This dialog shows the details of a single activity. You can change the activity 
 
 This dialog is used to split an activity into two activities. The split at time will be used to set the end time of the first activity and the start time of the second activity. After the activity has been split you can change the activity names to reflect what was done during each time period.
 
-### Charts View
+## Charts View
 
 ![Charts View](../../images/projects/pwa-quanto-charts.png "Charts View")
 
@@ -129,7 +131,7 @@ Use the application settings to restrict the activities used to generate the sta
 
 If you want a view that shows how you spent your 'waking hours' use the settings to exclude activities that you name.
 
-### Settings View
+## Settings View
 
 ![Settings View](../../images/projects/pwa-quanto-settings.png "Settings View")
 
@@ -161,11 +163,11 @@ Restore to the default set of activity and detail names that PWA Quanto original
 
 Note: All your customary category changes wil be undone.
 
-### Limitations
+## Limitations
 
 - Timing is done with a resolution in minutes.
 
-### Acknowledgment
+## Acknowledgment
 
 Special thanks to [Natara Software, Inc](https://twitter.com/natara)'s discontinued original **Quanto for Palm OS** from 2006 for inspritation.
 

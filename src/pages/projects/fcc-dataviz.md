@@ -2,19 +2,25 @@
 path: "/portfolio/fcc-dataviz"
 date: "2019-05-04"
 type: "dataviz practice"
-name: "FCC Dataviz Practice Projects"
+name: "FCC Dataviz Practices"
 intro: "5 data visualization projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/dataviz.jpg]
 madeFor: "freeCodeCamp"
 url: "//codepen.io/collection/nMoKdK"
 code:
-desc: "Responsive, interactive data visualizations with D3.js, Javascript, and CSS"
+desc:
 highlights:
   ["Interactive tooltips", "Responsive with viewBox and preserveAspectRatio"]
 techs: ["D3", "JavaScript", "CSS", "Codepen"]
 testimonial: { text: "" }
 featured: false
 ---
+
+- [Choropleth Map](#choropleth-map)
+- [Heat Map](#heat-map)
+- [Treemap Diagram](#treemap-diagram)
+- [Scatterplot Graph](#scatterplot-graph)
+- [Bar Chart](#bar-chart)
 
 ## Choropleth Map
 
