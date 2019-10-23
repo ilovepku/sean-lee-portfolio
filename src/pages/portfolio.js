@@ -47,7 +47,7 @@ const PortfolioPage = () => {
     setIsotope(
       new Isotope(".filter-container", {
         itemSelector: ".filter-item",
-        layoutMode: "fitRows",
+        layoutMode: "masonry",
       })
     )
   }, [])
