@@ -16,6 +16,9 @@ const BlogPostTemplate = ({
       id,
       frontmatter: { title, date },
       html,
+      fields: {
+        readingTime: { text },
+      },
     } = markdownRemark
   }
 
@@ -37,7 +40,7 @@ const BlogPostTemplate = ({
               <span className="date">
                 Published {timeSince(new Date(date))} ago
               </span>
-              <span className="time">5 min read</span>
+              <span className="time">{text}</span>
               <span className="comment">
                 <a href="#comment-section">
                   <CommentCount
@@ -103,6 +106,11 @@ export const pageQuery = graphql`
       frontmatter {
         date
         title
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
   }

@@ -48,11 +48,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-images`,
-            options: {
+            /* options: {
               maxWidth: 309,
-            },
+            }, */
           },
           `gatsby-remark-autolink-headers`,
           {
