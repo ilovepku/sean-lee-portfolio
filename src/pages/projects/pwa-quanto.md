@@ -37,6 +37,7 @@ featured: true
 - [History View](#history-view)
 - [Charts View](#charts-view)
 - [Settings View](#settings-view)
+- [Notification](#notification)
 - [Limitations](#limitations)
 - [Acknowledgment](#acknowledgment)
 
@@ -162,6 +163,12 @@ You may want to backup the old activity information to the cloud before deleting
 Restore to the default set of activity and detail names that PWA Quanto originally came with.
 
 Note: All your customary category changes wil be undone.
+
+## Notification
+
+![Notification](../../images/projects/quanto/quanto-notification.png "Notification")
+
+After enabling notification in the Settings View on an Android Device, you will get a persistent notification that shows you your current activity's category, start time, and elasped time. You can also start a new activity or pause/resume the current activity by interacting with the notification actions. With the neccessary permisson, you can even do this from your lock screen without unlocking your device, making time tracking even easier.  
 
 ## Limitations
 
