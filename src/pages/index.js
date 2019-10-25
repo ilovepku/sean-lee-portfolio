@@ -6,9 +6,11 @@ import OverviewSection from "../components/overview.section"
 import PortfolioSection from "../components/portfolio.section"
 import BlogSection from "../components/blog.section"
 import TestimonialsSection from "../components/testimonials.sections"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home" />
     <AboutSection />
     <OverviewSection />
     <PortfolioSection />

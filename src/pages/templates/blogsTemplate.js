@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import Layout from "../../components/layout"
 import BlogItem from "../../components/blog.item"
+import SEO from "../../components/seo"
 
 // mailchip settings
 const url =
@@ -74,6 +75,7 @@ const BlogsTemplate = props => {
   const { currentPage, numPages } = props.pageContext
   return (
     <Layout>
+      <SEO title="Blog" />
       <section className="cta-section theme-bg-light py-5">
         <div className="container text-center">
           <h2 className="heading">

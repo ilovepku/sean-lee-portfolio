@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import profile from "../images/profile.png"
 import { reqSvgs } from "../utils/svgs.util"
+import SEO from "../components/seo"
 
 const ResumePage = () => {
   const data = useStaticQuery(graphql`
@@ -59,6 +60,7 @@ const ResumePage = () => {
   `)
   return (
     <Layout>
+      <SEO title="Resume" />
       <section className="cta-section theme-bg-light py-5">
         <div className="container text-center single-col-max-width">
           <h2 className="heading mb-3">Online Resume</h2>

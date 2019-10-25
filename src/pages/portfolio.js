@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Isotope from "isotope-layout"
 import Layout from "../components/layout"
 import PortfolioItem from "../components/portfolio.item"
+import SEO from "../components/seo"
 
 const PortfolioPage = () => {
   const data = useStaticQuery(graphql`
@@ -62,6 +63,7 @@ const PortfolioPage = () => {
 
   return (
     <Layout>
+      <SEO title="Portfolio" />
       <section className="cta-section theme-bg-light py-5">
         <div className="container text-center single-col-max-width">
           <h2 className="heading">Portfolio</h2>
