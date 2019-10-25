@@ -16,48 +16,50 @@ Most dependencies updated just fine, with the only exception being [react-redux-
 
 Following the official [v3 Migration Guide](http://react-redux-firebase.com/docs/v3-migration-guide.html), the first things I did were:
 
-    - import { reduxFirestore, getFirestore } from "redux-firestore";
-    + import { createFirestoreInstance, getFirestore } from "redux-firestore";
-    - import { reactReduxFirebase, getFirebase } from "react-redux-firebase";
-    + import { ReactReduxFirebaseProvider, getFirebase } from "react-redux-firebase";
+```diff
+- import { reduxFirestore, getFirestore } from "redux-firestore";
++ import { createFirestoreInstance, getFirestore } from "redux-firestore";
+- import { reactReduxFirebase, getFirebase } from "react-redux-firebase";
++ import { ReactReduxFirebaseProvider, getFirebase } from "react-redux-firebase";
 
-    const store = createStore(
-      rootReducer,
-    - compose(
-    -   reactReduxFirebase(firebase, rrfConfig),
-    -   reduxFirestore(firebase),
-    -   applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore }))
-    - )
-    + applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore }))
-    );
+const store = createStore(
+  rootReducer,
+- compose(
+-   reactReduxFirebase(firebase, rrfConfig),
+-   reduxFirestore(firebase),
+-   applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore }))
+- )
++ applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore }))
+);
 
-    + const rrfProps = {
-    +   firebase,
-    +   config: rrfConfig,
-    +   dispatch: store.dispatch,
-    +   createFirestoreInstance
-    + }
++ const rrfProps = {
++   firebase,
++   config: rrfConfig,
++   dispatch: store.dispatch,
++   createFirestoreInstance
++ }
 
-    store.firebaseAuthIsReady.then(() => {
-      ReactDOM.render(
-        <Provider store={store}>
-    +     <ReactReduxFirebaseProvider {...rrfProps}>
-            <App />
-    +     </ReactReduxFirebaseProvider>
-        </Provider>,
-        document.getElementById("root")
-      );
-    });
+store.firebaseAuthIsReady.then(() => {
+  ReactDOM.render(
+    <Provider store={store}>
++     <ReactReduxFirebaseProvider {...rrfProps}>
+        <App />
++     </ReactReduxFirebaseProvider>
+    </Provider>,
+    document.getElementById("root")
+  );
+});
+```
 
-That seemed pretty straight forward, and "TypeError: Object(…) is not a function" was no more, but here came another error "TypeError: Cannot read property 'then' of undefined", and it happened on:
-
-    store.firebaseAuthIsReady.then(() => {
+That seemed pretty straight forward, and "TypeError: Object(…) is not a function" was no more, but here came another error "TypeError: Cannot read property 'then' of undefined", and it happened on: `store.firebaseAuthIsReady.then(() => {`
 
 With a bit of research, I found out that react-redux-firebase had got rid of this method in v3. I was only using it to delay rendering before data is loaded anyway, so no biggie. I'd just remove it for now, and find an alternative later, so:
 
-    - store.firebaseAuthIsReady.then(() => {
-        // ...
-    - });
+```diff
+- store.firebaseAuthIsReady.then(() => {
+    // ...
+- });
+```
 
 My app successfully loaded after this, hooray!
 
@@ -67,30 +69,34 @@ Alas! Another error, this time trigged by a `getFirestore()` in one of my redux 
 
 The problem seemed to be related to firestore initiation. Though the official migration guide did not mention anything on `useFirestore`, the deletion of `reduxFirestore(firebase)`, which the guide suggested, might have caused the error. After adding the line (and the compose) back, my app now runs properly.
 
-    const store = createStore(
-      rootReducer,
-    - applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
-    + compose(
-    +   reduxFirestore(firebase),
-    +   applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore }))
-    + )
-    );
+```diff
+const store = createStore(
+  rootReducer,
+- applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
++ compose(
++   reduxFirestore(firebase),
++   applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore }))
++ )
+);
+```
 
 ## TypeError: Cannot read property 'then' of undefined
 
 I then doubled back to the deprecated `firebaseAuthIsReady` problem with all the major isses addressed. It turned out that I didn't even need this method, which was initially introduced as a SSR helper, if having a component wait for the data to load before it renders was my sole purpose, according to [this github issue](https://github.com/prescottprue/react-redux-firebase/issues/673). Instead, I could use the new `isLoaded` hook to get the job done. But since a hook is only usable in a functional component, I had to move the logic one level deeper to the root React component from its original place in index.js:
 
-    + import { useSelector } from "react-redux";
-    + import { isLoaded } from "react-redux-firebase";
+```diff
++ import { useSelector } from "react-redux";
++ import { isLoaded } from "react-redux-firebase";
 
-    + const auth = useSelector(state => state.firebase.auth);
++ const auth = useSelector(state => state.firebase.auth);
 
-    - <MainComponent />
-    + {!isLoaded(auth) ? (
-        <LoadingIndicatorComponent />
-    + ) : (
-    +   <MainComponent />
-    + )}
+- <MainComponent />
++ {!isLoaded(auth) ? (
++   <LoadingIndicatorComponent />
++ ) : (
++   <MainComponent />
++ )}
+```
 
 And that does what `store.firebaseAuthIsReady.then(() => {// something})` used to do.
 

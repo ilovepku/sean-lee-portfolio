@@ -31,67 +31,78 @@ Below is a barebone example of my take on the problem on Codepen using `useState
 
 Firstly, we create two states with `useState`:
 
-    // state for storing the isotope object, with an initial value of null
-    const [isotope, setIsotope] = React.useState(null);
-    // state for storing the filter keyword, with an initial value of *, which matches everything
-    const [filterKey, setFilterKey] = React.useState("*");
+```jsx
+// state for storing the isotope object, with an initial value of null
+const [isotope, setIsotope] = React.useState(null)
+// state for storing the filter keyword, with an initial value of *, which matches everything
+const [filterKey, setFilterKey] = React.useState("*")
+```
 
 Next, we initialize Isotope with configs after the component is mounted with the first `useEffect`:
 
-    React.useEffect(() => {
-      setIsotope(
-        new Isotope(".filter-container", { // filter-container: className of the parent of the isotope elements
-          itemSelector: ".filter-item", // filter-item: className of the isotope elements
-          layoutMode: "fitRows" // for horizontal isotope
-        })
-      );
-    }, []); // [] makes this useEffect work like a componentDidMount in a class component
+```jsx
+React.useEffect(() => {
+  setIsotope(
+    new Isotope(".filter-container", {
+      // filter-container: className of the parent of the isotope elements
+      itemSelector: ".filter-item", // filter-item: className of the isotope elements
+      layoutMode: "fitRows", // for horizontal isotope
+    })
+  )
+}, []) // [] makes this useEffect work like a componentDidMount in a class component
+```
 
 Then, we have another `useEffect` handling filter key change, calling the `arrange` method of the isotope object to reorganize the item layout when a change to the filterKey is detected:
 
-    React.useEffect(
-      () => {
-        if (isotope) { // sanity check
-          filterKey === "*"
-            ? isotope.arrange({ filter: `*` })
-          : isotope.arrange({ filter: `.${filterKey}` });
-        }
-      },
-      [isotope, filterKey]
-    );
+```jsx
+React.useEffect(() => {
+  if (isotope) {
+    // sanity check
+    filterKey === "*"
+      ? isotope.arrange({ filter: `*` })
+      : isotope.arrange({ filter: `.${filterKey}` })
+  }
+}, [isotope, filterKey])
+```
 
 The `[isotope, filterKey]` makes this useEffect work like an
 
-    componentDidUpdate(prevProps, prevState) {
-      if (prevState.filterKey !== this.state.filterKey) {
-        // do the thing
-      }
-    }
+```jsx
+componentDidUpdate(prevProps, prevState) {
+  if (prevState.filterKey !== this.state.filterKey) {
+    // do the thing
+  }
+}
+```
 
 Last but not least, here comes:
 
-    <ul>
-      <li onClick={() => setFilterKey("*")}>Show Both</li>
-      <li onClick={() => setFilterKey("vege")}>Show Veges</li>
-      <li onClick={() => setFilterKey("fruit")}>Show Fruits</li>
-    </ul>
+```jsx
+<ul>
+  <li onClick={() => setFilterKey("*")}>Show Both</li>
+  <li onClick={() => setFilterKey("vege")}>Show Veges</li>
+  <li onClick={() => setFilterKey("fruit")}>Show Fruits</li>
+</ul>
+```
 
 to change the filterKey state when clicked, and:
 
-    <ul className="filter-container">
-      <div className="filter-item vege">
-        <span>Cucumber</span>
-      </div>
-      <div className="filter-item fruit">
-        <span>Apple</span>
-      </div>
-      <div className="filter-item fruit">
-        <span>Orange</span>
-      </div>
-      <div className="filter-item fruit vege">
-        <span>Tomato</span>
-      </div>
-    </ul>
+```jsx
+<ul className="filter-container">
+  <div className="filter-item vege">
+    <span>Cucumber</span>
+  </div>
+  <div className="filter-item fruit">
+    <span>Apple</span>
+  </div>
+  <div className="filter-item fruit">
+    <span>Orange</span>
+  </div>
+  <div className="filter-item fruit vege">
+    <span>Tomato</span>
+  </div>
+</ul>
+```
 
 the isotope items with their respective filter keywords "fruit" and "vege".
 
