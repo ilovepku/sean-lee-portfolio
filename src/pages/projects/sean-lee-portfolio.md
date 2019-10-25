@@ -8,7 +8,7 @@ pics: [../../images/projects/portfolio.jpg]
 madeFor: "Myself"
 url: "//seanlee.netlify.com"
 code: "//github.com/ilovepku/sean-lee-portfolio"
-desc: 
+desc:
 highlights:
   [
     "Dynamically generated pages and blogs from markdowns with Gatsby",
@@ -16,6 +16,7 @@ highlights:
     "Form handling with Netlify",
     "Blog commenting with Disqus",
     "Blog subscription with Mailchimp",
+    "SEO with Helmet",
   ]
 techs:
   [

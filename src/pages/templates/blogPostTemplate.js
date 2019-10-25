@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { DiscussionEmbed, CommentCount } from "disqus-react"
 import { timeSince } from "../../utils/timeSince.util"
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 // import PromoSection from "../../components/promo.section"
 
 const BlogPostTemplate = ({
@@ -14,7 +15,7 @@ const BlogPostTemplate = ({
   if (markdownRemark) {
     var {
       id,
-      frontmatter: { title, date },
+      frontmatter: { title, date, intro },
       html,
       fields: {
         readingTime: { text },
@@ -32,6 +33,7 @@ const BlogPostTemplate = ({
 
   return (
     <Layout>
+      <SEO title={title} description={intro} />
       <article className="blog-post px-3 py-5 p-md-5">
         <div className="container single-col-max-width">
           <header className="blog-post-header">

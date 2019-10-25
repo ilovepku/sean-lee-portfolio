@@ -5,6 +5,7 @@ import { Carousel } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../../components/layout"
 import TestimonialItem from "../../components/testimonial.item"
+import SEO from "../../components/seo"
 
 // webpack feature: function mapping all *.svg paths to the actual data:image
 const reqSvgs = require.context("../../images/webdev-icons", true, /\.svg$/)
@@ -31,6 +32,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
 
   return (
     <Layout>
+      <SEO title={name} description={intro} />
       <section className="cta-section theme-bg-light py-5">
         <div className="container single-col-max-width">
           <h2 className="heading text-center">{name}</h2>
