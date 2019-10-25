@@ -4,7 +4,7 @@ date: "2019-05-04"
 type: "other python production"
 name: "Python Scrapy Web Scraper"
 intro: "Web scraper for product listing info from goverment website"
-pics: [../../images/projects/txtbtz-scrapy.png]
+pics: [../../images/projects/scrapy/scrapy-txtbtz.png]
 madeFor: "Beijing Broadlink Supply Chain Infotech Co., Ltd"
 url:
 code: "//github.com/ilovepku/scrapy-for-txtbtz.cnca.gov.cn"
@@ -40,28 +40,28 @@ Taught myself from scratch Python foundations and the web scraping framework Scr
 
 ##### 2.5k \* Company Info scraped into a MySQL database table of companies
 
-![? * Company Info Scraped](../../images/projects/scrapy-txtbtz-companies.png "Company Info Scraped")
+![? * Company Info Scraped](../../images/projects/scrapy/scrapy-txtbtz-companies.png "Company Info Scraped")
 
 ---
 
 ##### 10k \* Product Info scraped into a MySQL database table of products
 
-![? * Product Info Scraped](../../images/projects/scrapy-txtbtz-products.png "Product Info Scraped")
+![? * Product Info Scraped](../../images/projects/scrapy/scrapy-txtbtz-products.png "Product Info Scraped")
 
 ---
 
 ##### 40k \* Image Info scraped into a MySQL database table of images
 
-![40k * Image Info Scraped](../../images/projects/scrapy-txtbtz-image-info.png "Image Info Scraped")
+![40k * Image Info Scraped](../../images/projects/scrapy/scrapy-txtbtz-image-info.png "Image Info Scraped")
 
 ---
 
 ##### 40k \* Image Files scraped into a media folder
 
-![40k * Image Files Scraped](../../images/projects/scrapy-txtbtz-image-files.png "Image Files Scraped")
+![40k * Image Files Scraped](../../images/projects/scrapy/scrapy-txtbtz-image-files.png "Image Files Scraped")
 
 ---
 
 ##### 66-page PDF of product listing data tables
 
-![Product Listing Data Tables in PDF](../../images/projects/scrapy-txtbtz-pdf.jpg "Product Listing Data Tables in PDF")
+![Product Listing Data Tables in PDF](../../images/projects/scrapy/scrapy-txtbtz-pdf.jpg "Product Listing Data Tables in PDF")

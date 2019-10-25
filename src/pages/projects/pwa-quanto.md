@@ -6,9 +6,9 @@ name: "Quanto Time Tracker App"
 intro: "Get a handle on where your time goes."
 pics:
   [
-    ../../images/projects/pwa-quanto-charts.png,
-    ../../images/projects/pwa-quanto-history.png,
-    ../../images/projects/pwa-quanto-settings.png,
+    ../../images/projects/quanto/quanto-charts.png,
+    ../../images/projects/quanto/quanto-history.png,
+    ../../images/projects/quanto/quanto-settings.png,
   ]
 madeFor: "Open Source"
 url: "//pwa-quanto.web.app"
@@ -71,7 +71,7 @@ Switching between the 4 main views is done by tapping one of the bottom navigati
 We recommend that you customize your list of activities before staring to track your time with PWA Quanto.
 The list of activity names that you use will depend on what aspect of you life you are analysing. PWA Quanto installs with a default set of activity and detail names. By customizing the lists you can get the most out of the application.
 
-![Categories View](../../images/projects/pwa-quanto-categories.png "Categories View")
+![Categories View](../../images/projects/quanto/quanto-categories.png "Categories View")
 
 In "Categories" View, you can customize both the list of activity names and the seperate lists of detail names associated with each activity name. Either add new activity/detail names to the list from the respective input fields, delete current activities/details, or change their order by simply draging them around.
 
@@ -81,7 +81,7 @@ Note: Changing the names in this categories list does not affect existing activi
 
 ## Current Activity Bar
 
-![Current Activity Bar](../../images/projects/pwa-quanto-current-activity.png "Current Activity Bar")
+![Current Activity Bar](../../images/projects/quanto/quanto-current-activity.png "Current Activity Bar")
 
 This bar is present at all times and displays the current activity.
 
@@ -101,7 +101,7 @@ Tip: If the interrupt was started by accident, or does not last long enough to m
 
 ## History View
 
-![History View](../../images/projects/pwa-quanto-history.png "History View")
+![History View](../../images/projects/quanto/quanto-history.png "History View")
 
 This view is used to review the sequence of past activities. The start time and date of each activity is shown.
 
@@ -109,19 +109,19 @@ In addition to changing an activity using the details dialog you can delete or s
 
 ##### Edit Activity
 
-![Edit Activity](../../images/projects/pwa-quanto-edit-activity.png "Edit Activity")
+![Edit Activity](../../images/projects/quanto/quanto-edit-activity.png "Edit Activity")
 
 This dialog shows the details of a single activity. You can change the activity and details selections. You can also change the start and finish times. When you change the start or finish times the activities that precede or follow the activity are updated so that there is no gap or overlap.
 
 ##### Split Activity
 
-![Split Activity](../../images/projects/pwa-quanto-split-activity.png "Split Activity")
+![Split Activity](../../images/projects/quanto/quanto-split-activity.png "Split Activity")
 
 This dialog is used to split an activity into two activities. The split at time will be used to set the end time of the first activity and the start time of the second activity. After the activity has been split you can change the activity names to reflect what was done during each time period.
 
 ## Charts View
 
-![Charts View](../../images/projects/pwa-quanto-charts.png "Charts View")
+![Charts View](../../images/projects/quanto/quanto-charts.png "Charts View")
 
 This view displays the total time in minutes and percentage of each activity and also the statistics in the form of a pie chart.
 
@@ -133,7 +133,7 @@ If you want a view that shows how you spent your 'waking hours' use the settings
 
 ## Settings View
 
-![Settings View](../../images/projects/pwa-quanto-settings.png "Settings View")
+![Settings View](../../images/projects/quanto/quanto-settings.png "Settings View")
 
 ##### Sign In & Backup/Restore Data
 

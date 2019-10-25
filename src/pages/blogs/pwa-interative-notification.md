@@ -6,7 +6,7 @@ pic: ../../images/blogs/pwa.png
 intro: "Interact with your PWA from the notification bar/lockscreen."
 ---
 
-![Notification](../../images/blogs/quanto-notification.png "Notification")
+![Notification](../../images/projects/quanto/quanto-notification.png "Notification")
 
 ## Notes
 
