@@ -12,7 +12,6 @@ const Header = () => {
     query {
       site {
         siteMetadata {
-          title
           author
         }
       }
@@ -34,7 +33,7 @@ const Header = () => {
       }
     }
   `)
-  const { title, author } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
 
   // apply active menu item style to deeper routes
   const isPartiallyActive = ({ isPartiallyCurrent }) =>
@@ -61,9 +60,6 @@ const Header = () => {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>{title}</title>
-        <link rel="canonical" href="https://seanlee.netlify.com/" />
         <body className={darkmodeToggle ? "dark-mode" : ""} />
       </Helmet>
       <header className="header text-center">
