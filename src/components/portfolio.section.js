@@ -27,7 +27,6 @@ const PortfolioSection = () => {
                 }
               }
             }
-            madeFor
             techs
           }
         }

@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -23,6 +24,18 @@ const TestimonialItem = ({
       </div>
     </>
   )
+}
+
+TestimonialItem.propTypes = {
+  testimonial: PropTypes.exact({
+    text: PropTypes.string.isRequired,
+    avatar: PropTypes.exact({
+      childImageSharp: PropTypes.object.isRequired,
+    }),
+    person: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    company: PropTypes.string.isRequired,
+  }),
 }
 
 export default TestimonialItem

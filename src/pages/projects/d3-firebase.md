@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/d3-firebase"
-date: "2019-05-04"
 type: "dataviz backend practice"
 name: "D3-Firebase Dataviz Practices"
 intro: "3 mini full-stack data visualization projects"

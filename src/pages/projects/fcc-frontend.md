@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/fcc-frontend"
-date: "2019-05-04"
 type: "frontend practice"
 name: "FCC Front End Practices"
 intro: "5 frontend practice projects, part of freeCodeCamp's curriculum"

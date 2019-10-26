@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/eloqua"
-date: "2019-05-04"
 type: "frontend backend production"
 name: "Eloqua Speeches App"
 intro: "Listen to great speeches on your smartphone."

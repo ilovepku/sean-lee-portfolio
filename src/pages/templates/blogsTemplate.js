@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
@@ -71,8 +72,12 @@ const MailchimpForm = ({ status, message, onValidated }) => {
   )
 }
 
-const BlogsTemplate = props => {
-  const { currentPage, numPages } = props.pageContext
+const BlogsTemplate = ({
+  pageContext: { currentPage, numPages },
+  data: {
+    allMarkdownRemark: { nodes },
+  },
+}) => {
   return (
     <Layout>
       <SEO title="Blog" />
@@ -100,7 +105,7 @@ const BlogsTemplate = props => {
       <section className="blog-list px-3 py-5 p-md-5">
         <div className="container">
           <div className="row">
-            {props.data.allMarkdownRemark.nodes.map(({ id, frontmatter }) => (
+            {nodes.map(({ id, frontmatter }) => (
               <BlogItem key={id} frontmatter={frontmatter} />
             ))}
           </div>
@@ -138,6 +143,31 @@ const BlogsTemplate = props => {
       </section>
     </Layout>
   )
+}
+
+BlogsTemplate.propTypes = {
+  pageContext: PropTypes.shape({
+    currentPage: PropTypes.number.isRequired,
+    numPages: PropTypes.number.isRequired,
+  }),
+  data: PropTypes.exact({
+    allMarkdownRemark: PropTypes.exact({
+      nodes: PropTypes.arrayOf(
+        PropTypes.exact({
+          id: PropTypes.string.isRequired,
+          frontmatter: PropTypes.exact({
+            path: PropTypes.string.isRequired,
+            date: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            intro: PropTypes.string.isRequired,
+            pic: PropTypes.exact({
+              childImageSharp: PropTypes.object.isRequired,
+            }),
+          }),
+        })
+      ),
+    }),
+  }),
 }
 
 export default BlogsTemplate

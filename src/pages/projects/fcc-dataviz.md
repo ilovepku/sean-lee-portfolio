@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/fcc-dataviz"
-date: "2019-05-04"
 type: "dataviz practice"
 name: "FCC Dataviz Practices"
 intro: "5 data visualization projects, part of freeCodeCamp's curriculum"

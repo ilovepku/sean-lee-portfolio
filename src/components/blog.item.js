@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { timeSince } from "../utils/timeSince.util"
@@ -29,6 +30,18 @@ const BlogItem = ({ frontmatter: { path, date, title, intro, pic } }) => {
       </div>
     </div>
   )
+}
+
+BlogItem.propTypes = {
+  frontmatter: PropTypes.exact({
+    path: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    pic: PropTypes.exact({
+      childImageSharp: PropTypes.object.isRequired,
+    }),
+  }),
 }
 
 export default BlogItem

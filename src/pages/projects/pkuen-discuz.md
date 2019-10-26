@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/pkuen-discuz"
-date: "2019-05-04"
 type: "other frontend backend production"
 name: "Alumni Forum for English Department, Peking University"
 intro: "Semi-official forum for my Uni department (now archived and inactive)"

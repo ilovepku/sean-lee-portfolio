@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/caeda-wordpress"
-date: "2019-05-04"
 type: "other wordpress production"
 name: "Wordpress Company Website"
 intro: "A wordpress website project for an organization"

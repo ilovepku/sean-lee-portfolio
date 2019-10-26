@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { Carousel } from "react-bootstrap"
@@ -163,6 +164,39 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
   )
 }
 
+ProjectTemplate.propTypes = {
+  data: PropTypes.exact({
+    markdownRemark: PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      html: PropTypes.node.isRequired,
+      frontmatter: PropTypes.exact({
+        name: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        pics: PropTypes.arrayOf(
+          PropTypes.exact({
+            childImageSharp: PropTypes.object.isRequired,
+          })
+        ),
+        madeFor: PropTypes.string,
+        url: PropTypes.string,
+        code: PropTypes.string,
+        desc: PropTypes.string,
+        highlights: PropTypes.arrayOf(PropTypes.string.isRequired),
+        techs: PropTypes.arrayOf(PropTypes.string.isRequired),
+        testimonial: PropTypes.exact({
+          text: PropTypes.string.isRequired,
+          avatar: PropTypes.exact({
+            childImageSharp: PropTypes.object,
+          }),
+          person: PropTypes.string,
+          position: PropTypes.string,
+          company: PropTypes.string,
+        }),
+      }),
+    }),
+  }),
+}
+
 export default ProjectTemplate
 
 export const pageQuery = graphql`
@@ -171,8 +205,6 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date
-        path
         name
         intro
         pics {

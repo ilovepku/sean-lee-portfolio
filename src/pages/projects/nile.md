@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/nile"
-date: "2019-05-04"
 type: "frontend backend practice"
 name: "Full-stack E-commerce Practice"
 intro: "Full-stack mini collaborative project management tool."

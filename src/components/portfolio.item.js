@@ -1,10 +1,11 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const PortfolioItem = ({
-  frontmatter: { path, name, intro, pics, madeFor, type, techs },
+  frontmatter: { path, name, intro, pics, type, techs },
 }) => {
   return (
     <div className={`filter-item col-md-6 mb-5 ${type}`}>
@@ -45,6 +46,21 @@ const PortfolioItem = ({
       </div>
     </div>
   )
+}
+
+PortfolioItem.propTypes = {
+  frontmatter: PropTypes.exact({
+    path: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    intro: PropTypes.string.isRequired,
+    pics: PropTypes.arrayOf(
+      PropTypes.exact({
+        childImageSharp: PropTypes.object.isRequired,
+      })
+    ),
+    techs: PropTypes.arrayOf(PropTypes.string.isRequired),
+    type: PropTypes.string,
+  }),
 }
 
 export default PortfolioItem

@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/portfolio"
-date: "2019-05-04"
 type: "frontend production"
 name: "Static Portfolio Site"
 intro: "Static site generated with Gatsby"

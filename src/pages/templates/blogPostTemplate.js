@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { DiscussionEmbed, CommentCount } from "disqus-react"
@@ -98,6 +99,32 @@ const BlogPostTemplate = ({
   )
 }
 
+BlogPostTemplate.propTypes = {
+  pageContext: PropTypes.shape({
+    prevPath: PropTypes.string.isRequired,
+    nextPath: PropTypes.string.isRequired,
+  }),
+  location: PropTypes.shape({
+    href: PropTypes.string.isRequired,
+  }),
+  data: PropTypes.exact({
+    markdownRemark: PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      html: PropTypes.node.isRequired,
+      frontmatter: PropTypes.exact({
+        title: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+      }),
+      fields: PropTypes.exact({
+        readingTime: PropTypes.exact({
+          text: PropTypes.string.isRequired,
+        }),
+      }),
+    }),
+  }),
+}
+
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
@@ -108,6 +135,7 @@ export const pageQuery = graphql`
       frontmatter {
         date
         title
+        intro
       }
       fields {
         readingTime {

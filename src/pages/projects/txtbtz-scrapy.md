@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/txtbtz-scrapy"
-date: "2019-05-04"
 type: "other python production"
 name: "Python Scrapy Web Scraper"
 intro: "Web scraper for product listing info from goverment website"

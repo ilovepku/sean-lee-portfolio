@@ -1,6 +1,5 @@
 ---
 path: "/portfolio/react-redux-firebase"
-date: "2019-05-04"
 type: "frontend backend practice"
 name: "React-Redux-Firebase Practice"
 intro: "Full-stack mini collaborative project management tool."
