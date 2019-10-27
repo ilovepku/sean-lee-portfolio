@@ -5,72 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import Layout from "../../components/layout"
 import BlogItem from "../../components/blog.item"
+import MailchimpForm from "../../components/mailchimp.form"
 import SEO from "../../components/seo"
 
 // mailchip settings
 const url =
   "//gmail.us20.list-manage.com/subscribe/post?u=7d2dd6216c12ce2d858707378&amp;id=b3b880b90d"
-
-const MailchimpForm = ({ status, message, onValidated }) => {
-  let email
-  const submit = () =>
-    email &&
-    email.value.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email.value,
-    })
-  return (
-    <>
-      <div className="signup-form form-inline justify-content-center pt-3">
-        <div className="form-group">
-          <label className="sr-only" htmlFor="semail">
-            Your email
-          </label>
-          <input
-            id="semail"
-            ref={node => (email = node)}
-            type="email"
-            placeholder="Enter email"
-            className="form-control mr-md-1 semail"
-          />
-        </div>
-        <button onClick={submit} className="btn btn-primary">
-          Submit
-        </button>
-      </div>
-      <div className="d-flex justify-content-center pt-3">
-        {(() => {
-          switch (status) {
-            case "sending":
-              return (
-                <div className="alert alert-info" role="alert">
-                  Sending...
-                </div>
-              )
-            case "error":
-              return (
-                <div
-                  className="alert alert-danger"
-                  role="alert"
-                  dangerouslySetInnerHTML={{ __html: message }}
-                />
-              )
-            case "success":
-              return (
-                <div
-                  className="alert alert-success"
-                  role="alert"
-                  dangerouslySetInnerHTML={{ __html: message }}
-                />
-              )
-            default:
-              return null
-          }
-        })()}
-      </div>
-    </>
-  )
-}
 
 const BlogsTemplate = ({
   pageContext: { currentPage, numPages },
