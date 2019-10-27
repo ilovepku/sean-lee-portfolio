@@ -35,15 +35,6 @@ const Header = () => {
   `)
   const { author } = data.site.siteMetadata
 
-  // apply active menu item style to deeper routes
-  const isPartiallyActive = ({ isPartiallyCurrent }) =>
-    isPartiallyCurrent
-      ? { className: "nav-link active" }
-      : { className: "nav-link" }
-  const PartialNavLink = props => (
-    <Link getProps={isPartiallyActive} {...props} />
-  )
-
   // dark mode related
   const [darkmodeToggle, setDarkmodeToggle] = useState(false)
   useEffect(() => {
@@ -103,10 +94,15 @@ const Header = () => {
                 {data.allMenuJson.nodes.map(({ id, url, icon, name, deeper }) =>
                   deeper ? (
                     <li className="nav-item" key={id}>
-                      <PartialNavLink to={url}>
+                      <Link
+                        to={url}
+                        className="nav-link"
+                        activeClassName="active"
+                        partiallyActive={true}
+                      >
                         <FontAwesomeIcon icon={icon} className="fa-fw mr-2" />
                         {name}
-                      </PartialNavLink>
+                      </Link>
                     </li>
                   ) : (
                     <li className="nav-item" key={id}>
