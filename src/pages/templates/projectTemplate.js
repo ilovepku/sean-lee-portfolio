@@ -7,9 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../../components/layout"
 import TestimonialItem from "../../components/testimonial.item"
 import SEO from "../../components/seo"
-
-// webpack feature: function mapping all *.svg paths to the actual data:image
-const reqSvgs = require.context("../../images/webdev-icons", true, /\.svg$/)
+import { reqWebDevSvgs } from "../../utils/svgs.util"
 
 const ProjectTemplate = ({ data: { markdownRemark } }) => {
   if (markdownRemark) {
@@ -121,7 +119,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                           alt=""
                           title={tech}
                           className="img-fluid"
-                          src={reqSvgs(`./${tech.toLowerCase()}.svg`)}
+                          src={reqWebDevSvgs(`./${tech.toLowerCase()}.svg`)}
                         />
                       </div>
                     ))}

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet"
 import { Navbar } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import profile from "../images/profile.png"
-import { reqSvgs } from "../utils/svgs.util"
+import { reqSocialSvgs } from "../utils/svgs.util"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -90,7 +90,7 @@ const Header = () => {
                         <img
                           alt=""
                           title={name}
-                          src={reqSvgs(`./${name}.svg`)}
+                          src={reqSocialSvgs(`./${name}.svg`)}
                         />
                       </a>
                     </li>

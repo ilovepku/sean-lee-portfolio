@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import { reqSvgs } from "../utils/svgs.util"
+import { reqSocialSvgs } from "../utils/svgs.util"
 import SEO from "../components/seo"
 
 const ContactPage = () => {
@@ -45,7 +45,7 @@ const ContactPage = () => {
                   key={id}
                 >
                   <a href={url}>
-                    <img alt="" title={name} src={reqSvgs(`./${name}.svg`)} />
+                    <img alt="" title={name} src={reqSocialSvgs(`./${name}.svg`)} />
                   </a>
                 </li>
               ))}

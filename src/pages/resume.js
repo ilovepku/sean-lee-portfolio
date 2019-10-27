@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import profile from "../images/profile.png"
-import { reqSvgs } from "../utils/svgs.util"
+import { reqSocialSvgs } from "../utils/svgs.util"
 import SEO from "../components/seo"
 
 const ResumePage = () => {
@@ -326,7 +326,7 @@ const ResumePage = () => {
                     <img
                       alt=""
                       title={name}
-                      src={reqSvgs(`./${name}.svg`)}
+                      src={reqSocialSvgs(`./${name}.svg`)}
                       className="mr-2"
                     />
                     <span className="d-none d-lg-inline-block">

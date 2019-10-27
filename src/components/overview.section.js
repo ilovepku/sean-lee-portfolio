@@ -1,8 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-
-// webpack feature: function mapping all *.svg paths to the actual data:image
-const reqSvgs = require.context("../images/webdev-icons", true, /\.svg$/)
+import { reqWebDevSvgs } from "../utils/svgs.util"
 
 const OverviewSection = () => {
   const data = useStaticQuery(graphql`
@@ -41,7 +39,7 @@ const OverviewSection = () => {
                       className={`tech-icon rounded ${
                         idx === arr.length - 1 ? "" : "mr-2"
                       }`}
-                      src={reqSvgs(`./${tech.toLowerCase()}.svg`)}
+                      src={reqWebDevSvgs(`./${tech.toLowerCase()}.svg`)}
                     />
                   ))}
                 </div>
