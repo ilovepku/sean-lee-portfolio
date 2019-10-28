@@ -1,8 +1,9 @@
 ---
 path: "/portfolio/caeda-wordpress"
-type: "other wordpress production"
-name: "Wordpress Company Website"
-intro: "A wordpress website project for an organization"
+type: "other production"
+order: 201
+name: "Wordpress on LAMP Stack"
+intro: "Wordpress news site for an organization"
 pics: [../../images/projects/caeda-wordpress.jpg]
 madeFor: "China-Asia Economic Development Association"
 url: "//chinaasia.org"

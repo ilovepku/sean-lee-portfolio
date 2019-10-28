@@ -1,8 +1,9 @@
 ---
 path: "/portfolio/nile"
 type: "frontend backend practice"
-name: "Full-stack E-commerce Practice"
-intro: "Full-stack mini collaborative project management tool."
+order: 104
+name: "Nile"
+intro: "Full-stack e-commerce practice project"
 pics: [../../images/projects/nile/nile.png]
 madeFor:
 url: "//nile-db.web.app"

@@ -1,6 +1,7 @@
 ---
 path: "/portfolio/d3-firebase"
 type: "dataviz backend practice"
+order: 107
 name: "D3-Firebase Dataviz Practices"
 intro: "3 mini full-stack data visualization projects"
 pics: [../../images/projects/dataviz.jpg]

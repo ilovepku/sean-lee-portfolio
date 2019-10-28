@@ -1,8 +1,9 @@
 ---
 path: "/portfolio/txtbtz-scrapy"
-type: "other python production"
-name: "Python Scrapy Web Scraper"
-intro: "Web scraper for product listing info from goverment website"
+type: "other production"
+order: 200
+name: "Python Web Scraper"
+intro: "Web scraper for product listing info from a goverment website"
 pics: [../../images/projects/scrapy/scrapy-txtbtz.png]
 madeFor: "Beijing Broadlink Supply Chain Infotech Co., Ltd"
 url:

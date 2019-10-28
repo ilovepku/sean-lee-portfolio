@@ -1,9 +1,10 @@
 ---
 path: "/portfolio/portfolio"
 type: "frontend production"
-name: "Static Portfolio Site"
+order: 102
+name: "Developer Portfolio Site"
 intro: "Static site generated with Gatsby"
-pics: [../../images/projects/portfolio.jpg]
+pics: [../../images/projects/portfolio.png]
 madeFor: "Myself"
 url: "//seanlee.netlify.com"
 code: "//github.com/ilovepku/sean-lee-portfolio"
@@ -32,5 +33,3 @@ techs:
 testimonial: { text: "" }
 featured: true
 ---
-
-This project is the website you are currently visiting.

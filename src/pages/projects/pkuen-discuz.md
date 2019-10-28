@@ -1,13 +1,14 @@
 ---
 path: "/portfolio/pkuen-discuz"
-type: "other frontend backend production"
-name: "Alumni Forum for English Department, Peking University"
-intro: "Semi-official forum for my Uni department (now archived and inactive)"
+type: "other production"
+order: 202
+name: "Forum on LAMP Stack"
+intro: "Forum for English Department, Peking University (now archived and inactive)"
 pics: [../../images/projects/pkuen-discuz.png]
 madeFor: "Department of English, Peking University"
 url:
 code:
-desc: 
+desc:
 highlights: ["IPv6 support since early 2012", "Online donation feature"]
 techs: ["Discuz", "Linux", "Apache", "MySQL", "PHP"]
 testimonial:

@@ -11,6 +11,7 @@ const PortfolioPage = () => {
     query {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { glob: "**/src/pages/projects/*.md" } }
+        sort: { fields: [frontmatter___order], order: ASC }
       ) {
         nodes {
           id
@@ -47,7 +48,7 @@ const PortfolioPage = () => {
     setIsotope(
       new Isotope(".filter-container", {
         itemSelector: ".filter-item",
-        layoutMode: "masonry",
+        layoutMode: "fitRows",
       })
     )
   }, [])

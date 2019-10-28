@@ -1,8 +1,9 @@
 ---
 path: "/portfolio/react-redux-firebase"
 type: "frontend backend practice"
+order: 106
 name: "React-Redux-Firebase Practice"
-intro: "Full-stack mini collaborative project management tool."
+intro: "Mini full-stack collaborative project management tool"
 pics: [../../images/projects/react-redux-firebase.jpg]
 madeFor:
 url: "//sean-planner.web.app"

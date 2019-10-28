@@ -11,7 +11,7 @@ const PortfolioSection = () => {
           fileAbsolutePath: { glob: "**/src/pages/projects/*.md" }
           frontmatter: { featured: { ne: false } }
         }
-
+        sort: { fields: [frontmatter___order], order: ASC }
         limit: 4
       ) {
         nodes {

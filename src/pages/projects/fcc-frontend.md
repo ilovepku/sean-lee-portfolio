@@ -1,6 +1,7 @@
 ---
 path: "/portfolio/fcc-frontend"
 type: "frontend practice"
+order: 109
 name: "FCC Front End Practices"
 intro: "5 frontend practice projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/frontend.jpg]

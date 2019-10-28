@@ -1,6 +1,7 @@
 ---
 path: "/portfolio/pwa-quanto"
 type: "frontend dataviz backend production"
+order: 100
 name: "Quanto Time Tracker App"
 intro: "Get a handle on where your time goes."
 pics:

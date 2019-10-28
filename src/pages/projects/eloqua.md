@@ -1,6 +1,7 @@
 ---
 path: "/portfolio/eloqua"
 type: "frontend backend production"
+order: 101
 name: "Eloqua Speeches App"
 intro: "Listen to great speeches on your smartphone."
 pics:

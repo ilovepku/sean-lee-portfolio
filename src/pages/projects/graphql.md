@@ -1,8 +1,9 @@
 ---
 path: "/portfolio/graphql"
 type: "backend practice"
+order: 105
 name: "GraphQL Full-stack Practice"
-intro: "A mini full-stack reading list app."
+intro: "Mini full-stack reading list app"
 pics: [../../images/projects/graphql.jpg]
 madeFor: "freeCodeCamp"
 url: "//graphql-apollo-practice.glitch.me"

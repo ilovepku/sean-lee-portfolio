@@ -38,6 +38,7 @@ const ResumePage = () => {
           fileAbsolutePath: { glob: "**/src/pages/projects/*.md" }
           frontmatter: { featured: { ne: false } }
         }
+        sort: { fields: [frontmatter___order], order: ASC }
       ) {
         nodes {
           id
