@@ -21,7 +21,6 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
         madeFor,
         url,
         code,
-        desc,
         highlights,
         techs,
         testimonial,
@@ -94,7 +93,6 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                     </li>
                   )}
                 </ul>
-                <div className="client-bio mb-4">{desc}</div>
                 {highlights && (
                   <>
                     <h4 className="subheading mb-3">Technical Highlights</h4>
@@ -167,7 +165,7 @@ ProjectTemplate.propTypes = {
     markdownRemark: PropTypes.exact({
       id: PropTypes.string.isRequired,
       html: PropTypes.node.isRequired,
-      frontmatter: PropTypes.exact({
+      frontmatter: PropTypes.shape({
         name: PropTypes.string.isRequired,
         intro: PropTypes.string.isRequired,
         pics: PropTypes.arrayOf(
@@ -178,7 +176,6 @@ ProjectTemplate.propTypes = {
         madeFor: PropTypes.string,
         url: PropTypes.string,
         code: PropTypes.string,
-        desc: PropTypes.string,
         highlights: PropTypes.arrayOf(PropTypes.string.isRequired),
         techs: PropTypes.arrayOf(PropTypes.string.isRequired),
         testimonial: PropTypes.exact({
@@ -215,7 +212,6 @@ export const pageQuery = graphql`
         madeFor
         url
         code
-        desc
         highlights
         techs
         testimonial {

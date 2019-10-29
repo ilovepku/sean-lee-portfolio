@@ -8,13 +8,13 @@ pics: [../../images/projects/nile/nile.png]
 madeFor:
 url: "//nile-db.web.app"
 code: "//github.com/ilovepku/nile"
-desc:
+desc: "A Shopify-like full-stack e-commerce practice application. Highlights include: online payment processing with Stripe API and Firebase Functions, data stored on Firebase Firestore for real-time content updates, persisted shopping cart and user authuntication."
 highlights:
   [
+    "Online payment processing with Stripe API and Firebase Functions",
     "State management with React Hooks and Context API (replacing Redux)",
-    "Data stored on Firebase Firestore",
-    "Stripe API integration with Firebase Functions",
-    "Persistent shopping cart and authuntication info",
+    "Data stored on Firebase Firestore for real-time content updates",
+    "Persisted shopping cart and user authuntication",
   ]
 techs: ["React", "Redux", "Firebase", "Stripe", "JavaScript", "CSS"]
 testimonial: { text: "" }

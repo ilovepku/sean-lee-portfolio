@@ -8,11 +8,11 @@ pics: [../../images/projects/backend.jpg]
 madeFor: "freeCodeCamp"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
 code: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
-desc:
+desc: "A series of backend projects from freeCodeCamp's curriculum, involving: CRUD on mLab MongoDB with Mongoose (one-to-many relationship data), unit/functional testing with Chai/Mocha/Zombie, security features with Helmet, and uploaded file processing."
 highlights:
   [
     "3rd party API integration",
-    "CRUD on mLab Cloud MongoDB(one-to-many data models) service with Mongoose",
+    "CRUD on mLab Cloud MongoDB service with Mongoose (one-to-many relationship data)",
     "Unit/functional testing with Chai, Mocha, and Zombie",
     "Security features with Helmet",
     "Uploaded file processing",

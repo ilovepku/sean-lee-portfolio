@@ -13,13 +13,13 @@ pics:
 madeFor: "Open Source"
 url: "//pwa-quanto.web.app"
 code: "//github.com/ilovepku/pwa-quanto"
-desc:
+desc: "Lead developer of the remake of the discontinued Natara Quanto time measurement tool for Palm OS into a Progressive Web App for modern mobile devices. Highlights include: easy activity tracking with re-engageable notification, multi-level categories with drag-n-drop reordering support, data-driven stats and chart visulizations filterable with date range and keywords, lazy-loading of large list, user authentication and data backup/restore with Firebase serverlessly, persisted state management with React Hooks and Context API."
 highlights:
   [
-    "Interative push notification",
+    "Re-engagable notification",
     "Interative, data-driven charts, filterable with both date range and keywords",
     "2-level drag-n-drag support for ordering categories",
-    "Lazy loading big list",
+    "Lazy loading large list",
     "Backup/restore data serverlessly with Firebase",
     "State management with React Hooks and Context API (replacing Redux)",
   ]
@@ -168,7 +168,7 @@ Note: All your customary category changes wil be undone.
 
 ![Notification](../../images/projects/quanto/quanto-notification.png "Notification")
 
-After enabling notification in the Settings View on an Android Device, you will get a persistent notification that shows you your current activity's category, start time, and elasped time. You can also start a new activity or pause/resume the current activity by interacting with the notification actions. With the neccessary permisson, you can even do this from your lock screen without unlocking your device, making time tracking even easier.  
+After enabling notification in the Settings View on an Android Device, you will get a persistent notification that shows you your current activity's category, start time, and elasped time. You can also start a new activity or pause/resume the current activity by interacting with the notification actions. With the neccessary permisson, you can even do this from your lock screen without unlocking your device, making time tracking even easier.
 
 ## Limitations
 

@@ -5,18 +5,18 @@ order: 200
 name: "Python Web Scraper"
 intro: "Web scraper for product listing info from a goverment website"
 pics: [../../images/projects/scrapy/scrapy-txtbtz.png]
-madeFor: "Beijing Broadlink Supply Chain Infotech Co., Ltd"
+madeFor: "Broadlink Supply Chain Co., Ltd"
 url:
 code: "//github.com/ilovepku/scrapy-for-txtbtz.cnca.gov.cn"
-desc:
+desc: "Challenaged myself by taking this quick freelance job without any prior web scraping experience. Taught myself Python and Scrapy fundamentals, then coded a crawler script within a week, which extracted nearly 1 million entries of product/producer data and images from a government website, with all info stored in a MySQL database with multilayerd one-to-many relationship models, accompanied by a 66-page PDF of product listing data tables."
 highlights:
   [
-    "multiple level one-to-many data model",
+    "multilayered one-to-many relationship data",
     "scraped data stored in a MySQL database",
   ]
 techs: ["Python", "Scrapy", "MySQL"]
 testimonial: { text: "" }
-featured: false
+featured: true
 ---
 
 ## Overview
@@ -27,7 +27,7 @@ Challenaged myself to something I had almost no prior experience with (web scrap
 
 - No previous Python or web scraping experience
 - High number of data entries and media files to be scraped
-- Multiple levels of one-to-many related information to be scraped
+- Multiple levels of one-to-many relationship data to be scraped
 - Client wanted scraped data stored in a database for various future uses
 - Target is a poorly coded goverment website with bad labeling for most of the data fields
 - Tight time schedule of one week

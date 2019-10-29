@@ -13,15 +13,15 @@ pics:
   ]
 madeFor: "Open Source"
 url: "//speech-pwa.web.app"
-code: "//github.com/laylapku/speech-log"
-desc: "I conceived the idea, planned the features, and have been directing the development of the speech listening app Eloqua, with Layla, the protégé I've been tutoring, doing most of the actual coding, while I conduct code reviews and help crack the occasional hard cases."
+code: "//github.com/laylapku/eloqua-pwa"
+desc: "Creator, director, and senior developer of the speech catelog PWA Eloqua, made in collaboration with my protégée—junior developer Layla. Eloqua offers, in both audio and text, great English speeches from 30+ public figures covering a wide range of topics. Apart from common features like speaker/theme/keyword filter, playlist, favlist, loop toggle, playback speed switch, dark mode, Eloqua also supports full player control from notification with Media Session API, and retrieves its multilayered many-to-many relationship data from Firebase Firestore for real-time content updates."
 highlights:
   [
-    "Multi layered many-to-many, one-to-many related data(speaker-theme-speech-text-audio) stored on Firebase Firestore for easier content updates.",
-    "Full control of the player from notification bar/lockscreen with Media Session API",
+    "Multilayered many-to-many relationship data stored on Firebase Firestore for real-time content updates",
+    "Full player control from notification with Media Session API",
     "State management with React Hooks and Context API (replacing Redux)",
-    "Speeches filterable by speaker, theme, or just a custom keyword.",
-    "Common features like playlist, favorites list, loop/random toggle, playback speed switch, dark mode",
+    "Speeches filterable by speaker, theme, or just a custom keyword",
+    "Common features like playlist, favorites list, loop toggle, playback speed switch, dark mode",
   ]
 techs: ["React", "Firebase", "Redux", "MaterialUI"]
 testimonial:
@@ -49,7 +49,7 @@ featured: true
 
 ## Introduction
 
-The Eloqua app offers, in both audio and text, greatest speeches in history from 30+ public figures, including politicians, entrepreneurs, authors, celebrities, etc., covering a wide range of themes.
+The Eloqua app offers, in both audio and text, great speeches in history from 30+ public figures, including politicians, entrepreneurs, authors, celebrities, etc., covering a wide range of themes.
 
 ## Speeches View
 
@@ -66,7 +66,7 @@ Skip Next, Pause/Resume, Go to Playlist, or View Speech Script from the Playing 
 ## Script View
 
 Click the title area of the playing bar to view the script text of currently playing speech.
-Extended control features like loop/random toggle and playback speed switch are also in this view.
+Extended control features like loop toggle and playback speed switch are also in this view.
 
 ![Script View](../../images/projects/eloqua/script.png "Script View")
 
@@ -96,6 +96,8 @@ Don’t forget to take better care of your eyes. Toggle dark mode in the Setting
 ![Dark Mode](../../images/projects/eloqua/dark-mode.png "Dark Mode")
 
 ## Acknowledgment
+
+Eloqua is a collaborative effort between myself, as creator-director-senior developer, and my protégée, as junior developer [Layla](https://github.com/laylapku/).
 
 ##### Libraries
 
