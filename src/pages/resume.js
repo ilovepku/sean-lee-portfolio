@@ -30,7 +30,6 @@ const ResumePage = () => {
           start
           end
           desc
-          bullets
         }
       }
       allMarkdownRemark(
@@ -48,6 +47,12 @@ const ResumePage = () => {
             madeFor
             desc
           }
+        }
+      }
+      allSkillsJson {
+        nodes {
+          id
+          techs
         }
       }
       allSocialsJson(limit: 3) {
@@ -80,7 +85,7 @@ const ResumePage = () => {
                   {data.site.siteMetadata.author}
                 </h2>
                 <div className="resume-tagline mb-3 mb-md-0">
-                  Senior Software Engineer
+                  Full-stack Developer
                 </div>
               </div>
               <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
@@ -137,39 +142,9 @@ const ResumePage = () => {
           <div className="resume-body">
             <div className="row">
               <div className="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
-                <section className="work-section py-3">
-                  <h3 className="text-uppercase resume-section-heading mb-4">
-                    Work Experiences
-                  </h3>
-                  {data.allExpJson.nodes.map(
-                    ({ id, role, company, start, end, desc, bullets }) => (
-                      <div className="item mb-3" key={id}>
-                        <div className="item-heading row align-items-center mb-2">
-                          <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                            {role}
-                          </h4>
-                          <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                            {company} | {start} - {end ? end : "Present"}
-                          </div>
-                        </div>
-                        <div className="item-content">
-                          <p>{desc}</p>
-                          {bullets.length ? (
-                            <ul className="resume-list">
-                              {bullets.map((bullet, idx) => (
-                                <li key={`${id}-bullet-${idx}`}>{bullet}</li>
-                              ))}
-                            </ul>
-                          ) : null}
-                        </div>
-                      </div>
-                    )
-                  )}
-                </section>
-
                 <section className="project-section py-3">
                   <h3 className="text-uppercase resume-section-heading mb-4">
-                    Projects
+                    Sample Projects
                   </h3>
 
                   {data.allMarkdownRemark.nodes.map(
@@ -193,6 +168,29 @@ const ResumePage = () => {
                     )
                   )}
                 </section>
+
+                <section className="work-section py-3">
+                  <h3 className="text-uppercase resume-section-heading mb-4">
+                    Work Experiences
+                  </h3>
+                  {data.allExpJson.nodes.map(
+                    ({ id, role, company, start, end, desc, bullets }) => (
+                      <div className="item mb-3" key={id}>
+                        <div className="item-heading row align-items-center mb-2">
+                          <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                            {role}
+                          </h4>
+                          <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
+                            {company} | {start} - {end ? end : "Present"}
+                          </div>
+                        </div>
+                        <div className="item-content">
+                          <p>{desc}</p>
+                        </div>
+                      </div>
+                    )
+                  )}
+                </section>
               </div>
               <aside className="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
                 <section className="skills-section py-3">
@@ -200,26 +198,21 @@ const ResumePage = () => {
                     Skills
                   </h3>
                   <div className="item">
-                    <h4 className="item-title">Technical</h4>
                     <ul className="list-unstyled resume-skills-list">
-                      <li className="mb-2">JavaScript/Angular/React/Vue</li>
-                      <li className="mb-2">Python/Ruby/PHP</li>
-                      <li className="mb-2">Node.js/ASP.NET</li>
-                      <li className="mb-2">PostgreSQL/MySQL</li>
-                      <li className="mb-2">Object-oriented design</li>
-                      <li className="mb-2">
-                        Design and implement database structures
-                      </li>
-                      <li>Lead and deliver complex software systems</li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h4 className="item-title">Professional</h4>
-                    <ul className="list-unstyled resume-skills-list">
-                      <li className="mb-2">Effective communication</li>
-                      <li className="mb-2">Team player</li>
-                      <li className="mb-2">Strong problem solver</li>
-                      <li>Good time management</li>
+                      {data.allSkillsJson.nodes.map(
+                        ({ id, techs }, idx, arr) => (
+                          <li
+                            className={`tech-icon rounded ${
+                              idx === arr.length - 1 ? "" : "mb-2"
+                            }`}
+                            id={id}
+                          >
+                            {techs.map((tech, idx, arr) =>
+                              idx === arr.length - 1 ? tech : tech + "/"
+                            )}
+                          </li>
+                        )
+                      )}
                     </ul>
                   </div>
                 </section>
@@ -270,44 +263,26 @@ const ResumePage = () => {
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Languages
                   </h3>
-                  <div className="item">
-                    <h4 className="item-title">
-                      Chinese<span className="text-muted"> (Native)</span>
-                    </h4>
-                    <ul className="list-unstyled resume-skills-list" />
-                  </div>
-                  <div className="item">
-                    <h4 className="item-title">
-                      English
-                      <span className="text-muted"> (Advanced)</span>
-                    </h4>
-                    <ul className="list-unstyled resume-skills-list">
-                      <li className="mb-2">Bachelor Degree</li>
-                      <li>Graduate Coursework</li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <h4 className="item-title">
-                      German
-                      <span className="text-muted"> (Intermediate)</span>
-                    </h4>
-                    <ul className="list-unstyled resume-skills-list">
-                      <li className="mb-2">
-                        Graduate Level 3rd Language Courses
-                      </li>
-                      <li>Duolingo Course with Full Skill Levels</li>
-                    </ul>
-                  </div>
+                  <ul className="list-unstyled resume-lang-list">
+                    <li className="mb-2">
+                      Chinese <span className="text-muted">(Native)</span>
+                    </li>
+                    <li className="mb-2">
+                      English <span className="text-muted">(Advanced)</span>
+                    </li>
+                    <li>
+                      German <span className="text-muted">(Intermediate)</span>
+                    </li>
+                  </ul>
                 </section>
                 <section className="skills-section py-3">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Interests
                   </h3>
                   <ul className="list-unstyled resume-interests-list mb-0">
-                    <li className="mb-2">Reading</li>
-                    <li className="mb-2">Piano</li>
-                    <li className="mb-2">Chess</li>
-                    <li>Football</li>
+                    <li className="mb-2">Learning/Reading</li>
+                    <li className="mb-2">Chess/Strategy Games</li>
+                    <li>Music/Piano</li>
                   </ul>
                 </section>
               </aside>

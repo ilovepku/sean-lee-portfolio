@@ -1,8 +1,8 @@
 [
   {
     "name": "Vanilla JavaScript",
-    "techs": ["JavaScript", "TypeScript", "Babel", "Webpack"],
-    "desc": "Solid foundations of vanilla JavaScript, its newest additions (ES6,7,8,9), superset Typescript, and modern workflow (Babel & Webpack)."
+    "techs": ["JavaScript", "Babel", "Webpack"],
+    "desc": "Solid foundations of vanilla JavaScript, its newest additions (ES6,7,8,9), and modern workflow (Babel & Webpack)."
   },
   {
     "name": "React Ecosystem",
@@ -15,6 +15,11 @@
     "desc": "Seasoned builder of fully functioning back-end REST/GraphQL API that can handle user authentication, CRUD operations, data filtering/sorting..."
   },
   {
+    "name": "Serverless & the Cloud",
+    "techs": ["Firebase", "AWS", "GoogleCloud"],
+    "desc": "Familiar with Firebase Auth, Firestore, Functions, and Hosting. Long-time user of AWS, Google Cloud Engine, both for hosting and proxy tunneling."
+  },
+  {
     "name": "Data Visualization",
     "techs": ["D3"],
     "desc": "Proficient maker of data-driven, interative, responsive, and real-time updating visualizations (graphs, charts, diagrams) with D3.js or Victory.js."
@@ -23,11 +28,6 @@
     "name": "LA/NMP & Wordpress",
     "techs": ["Linux", "PHP", "MySQL", "Wordpress"],
     "desc": "Customized, deployed and maintained: corporate websites /w Wordpress, an Uni department forum w/ Discuz! and a polling app w/ LimeSurvey, all on LA/NMP."
-  },
-  {
-    "name": "Serverless & the Cloud",
-    "techs": ["Firebase", "AWS", "GoogleCloud"],
-    "desc": "Familiar with Firebase Auth, Firestore, Functions, and Hosting. Long-time user of AWS, Google Cloud Engine, both for hosting and proxy tunneling."
   },
   {
     "name": "CSS Styling",

@@ -2,7 +2,7 @@
 path: "/portfolio/pwa-quanto"
 type: "frontend dataviz backend production"
 order: 100
-name: "Quanto Time Tracker App"
+name: "Quanto Time Tracking App"
 intro: "Get a handle on where your time goes."
 pics:
   [
@@ -13,7 +13,7 @@ pics:
 madeFor: "Open Source"
 url: "//pwa-quanto.web.app"
 code: "//github.com/ilovepku/pwa-quanto"
-desc: "Lead developer of the remake of the discontinued Natara Quanto time measurement tool for Palm OS into a Progressive Web App for modern mobile devices. Highlights include: easy activity tracking with re-engageable notification, multi-level categories with drag-n-drop reordering support, data-driven stats and chart visulizations filterable with date range and keywords, lazy-loading of large list, user authentication and data backup/restore with Firebase serverlessly, persisted state management with React Hooks and Context API."
+desc: "Led the remake of the discontinued Natara Quanto for Palm OS into a React Progressive Web App for modern smartphones. Highlights: actionable notification, 2-level drag-n-droppable categories, filterable data visulizations, big list lazy-loading, user auth and data backup with Google Firebase."
 highlights:
   [
     "Re-engagable notification",

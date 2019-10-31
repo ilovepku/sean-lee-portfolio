@@ -1,14 +1,14 @@
 ---
 path: "/portfolio/nile"
 type: "frontend backend practice"
-order: 104
+order: 103
 name: "Nile"
-intro: "Full-stack e-commerce practice project"
+intro: "Full-stack E-commerce Site"
 pics: [../../images/projects/nile/nile.png]
-madeFor:
+madeFor: "Udemy Practice"
 url: "//nile-db.web.app"
 code: "//github.com/ilovepku/nile"
-desc: "A Shopify-like full-stack e-commerce practice application. Highlights include: online payment processing with Stripe API and Firebase Functions, data stored on Firebase Firestore for real-time content updates, persisted shopping cart and user authuntication."
+desc: "Large Shopify-like site with Stripe payment processing, user auth and data storage through Firebase."
 highlights:
   [
     "Online payment processing with Stripe API and Firebase Functions",

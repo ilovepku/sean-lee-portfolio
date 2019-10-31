@@ -1,33 +1,23 @@
 [
   {
-    "role": "Role A",
-    "company": "Company A",
-    "start": "2019",
+    "role": "Part-time Full-stack Developer / Tutor",
+    "company": "Freelance",
+    "start": "2018",
     "end": "",
-    "desc": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.",
-    "bullets": [
-      "Lorem ipsum dolor sit amet, consectetuer.",
-      "Aenean commodo ligula eget dolor",
-      "Etiam ultricies nisi vel augue."
-    ]
+    "desc": "3 contract jobs, 2 production-level open source projects, while tutoring 1 junior developer."
   },
   {
-    "role": "Role B",
-    "company": "Company B",
+    "role": "Certification Consulting Manager",
+    "company": "China-Asia Econ. Dev. Assoc.",
     "start": "2016",
-    "end": "2019",
-    "desc": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.",
-    "bullets": [
-      "Lorem ipsum dolor sit amet, consectetuer.",
-      "Aenean commodo ligula eget dolor"
-    ]
+    "end": "",
+    "desc": "Led a team that helped dozens of overseas companies to successfully acquire for import licenses for food and recyclable materials from Chinese government authorities. "
   },
   {
-    "role": "Role C",
-    "company": "Company C",
+    "role": "Business Developer / Operations Manager",
+    "company": "INFIPLAY LLC",
     "start": "2014",
     "end": "2016",
-    "desc": "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    "bullets": []
+    "desc": "Oversaw and facilitated the selection, signing, localization, technical integration, and operation processes of the introduction of several Chinese games into the European market, with the one title (Light of Darkness) I was most closely involved having grossed over half a million USD."
   }
 ]

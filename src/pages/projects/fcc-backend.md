@@ -1,14 +1,14 @@
 ---
 path: "/portfolio/fcc-backend"
 type: "backend practice"
-order: 103
-name: "FCC Back End Practices"
+order: 104
+name: "FCC Back End Projects"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/backend.jpg]
-madeFor: "freeCodeCamp"
+madeFor: "freeCodeCamp Practice"
 url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
 code: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
-desc: "A series of backend projects from freeCodeCamp's curriculum, involving: CRUD on mLab MongoDB with Mongoose (one-to-many relationship data), unit/functional testing with Chai/Mocha/Zombie, security features with Helmet, and uploaded file processing."
+desc: "Highlights: CRUD on mLab MongoDB with Mongoose (one-to-many relationship data models), unit/functional testing with Chai / Mocha / Zombie, security with Helmet, and uploaded file processing."
 highlights:
   [
     "3rd party API integration",

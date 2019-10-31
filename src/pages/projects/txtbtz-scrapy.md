@@ -8,7 +8,7 @@ pics: [../../images/projects/scrapy/scrapy-txtbtz.png]
 madeFor: "Broadlink Supply Chain Co., Ltd"
 url:
 code: "//github.com/ilovepku/scrapy-for-txtbtz.cnca.gov.cn"
-desc: "Challenaged myself by taking this quick freelance job without any prior web scraping experience. Taught myself Python and Scrapy fundamentals, then coded a crawler script within a week, which extracted nearly 1 million entries of product/producer data and images from a government website, with all info stored in a MySQL database with multilayerd one-to-many relationship models, accompanied by a 66-page PDF of product listing data tables."
+desc: 
 highlights:
   [
     "multilayered one-to-many relationship data",
@@ -16,7 +16,7 @@ highlights:
   ]
 techs: ["Python", "Scrapy", "MySQL"]
 testimonial: { text: "" }
-featured: true
+featured: false
 ---
 
 ## Overview

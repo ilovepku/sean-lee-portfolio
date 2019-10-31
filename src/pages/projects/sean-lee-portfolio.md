@@ -8,7 +8,7 @@ pics: [../../images/projects/portfolio.png]
 madeFor: "Myself"
 url: "//seanlee.netlify.com"
 code: "//github.com/ilovepku/sean-lee-portfolio"
-desc: "My own developer portfolio, a static Gatsby site. Highlights include: dynamically generated pages from markdown files, isotope filter layout, pagination, image optimization with Sharp, SEO with Helmet, syntax highlighting with Prism, typechecking wtih PropTypes, as well as blog commenting/subscription and form handling with 3rd-party API integrations."
+desc: "Static Gatsby site. Highlights: dynamically generated pages from markdown files, isotope filter layout, blog pagination, and blog commenting / subscription / form handling thru 3rd-party API integrations."
 highlights:
   [
     "Dynamically generated pages and blogs from markdown files",

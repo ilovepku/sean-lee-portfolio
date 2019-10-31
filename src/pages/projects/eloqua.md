@@ -2,7 +2,7 @@
 path: "/portfolio/eloqua"
 type: "frontend backend production"
 order: 101
-name: "Eloqua Speeches App"
+name: "Eloqua Speech Listening App"
 intro: "Listen to great speeches on your smartphone."
 pics:
   [
@@ -14,7 +14,7 @@ pics:
 madeFor: "Open Source"
 url: "//speech-pwa.web.app"
 code: "//github.com/laylapku/eloqua-pwa"
-desc: "Creator, director, and senior developer of the speech catelog PWA Eloqua, made in collaboration with my protégée—junior developer Layla. Eloqua offers, in both audio and text, great English speeches from 30+ public figures covering a wide range of topics. Apart from common features like speaker/theme/keyword filter, playlist, favlist, loop toggle, playback speed switch, dark mode, Eloqua also supports full player control from notification with Media Session API, and retrieves its multilayered many-to-many relationship data from Firebase Firestore for real-time content updates."
+desc: "Creator/senior developer of React PWA Eloqua, made in collaboration with my protégée—junior developer Layla. Highlights: full player control from notification, many-to-many relationship data on Firestore, filter thru speaker/topic/keyword, playlist, favlist, loop, playback speed switch, dark mode."
 highlights:
   [
     "Multilayered many-to-many relationship data stored on Firebase Firestore for real-time content updates",
