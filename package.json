@@ -32,7 +32,8 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-mailchimp-subscribe": "^2.1.0"
+    "react-mailchimp-subscribe": "^2.1.0",
+    "svgo": "1.3.2"
   },
   "devDependencies": {
     "@iconify/icons-simple-icons": "^1.0.15",
