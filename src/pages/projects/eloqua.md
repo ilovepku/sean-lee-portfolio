@@ -26,7 +26,7 @@ highlights:
 techs: ["React", "Firebase", "Redux", "MaterialUI"]
 testimonial:
   {
-    text: "Sean opened the doors for me to pursue my new career in web development. He’s been providing constant support in the process of building Eloqua - an app of our joint effort. I’m impressed by the flexibility and tenacity he showed throughout this journey. He has the patience to clarify my silly doubts as a beginner, and the ingenuity to tackle tricky problems. Eloqua would be impossible without Sean’s close instruction and supervision.",
+    text: "Sean opened the doors for me to the world of web development, and has been providing constant support in the building of Eloqua - a speech listening app of our joint effort. Sean has the ingenuity to efficiently tackle tricky problems and the patience to thoroughly answer all the questions from a curious beginner.",
     avatar: ../../images/layla.jpg,
     person: "Layla",
     position: "Web Developer",

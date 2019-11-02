@@ -23,7 +23,7 @@ const AboutSection = () => {
             </h2>
             <div className="tagline mb-3">Senior Full Stack Developer</div>
             <div className="bio mb-4">
-              I'm an aspiring senior full stack developer specialised in frontend and backend
+              I'm an full stack developer / mentor specialised in frontend and backend
               development for complex scalable web apps. I write about software
               development on{" "}
               <Link to="/blogs" className="link-on-bg">

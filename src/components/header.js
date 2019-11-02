@@ -71,8 +71,8 @@ const Header = () => {
                 />
 
                 <div className="bio mb-3">
-                  Hi, my name is {author} and I'm an aspiring senior full stack
-                  developer. Welcome to my personal website!
+                  Hi, my name is {author} and I'm an full stack
+                  developer / mentor. Welcome to my personal website!
                 </div>
                 <ul className="social-list list-inline py-2 mx-auto">
                   {data.allSocialsJson.nodes.map(({ id, name, url }) => (

@@ -10,6 +10,7 @@ const TestimonialsSection = () => {
           fileAbsolutePath: { glob: "**/src/pages/projects/*.md" }
           frontmatter: { testimonial: { text: { ne: "" } } }
         }
+        sort: { fields: [frontmatter___order], order: ASC }
       ) {
         nodes {
           id

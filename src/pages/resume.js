@@ -124,16 +124,12 @@ const ResumePage = () => {
               />
               <div className="media-body text-left">
                 <p className="mb-0">
-                  Summarise your career here. Donec quam felis, ultricies nec,
-                  pellentesque eu. Lorem ipsum dolor sit amet, consectetuer
-                  adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                  massa. Cum sociis natoque penatibus et magnis dis parturient
-                  montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                  nec, pellentesque eu, pretium quis, sem. Maecenas nec odio et
-                  ante tincidunt tempus. Donec vitae sapien ut libero venenatis
-                  faucibus. Nullam quis ante. Etiam sit amet orci eget eros
-                  faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet
-                  nibh.
+                  Self-taught, certified full stack developer and mentor.
+                  Skilled in JavaScript, the React ecosystem (Redux, Gatsby...),
+                  and PWA building in particular. Competent in Firebase
+                  serverless architecture, Node / Express RESTful API coding,
+                  MongoDB / MySQL, and GraphQL. Years of experience working in
+                  an international team, and serving customers around the world.
                 </p>
               </div>
             </div>
@@ -221,6 +217,22 @@ const ResumePage = () => {
                     Education
                   </h3>
                   <ul className="list-unstyled resume-education-list">
+                    <li className="mb-3">
+                      <div className="resume-degree font-weight-bold">
+                        1800-Hour Full-stack Program
+                      </div>
+                      <div className="resume-degree-org text-muted">
+                        <a
+                          href="//https://www.topuniversities.com/universities/peking-university"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="theme-link"
+                        >
+                          freeCodeCamp
+                        </a>
+                      </div>
+                      <div className="resume-degree-time text-muted">2018</div>
+                    </li>
                     <li className="mb-3">
                       <div className="resume-degree font-weight-bold">
                         Graduate Coursework in English Literature
