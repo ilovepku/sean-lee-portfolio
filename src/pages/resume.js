@@ -115,7 +115,7 @@ const ResumePage = () => {
             </div>
           </div>
           <hr />
-          <div className="resume-intro py-3">
+          <div className="resume-intro">
             <div className="media flex-column flex-md-row align-items-center">
               <img
                 className="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded-circle mx-auto"
@@ -124,12 +124,13 @@ const ResumePage = () => {
               />
               <div className="media-body text-left">
                 <p className="mb-0">
-                  Self-taught, certified full stack developer and mentor.
-                  Skilled in JavaScript, the React ecosystem (Redux, Gatsby...),
-                  and PWA building in particular. Competent in Firebase
-                  serverless architecture, Node / Express RESTful API coding,
-                  MongoDB / MySQL, and GraphQL. Years of experience working in
-                  an international team, and serving customers around the world.
+                  I'm a self-taught full stack developer / mentor with
+                  professional experience building web applications / coaching
+                  junior developers. I specialize in JavaScript, React, Redux,
+                  Node, MongoDB, GraphQL, Firebase... I have years of experience
+                  working in an international team, and serving customers around
+                  the world. Check out my work and get in touch!
+                  seanlee.netlify.com
                 </p>
               </div>
             </div>
@@ -138,7 +139,7 @@ const ResumePage = () => {
           <div className="resume-body">
             <div className="row">
               <div className="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
-                <section className="project-section py-3">
+                <section className="project-section">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Sample Projects
                   </h3>
@@ -165,7 +166,7 @@ const ResumePage = () => {
                   )}
                 </section>
 
-                <section className="work-section py-3">
+                <section className="work-section">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Work Experiences
                   </h3>
@@ -189,7 +190,7 @@ const ResumePage = () => {
                 </section>
               </div>
               <aside className="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
-                <section className="skills-section py-3">
+                <section className="skills-section">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Skills
                   </h3>
@@ -201,7 +202,7 @@ const ResumePage = () => {
                             className={`tech-icon rounded ${
                               idx === arr.length - 1 ? "" : "mb-2"
                             }`}
-                            id={id}
+                            key={id}
                           >
                             {techs.map((tech, idx, arr) =>
                               idx === arr.length - 1 ? tech : tech + "/"
@@ -212,14 +213,14 @@ const ResumePage = () => {
                     </ul>
                   </div>
                 </section>
-                <section className="education-section py-3">
+                <section className="education-section">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Education
                   </h3>
                   <ul className="list-unstyled resume-education-list">
                     <li className="mb-3">
                       <div className="resume-degree font-weight-bold">
-                        1800-Hour Full-stack Program
+                        1800hr Full Stack Program
                       </div>
                       <div className="resume-degree-org text-muted">
                         <a
@@ -271,7 +272,7 @@ const ResumePage = () => {
                     </li>
                   </ul>
                 </section>
-                <section className="skills-section py-3">
+                <section className="skills-section">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Languages
                   </h3>
@@ -287,7 +288,7 @@ const ResumePage = () => {
                     </li>
                   </ul>
                 </section>
-                <section className="skills-section py-3">
+                <section className="skills-section">
                   <h3 className="text-uppercase resume-section-heading mb-4">
                     Interests
                   </h3>
