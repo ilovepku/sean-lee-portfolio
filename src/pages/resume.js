@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
-import profile from "../images/profile.png"
+import photo from "../images/photo.jpg"
 import { reqSocialSvgs } from "../utils/svgs.util"
 import SEO from "../components/seo"
 
@@ -119,7 +119,7 @@ const ResumePage = () => {
             <div className="media flex-column flex-md-row align-items-center">
               <img
                 className="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded-circle mx-auto"
-                src={profile}
+                src={photo}
                 alt=""
               />
               <div className="media-body text-left">
