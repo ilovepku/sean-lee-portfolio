@@ -2,13 +2,13 @@
   {
     "name": "phone",
     "icon": "phone-square",
-    "url": "tel:#",
+    "url": "tel:8613911066746",
     "content": "+86 139 1106 6746"
   },
   {
     "name": "email",
     "icon": "envelope-square",
-    "url": "mailto:#",
+    "url": "mailto:seanleecoder@gmail.com",
     "content": "seanleecoder@gmail.com"
   },
   {

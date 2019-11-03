@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import photo from "../images/photo.jpg"
 import { reqSocialSvgs } from "../utils/svgs.util"
+import pdf from "../assets/sean-lee-full-stack-resume.pdf"
 import SEO from "../components/seo"
 
 const ResumePage = () => {
@@ -70,10 +71,10 @@ const ResumePage = () => {
       <section className="cta-section theme-bg-light py-5">
         <div className="container text-center single-col-max-width">
           <h2 className="heading mb-3">Online Resume</h2>
-          <Link className="btn btn-primary" to="/">
+          <a className="btn btn-primary" href={pdf} download>
             <FontAwesomeIcon icon="file-pdf" className="mr-2" />
             Download PDF Version
-          </Link>
+          </a>
         </div>
       </section>
       <div className="container px-3 px-lg-5">
@@ -229,7 +230,7 @@ const ResumePage = () => {
                       </div>
                       <div className="resume-degree-org text-muted">
                         <a
-                          href="//https://www.topuniversities.com/universities/peking-university"
+                          href="//freecodecamp.org/ilovepku"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="theme-link"
@@ -245,7 +246,7 @@ const ResumePage = () => {
                       </div>
                       <div className="resume-degree-org text-muted">
                         <a
-                          href="//https://www.topuniversities.com/universities/peking-university"
+                          href="//www.topuniversities.com/universities/peking-university"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="theme-link"
@@ -263,7 +264,7 @@ const ResumePage = () => {
                       </div>
                       <div className="resume-degree-org text-muted">
                         <a
-                          href="//https://www.topuniversities.com/universities/peking-university"
+                          href="//www.topuniversities.com/universities/peking-university"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="theme-link"
