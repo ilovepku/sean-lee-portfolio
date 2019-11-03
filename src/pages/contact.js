@@ -45,7 +45,11 @@ const ContactPage = () => {
                   key={id}
                 >
                   <a href={url}>
-                    <img alt="" title={name} src={reqSocialSvgs(`./${name}.svg`)} />
+                    <img
+                      alt=""
+                      title={name}
+                      src={reqSocialSvgs(`./${name}.svg`)}
+                    />
                   </a>
                 </li>
               ))}
@@ -61,7 +65,9 @@ const ContactPage = () => {
             className="contact-form col-lg-8 mx-lg-auto"
             method="post"
             data-netlify="true"
+            netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact-form" />
             <h3 className="text-center mb-3">Get In Touch</h3>
             <div className="form-row">
               <div className="form-group col-md-6">
