@@ -51,7 +51,7 @@ store.firebaseAuthIsReady.then(() => {
 });
 ```
 
-That seemed pretty straight forward, and "TypeError: Object(…) is not a function" was no more, but here came another error "TypeError: Cannot read property 'then' of undefined", and it happened on: `store.firebaseAuthIsReady.then(() => {`
+That seemed straight forward, and "TypeError: Object(…) is not a function" was no more, but here came another error "TypeError: Cannot read property 'then' of undefined", and it happened on: `store.firebaseAuthIsReady.then(() => {`
 
 With a bit of research, I found out that react-redux-firebase had got rid of this method in v3. I was only using it to delay rendering before data is loaded anyway, so no biggie. I'd just remove it for now, and find an alternative later, so:
 

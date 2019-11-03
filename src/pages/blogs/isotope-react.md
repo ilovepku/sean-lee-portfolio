@@ -13,7 +13,7 @@ intro: "With a couple of hooks, you can easily make the filter & sort layout lib
 [Isotope](https://www.npmjs.com/package/isotope-layout) is a JavaScript library that can provide an animated, filterable/sortabe layout for a list of HTML elements. A demo of the effect can be seen on either its [official website](https://isotope.metafizzy.co/).
 or the portfolio page of [this same very site](/portfolio).
 
-It's a quite handly tool, and the animations look pretty cool, but the problem is that it was quite a dated library, first introduced back in the days of jQuery, hence not as well suited to be used together with a modern front end framework like React. Though the official documentation has chapters on initializing Isotope with both vanilla JS and HTML, nothing on using it with React has been given.
+It's a quite handly tool, and the animations look cool, but the problem is that it was quite a dated library, first introduced back in the days of jQuery, hence not as well suited to be used together with a modern front end framework like React. Though the official documentation has chapters on initializing Isotope with both vanilla JS and HTML, nothing on using it with React has been given.
 
 ## Previous Takes
 
