@@ -21,6 +21,7 @@ const ContactPage = () => {
       }
     }
   `)
+  const { email } = data.site.siteMetadata
   return (
     <Layout>
       <SEO title="Contact" />
@@ -31,7 +32,7 @@ const ContactPage = () => {
             <p>
               Thanks for taking the time to reach out. How can I help you today?
               You can fill in the contact form below or send me an email to{" "}
-              <a href={`mailto:${email}`}>{data.site.siteMetadata.email}</a>
+              <a href={`mailto:${email}`}>{email}</a>
             </p>
             <p>
               Want to get connected? Follow me on the social channels below.
