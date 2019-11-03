@@ -21,7 +21,7 @@ const AboutSection = () => {
             <h2 className="name font-weight-bold mb-1">
               {data.site.siteMetadata.author}
             </h2>
-            <div className="tagline mb-3">Senior Full Stack Developer</div>
+            <div className="tagline mb-3">Full Stack Developer / Mentor</div>
             <div className="bio mb-4">
               I'm an full stack developer / mentor specialised in frontend and backend
               development for complex scalable web apps. I write about software
@@ -29,7 +29,7 @@ const AboutSection = () => {
               <Link to="/blogs" className="link-on-bg">
                 my blog
               </Link>
-              . Want to know how I may help your project? Check out my project{" "}
+              . Want to know how I may help you? Check out my project{" "}
               <Link to="/portfolio" className="link-on-bg">
                 portfolio
               </Link>{" "}

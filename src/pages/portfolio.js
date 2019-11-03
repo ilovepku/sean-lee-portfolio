@@ -68,10 +68,9 @@ const PortfolioPage = () => {
           <h2 className="heading">Portfolio</h2>
           <div className="intro">
             <p>
-              Welcome to my online portfolio. Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-              I'm taking on freelance work at the moment. Want some help
-              building your software?
+              Welcome to my online portfolio, a compilation of my freelance
+              works, open source projects, as well as featured study practices.
+              Interested in having me in your project? Feel free to give me a holler!
             </p>
           </div>
           <Link to="/contact" className="btn btn-primary">
