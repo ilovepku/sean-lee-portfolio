@@ -55,7 +55,7 @@ const ResumePage = () => {
           techs
         }
       }
-      allSocialsJson(limit: 3) {
+      allSocialsJson(limit: 4) {
         nodes {
           id
           name
@@ -85,7 +85,7 @@ const ResumePage = () => {
                   {data.site.siteMetadata.author}
                 </h2>
                 <div className="resume-tagline mb-3 mb-md-0">
-                  Full-stack Developer
+                  Full-stack Developer / Mentor
                 </div>
               </div>
               <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
@@ -125,12 +125,17 @@ const ResumePage = () => {
               <div className="media-body text-left">
                 <p className="mb-0">
                   I'm a self-taught full stack developer / mentor with
-                  professional experience building web applications / coaching
-                  junior developers. I specialize in JavaScript, React, Redux,
-                  Node, MongoDB, GraphQL, Firebase... I have years of experience
-                  working in an international team, and serving customers around
-                  the world. Check out my work and get in touch!
-                  seanlee.netlify.com
+                  professional experience building web applications and coaching
+                  junior developers. JavaScript, React, Redux, Gatsby, Node,
+                  Express, MongoDB, MySQL, GraphQL, Firebase, D3 data
+                  visualization, Python web scraping, and LAMP Admin are some of
+                  my main skill sets. I have years of experience working in an
+                  international team, and serving customers around the world. To
+                  check out my work and get in touch, visit{" "}
+                  <Link to="/" className="resume-link">
+                    seanlee.netlify.com
+                  </Link>
+                  !
                 </p>
               </div>
             </div>
@@ -171,7 +176,7 @@ const ResumePage = () => {
                     Work Experiences
                   </h3>
                   {data.allExpJson.nodes.map(
-                    ({ id, role, company, start, end, desc, bullets }) => (
+                    ({ id, role, company, start, end, desc }) => (
                       <div className="item mb-3" key={id}>
                         <div className="item-heading row align-items-center mb-2">
                           <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">

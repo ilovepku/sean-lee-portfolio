@@ -21,7 +21,7 @@ testimonial:
     avatar: ../../images/fan.jpg,
     person: "FAN Ze",
     position: "Vice-chairwoman",
-    company: "China-Asia Economic Development Association",
+    company: "China-Asia Econ. Dev. Assoc.",
   }
 featured: false
 ---

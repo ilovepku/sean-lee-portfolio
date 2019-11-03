@@ -4,6 +4,10 @@
     "url": "//github.com/ilovepku"
   },
   {
+    "name": "linkedin",
+    "url": "//linkedin.com/in/ilovepku"
+  },
+  {
     "name": "codepen",
     "url": "//codepen.io/ilovepku"
   },
@@ -18,9 +22,5 @@
   {
     "name": "stackoverflow",
     "url": "//stackoverflow.com/users/10644430/sean-lee"
-  },
-  {
-    "name": "leetcode",
-    "url": "//leetcode.com/ilovepku/"
   }
 ]
