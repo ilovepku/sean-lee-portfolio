@@ -27,7 +27,7 @@
   {
     "name": "LA/NMP & Wordpress",
     "techs": ["Linux", "PHP", "MySQL", "Wordpress"],
-    "desc": "Customized, deployed and maintained: corporate websites /w Wordpress, an Uni department forum w/ Discuz! and a polling app w/ LimeSurvey, all on LA/NMP."
+    "desc": "Customized, deployed and maintained: corporate websites w/ Wordpress, an Uni department forum w/ Discuz! and a polling app w/ LimeSurvey, all on LA/NMP."
   },
   {
     "name": "CSS Styling",

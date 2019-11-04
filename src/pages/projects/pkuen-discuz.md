@@ -24,7 +24,7 @@ featured: false
 
 ## Overview
 
-Envisioned, customized, deployed, maintained, promoted, and adminstered an semi-official internet forum for the English Department of Peking University, while I was still persuing my graduate studies. Though only a volunteer project I made in my free time, the forum became very well received by professors, my fellow students, alumni, and potential candidates alike, an convenient online presence of the department where announcements were made, coursework discussed, resources shared, and so on. Frequenters even pitched in 1k+ RMB through my customized online donation system to help me cover for the expenses of running the forum. Due to its somewhat exclusive nature, user registration had to be limited, hence the forum's daily new post number only reached a respectable 200+ at its peak. With the introduction of newer social media in the forms of Weibo and Wechat, interests in the forum gradually waned and it was finally shut down and archived in 2016, roughly 5 years after its initial conception.
+Created, administered, and promoted a semi-official online forum for the English Department of Peking University, while I was perusing my graduate studies. Though a volunteer project I did in my free time, the forum became well received by professors, fellow students, alumni, and applicants alike, a convenient online presence of the department where announcements were made, coursework discussed, and resources shared. Frequenters even pitched in 1k+ RMB via my customized online donation system to help me cover for the expenses. The forum's daily new posts reached 200+ at its peak, a respectable number considering its exclusive nature and restricted registration policy.
 
 ## The Challenge
 
