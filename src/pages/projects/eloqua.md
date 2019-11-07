@@ -38,11 +38,11 @@ featured: true
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Speeches Views](#speeches-views)
+- [Speeches View](#speeches-view)
 - [Playing Bar](#playing-bar)
-- [Script Views](#script-views)
-- [Playlist Views](#playlist-views)
-- [Favorites Views](#favorites-views)
+- [Script View](#script-view)
+- [Playlist View](#playlist-view)
+- [Favorites View](#favorites-view)
 - [Notification Controls](#notification-controls)
 - [Dark Mode](#dark-mode)
 - [Acknowledgment](#acknowledgment)
@@ -70,14 +70,14 @@ Extended control features like loop toggle and playback speed switch are also in
 
 ![Script View](../../images/projects/eloqua/script.png "Script View")
 
-## Playlist View:
+## Playlist View
 
 Showing the queued speeches to be played.
 You can remove any/all speech(es) from the playlist or add one/all to the favorites list.
 
 ![Playlist](../../images/projects/eloqua/playlist.png "Playlist")
 
-## Favorites View:
+## Favorites View
 
 List of your favorite speeches list for easier access.
 
@@ -89,7 +89,7 @@ View, play/resume, rewind/fast forward, go to previous/next from the notificatio
 
 ![Notification Controls](../../images/projects/eloqua/media-session.png "Notification Controls")
 
-## Dark Mode:
+## Dark Mode
 
 Don’t forget to take better care of your eyes. Toggle dark mode in the Settings View for the optimal bedtime reading experience.
 
