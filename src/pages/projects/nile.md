@@ -15,8 +15,9 @@ highlights:
     "State management with React Hooks and Context API (replacing Redux)",
     "Data stored on Firebase Firestore for real-time content updates",
     "Persisted shopping cart and user authuntication",
+    "Unit testing with Jest and Enzyme",
   ]
-techs: ["React", "Redux", "Firebase", "Stripe", "JavaScript", "CSS"]
+techs: ["React", "Redux", "Firebase", "Stripe", "Jest", "JavaScript", "CSS"]
 testimonial: { text: "" }
 featured: true
 ---
