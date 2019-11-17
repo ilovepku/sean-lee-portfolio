@@ -6,7 +6,7 @@ name: "Eloqua Speech Listening App"
 intro: "Listen to great speeches on your smartphone."
 pics:
   [
-    ../../images/projects/eloqua/speaker-list.png,
+    ../../images/projects/eloqua/speaker-list.jpg,
     ../../images/projects/eloqua/category-list.png,
     ../../images/projects/eloqua/filtered-by-ctg.png,
     ../../images/projects/eloqua/script.png,
