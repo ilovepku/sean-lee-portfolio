@@ -4,7 +4,7 @@ type: "frontend production"
 order: 102
 name: "Developer Portfolio Site"
 intro: "Static site generated with Gatsby"
-pics: [../../images/projects/portfolio.png]
+pics: [../../images/projects/portfolio.jpg]
 madeFor: "Myself"
 url: "//seanlee.netlify.com"
 code: "//github.com/ilovepku/sean-lee-portfolio"

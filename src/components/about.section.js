@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import profileLg from "../images/profile-lg.jpg"
 
 const AboutSection = () => {
   const data = useStaticQuery(graphql`
@@ -9,6 +9,13 @@ const AboutSection = () => {
       site {
         siteMetadata {
           author
+        }
+      }
+      file(relativePath: { eq: "profile-lg.jpg" }) {
+        childImageSharp {
+          fixed(width: 400) {
+            ...GatsbyImageSharpFixed
+          }
         }
       }
     }
@@ -23,9 +30,9 @@ const AboutSection = () => {
             </h2>
             <div className="tagline mb-3">Full Stack Developer / Mentor</div>
             <div className="bio mb-4">
-              I'm an full stack developer / mentor specialised in frontend and backend
-              development for complex scalable web apps. I write about software
-              development on{" "}
+              I'm an full stack developer / mentor specialised in frontend and
+              backend development for complex scalable web apps. I write about
+              software development on{" "}
               <Link to="/blogs" className="link-on-bg">
                 my blog
               </Link>
@@ -53,9 +60,9 @@ const AboutSection = () => {
               </Link>
             </div>
           </div>
-          <img
+          <Img
             className="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0"
-            src={profileLg}
+            fixed={data.file.childImageSharp.fixed}
             alt=""
           />
         </div>

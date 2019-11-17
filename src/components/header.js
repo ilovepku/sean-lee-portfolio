@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { Navbar } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import profile from "../images/profile.png"
 import { reqSocialSvgs } from "../utils/svgs.util"
 
 const Header = () => {
@@ -29,6 +29,13 @@ const Header = () => {
           icon
           url
           deeper
+        }
+      }
+      file(relativePath: { eq: "profile.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 200) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
@@ -64,15 +71,15 @@ const Header = () => {
 
             <Navbar.Collapse id="navigation" className="flex-column">
               <div className="profile-section pt-3 pt-lg-0">
-                <img
+                <Img
                   className="profile-image mb-3 rounded-circle mx-auto"
-                  src={profile}
+                  fluid={data.file.childImageSharp.fluid}
                   alt=""
                 />
 
                 <div className="bio mb-3">
-                  Hi, my name is {author} and I'm an full stack
-                  developer / mentor. Welcome to my personal website!
+                  Hi, my name is {author} and I'm an full stack developer /
+                  mentor. Welcome to my personal website!
                 </div>
                 <ul className="social-list list-inline py-2 mx-auto">
                   {data.allSocialsJson.nodes.map(({ id, name, url }) => (
