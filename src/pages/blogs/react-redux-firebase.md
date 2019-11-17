@@ -65,7 +65,7 @@ My app successfully loaded after this, hooray!
 
 ## Error: Firebase instance does not yet exist. Check your compose function.
 
-Alas! Another error, this time trigged by a `getFirestore()` in one of my redux actions. I was using [redux-thunk](https://github.com/reduxjs/redux-thunk) to handle the asynchronous firebase operations. Some changes I just made must have broken it.
+Alas! Another error, this time triggered by a `getFirestore()` in one of my redux actions. I was using [redux-thunk](https://github.com/reduxjs/redux-thunk) to handle the asynchronous firebase operations. Some changes I just made must have broken it.
 
 The problem seemed to be related to firestore initiation. Though the official migration guide did not mention anything on `useFirestore`, the deletion of `reduxFirestore(firebase)`, which the guide suggested, might have caused the error. After adding the line (and the compose) back, my app now runs properly.
 
@@ -82,7 +82,7 @@ const store = createStore(
 
 ## TypeError: Cannot read property 'then' of undefined
 
-I then doubled back to the deprecated `firebaseAuthIsReady` problem with all the major isses addressed. It turned out that I didn't even need this method, which was initially introduced as a SSR helper, if having a component wait for the data to load before it renders was my sole purpose, according to [this github issue](https://github.com/prescottprue/react-redux-firebase/issues/673). Instead, I could use the new `isLoaded` hook to get the job done. But since a hook is only usable in a functional component, I had to move the logic one level deeper to the root React component from its original place in index.js:
+I then doubled back to the deprecated `firebaseAuthIsReady` problem with all the major issues addressed. It turned out that I didn't even need this method, which was initially introduced as an SSR helper, if having a component wait for the data to load before it renders was my sole purpose, according to [this GitHub issue](https://github.com/prescottprue/react-redux-firebase/issues/673). Instead, I could use the new `isLoaded` hook to get the job done. But since a hook is only usable in a functional component, I had to move the logic one level deeper to the root React component from its original place in index.js:
 
 ```diff
 + import { useSelector } from "react-redux";

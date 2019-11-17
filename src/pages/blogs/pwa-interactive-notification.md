@@ -15,17 +15,17 @@ intro: "Interact with your PWA from the notification bar/lockscreen."
 
 ## The Challenge
 
-While working on my [Quanto Time Tracker](/portfolio/pwa-quanto), I envisioned a feature that enables the user, without opening the app, to both view the category, start time, and elasped time of the currently tracked activity as well as to engage with the app like starting a new activity or interrupting/resuming the current activity.
+While working on my [Quanto Time Tracker](/portfolio/pwa-quanto), I envisioned a feature that enables the user, without opening the app, to both view the category, start time and elapsed time of the currently tracked activity as well as to engage with the app like starting a new activity or interrupting/resuming the current activity.
 
-While this may at first sound like a feature from a native app, it's actually achievable(at least on Android) through pure front-end web technology in a Progressive Web App.
+While this may at first sound like a feature from a native app, it's achievable(at least on Android) through pure front-end web technology in a Progressive Web App.
 
-For those of you who aren't yet familar with the topic, Progressive web apps use modern web APIs along with traditional progressive enhancement strategy to create cross-platform web applications. These apps work everywhere(desktop/mobile) and provide several features that give them the same user experience advantages as native apps.
+For those of you who aren't yet familiar with the topic, Progressive web apps use modern web APIs along with traditional progressive enhancement strategy to create cross-platform web applications. These apps work everywhere(desktop/mobile) and provide several features that give them the same user experience advantages as native apps.
 
-Some of these native features that a PWA provide, like offline use, push notificaiton, and background sync are achieved with the help of the service worker, a JavaScript file that operates separately from the main browser thread. The service worker, specifically, sending re-engagable notifications through the service worker, as well as handling engagement actions in the service worker and then in the main app thread, will be the focal point of today's blog post, which includes the following topics:
+Some of these native features that a PWA provides, like offline use, push notification, and background sync, are achieved with the help of the service worker, a JavaScript file that operates separately from the main browser thread. The service worker, specifically, sending re-engageable notifications through the service worker, as well as handling engagement actions in the service worker and then in the main app thread, will be the focal point of today's blog post, which includes the following topics:
 
 - Show actionable notifications (after first acquiring the necessary permission)
 - Handle notification actions in the service worker
-- Have the service worker communicate the action to the main brower thread where the main app runs
+- Have the service worker communicate the action to the main browser thread where the main app runs
 - Listen to the service worker communication in the main app and trigger a Redux action
 - Or listen to the service worker communication in the main app and trigger a React Context API action (alternative to Redux)
 
@@ -33,7 +33,7 @@ Some of these native features that a PWA provide, like offline use, push notific
 
 ##### Show actionable notifications (after first acquiring the necessary permission)
 
-Firstly, I have a simple switch component which when clicked prompt the user to give permission to the app to display notifications. I consider it a better practice than immediatly prompting for permission out of nowhere. Once permission is given, the switch will be disabled. I'd also add some text to explain what sort of notification is in store for the user in a real-life scenario.
+Firstly, I have a simple switch component which when clicked prompts the user to permit the app to display notifications. I consider it a better practice than immediately prompting for permission out of nowhere. Once permission is given, the switch will be disabled. I'd also add some text to explain what sort of notification is in store for the user in a real-life scenario.
 
 ```jsx
 const NotificationSettings = () => {
@@ -79,7 +79,7 @@ case DISPLAY_NOTIFICATION:
             action: "pause",
             title: "Pause"
           }
-        ], // essense of the re-engagable notification with two actions defined
+        ], // essence of the re-engageable notification with two actions defined
         tag: "default", // makes any new notification automatically replace the old one with the same tag, so there will always be one notification of this tag shown at any given time
         silent: true // show the notification without vibrating the device or playing any sound
       };
@@ -99,7 +99,7 @@ With the DISPLAY_NOTIFICATION action type in place, I can just dispatch the corr
 
 ##### Handle notification actions in the service worker
 
-##### Have the service worker communicate the action to the main brower thread where the PWA runs
+##### Have the service worker communicate the action to the main browser thread where the PWA runs
 
 Then, we come to the actual servicer worker file:
 
@@ -119,7 +119,7 @@ self.addEventListener(
 
 Two things are accomplished here, the one is the listening of clicks on the two notification actions defined just above. The other is to send the action info to the main browser thread where the app runs with the BroadcastChannel API. One can manually add this part of code to the service worker file generated in the build process(of create-react-app, or equivalent tools), or better yet, use workbox to automate the injection during the build process. The use of workbox to customize the service worker is another interesting topic, but its scope rightly justifies a blog post of its own, and I apologize for its omission here.
 
-Again, the need to use the BroadcastChannel API is a result of the service worker running in a seperate thread. One way for it to communicate with the main app is through the BroadcastChannel API. Of course, there are other ways to produce a similar effect like `client.postMessage()`, however, in this case I prefer the BroadcastChannel due to its simplicity--just create a channel instance, send the message, and close the channel.
+Again, the need to use the BroadcastChannel API is a result of the service worker running in a separate thread. One way for it to communicate with the main app is through the BroadcastChannel API. Of course, there are other ways to produce a similar effect like `client.postMessage()`, however, in this case, I prefer the BroadcastChannel due to its simplicity--just create a channel instance, send the message, and close the channel.
 
 ##### Listen to the service worker communication in the main app and trigger a Redux action
 
@@ -139,9 +139,9 @@ If you are using Redux to manage the state, you can skip the next, and last part
 
 ##### Listen to the service worker communication in the main app and trigger a React Context API action
 
-If you are an early adopter who uses React Context API to manage your state, or have just switched to Context from Redux as an experiment like me, the above method won't work for you, because you can't dispatch a Context action in the index.js, out of the scope of React, and by extension any React Context.
+If you are an early adopter who uses React Context API to manage your state or have just switched to Context from Redux as an experiment like me, the above method won't work for you, because you can't dispatch a Context action in the index.js, out of the scope of React, and by extension any React Context.
 
-This problem can be easily addressed by moving the above code block in index.js into any component that has access to the necessary Context or even into the Context itself. One catch to this, however, is that you must wrap the block in a `useEffect()` hook to make it only run once after the component is first mounted, otherwise you'll run into the annoying bug of receiving more messages in the app than the service worker actually sends.
+This problem can be easily addressed by moving the above code block in index.js into any component that has access to the necessary Context or even into the Context itself. One catch to this, however, is that you must wrap the block in a `useEffect()` hook to make it only run once after the component is first mounted, otherwise you'll run into the annoying bug of receiving more messages in the app than the service worker sends.
 
 ```jsx
 // someContext.js or someComponentWithContextAccess.js
