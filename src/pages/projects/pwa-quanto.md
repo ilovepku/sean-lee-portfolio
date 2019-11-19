@@ -13,7 +13,7 @@ pics:
 madeFor: "Open Source"
 url: "//pwa-quanto.web.app"
 code: "//github.com/ilovepku/pwa-quanto"
-desc: "Led the remake of the discontinued Natara Quanto for Palm OS into a React Progressive Web App for modern smartphones. Highlights: actionable notification, 2-level drag-n-droppable categories, filterable data visulizations, big list lazy-loading, user auth and data backup with Google Firebase."
+desc: "Led the remake of the discontinued Natara Quanto for Palm OS into a React Progressive Web App for modern smartphones. Highlights: actionable notification, 2-level drag-n-droppable categories, filterable data visualizations, big list lazy-loading, user auth and data backup with Google Firebase."
 highlights:
   [
     "Re-engagable notification",
