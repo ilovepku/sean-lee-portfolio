@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import photo from "../images/photo.jpg"
 import { reqSocialSvgs } from "../utils/svgs.util"
-import pdf from "../assets/sean-lee-full-stack-resume.pdf"
+import pdf from "../assets/sean-lee-full-stack-resume-v1.1.pdf"
 import SEO from "../components/seo"
 
 const ResumePage = () => {
