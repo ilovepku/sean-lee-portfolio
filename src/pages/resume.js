@@ -125,18 +125,16 @@ const ResumePage = () => {
               />
               <div className="media-body text-left">
                 <p className="mb-0">
-                  I'm a self-taught full stack developer / mentor with
-                  professional experience building web applications and coaching
-                  junior developers. JavaScript, React, Redux, Gatsby, Node,
-                  Express, MongoDB, MySQL, GraphQL, Firebase, D3 data
-                  visualization, Python web scraping, and LAMP Admin are some of
-                  my main skill sets. I have years of experience working in an
-                  international team, and serving customers around the world. To
-                  check out my work and get in touch, visit{" "}
-                  <Link to="/" className="resume-link">
-                    seanlee.netlify.com
-                  </Link>
-                  !
+                  I'm a frontend focused fullstack developer with hands-on
+                  experience building production-level web applications from the
+                  ground up. My strengths lie within React and its ecosystem
+                  (Redux, Gatsby, etc.). I'm familiar with React design
+                  patterns, best practices, newer features, testing,
+                  optimization, and how to implement them in real-life
+                  situations. I've also had backend practices building RESTful
+                  APIs following a microservice architecture with Node.js,
+                  MongoDB, and GraphQL, as well as going serverless with
+                  Firebase.
                 </p>
               </div>
             </div>
@@ -299,9 +297,9 @@ const ResumePage = () => {
                     Interests
                   </h3>
                   <ul className="list-unstyled resume-interests-list mb-0">
-                    <li className="mb-2">Learning/Reading</li>
-                    <li className="mb-2">Chess/Strategy Games</li>
-                    <li>Music/Piano</li>
+                    <li className="mb-2">Learning / Reading</li>
+                    <li className="mb-2">Chess / Yoga</li>
+                    <li>Music / Piano</li>
                   </ul>
                 </section>
               </aside>

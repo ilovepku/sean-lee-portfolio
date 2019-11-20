@@ -8,7 +8,7 @@ pics: [../../images/projects/nile/nile.png]
 madeFor: "Udemy Practice"
 url: "//nile-db.web.app"
 code: "//github.com/ilovepku/nile"
-desc: "Large Shopify-like site with Stripe payment processing, user auth and data storage through Firebase."
+desc: "Large Shopify-like site with Stripe payment processing, user auth, and data storage through Firebase."
 highlights:
   [
     "Online payment processing with Stripe API and Firebase Functions",
