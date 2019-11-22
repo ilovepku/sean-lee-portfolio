@@ -29,4 +29,4 @@ A mini full-stack project management tool built mainly around React, Redux and F
 - Project creation for logged in users
 - Notification for project/user creation with Firebase Functions
 - User, project, and notification data stored real-time in Firebase Firestore
-- Project deployed on Firebase Hosting for better synegy
+- The project deployed on Firebase Hosting for better synergy

@@ -28,16 +28,16 @@ Created, administered, and promoted a semi-official online forum for the English
 
 ## The Challenge
 
-- Forum had to be easily accessible on campus, but back then university policy only allowed free access to websites deployed in China, with a 10 times high extra fee for overseas ones!
-- Websites deployed in China need to be pre-registered with the government and are strictly monitored for sensitive contents. The extra adminstrive efforts were too strenuous for a volunteer project.
-- Financial costs for runing the forum needed to be managable as it was non-profit.
+- The forum had to be easily accessible on campus, but back then university policy only allowed free access to websites deployed in China, with a 10 times high extra fee for overseas ones!
+- Websites deployed in China need to be pre-registered with the government and are strictly monitored for sensitive contents. The extra administrative efforts were too strenuous for a volunteer project.
+- Financial costs for running the forum needed to be manageable as it was non-profit.
 
-## The Approach & Solution
+## Approach & Solution
 
-- Deployed the forum overseas (in Hong Kong) for less governmental supervision but with IPv6 support which is accessible on campus due to Peking University being part of the CERNET(China Education and Research NETwork).
+- Deployed the forum overseas (in Hong Kong) for less governmental supervision but with IPv6 support which is accessible on campus due to Peking University being part of the CERNET(China Education and Research Network).
 - Customized and introduced an online donation feature for the forum to ease the financial burden.
 
-## The Results
+## Results
 
 <div class="metrics mb-4">
   <div class="row">
