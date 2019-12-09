@@ -23,7 +23,7 @@ highlights:
     "Speeches filterable by speaker, theme, or just a custom keyword",
     "Common features like playlist, favorites list, loop toggle, playback speed switch, dark mode",
   ]
-techs: ["React", "Firebase", "Redux", "MaterialUI"]
+techs: ["React", "Firebase", "Redux", "JavaScript", "MaterialUI"]
 testimonial:
   {
     text: "Sean opened the doors for me to the world of web development, and has been providing constant support in the building of Eloqua - a speech listening app of our joint effort. Sean has the ingenuity to efficiently tackle tricky problems and the patience to thoroughly answer all the questions from a curious beginner.",

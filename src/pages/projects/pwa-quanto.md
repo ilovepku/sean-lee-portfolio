@@ -22,8 +22,9 @@ highlights:
     "Lazy loading large list",
     "Backup/restore data serverlessly with Firebase",
     "State management with React Hooks and Context API (replacing Redux)",
+    "Migrated to TypeScript",
   ]
-techs: ["React", "Firebase", "Redux", "MaterialUI"]
+techs: ["React", "Firebase", "Redux", "TypeScript", "JavaScript", "MaterialUI"]
 testimonial: { text: "" }
 featured: true
 ---
