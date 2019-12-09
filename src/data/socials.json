@@ -1,11 +1,11 @@
 [
   {
-    "name": "github",
-    "url": "//github.com/ilovepku"
-  },
-  {
     "name": "linkedin",
     "url": "//linkedin.com/in/ilovepku"
+  },
+  {
+    "name": "github",
+    "url": "//github.com/ilovepku"
   },
   {
     "name": "codepen",
@@ -16,11 +16,27 @@
     "url": "//glitch.com/@ilovepku"
   },
   {
+    "name": "stackoverflow",
+    "url": "//stackoverflow.com/users/10644430/sean-lee"
+  },
+  {
     "name": "freecodecamp",
     "url": "//freecodecamp.org/ilovepku"
   },
   {
-    "name": "stackoverflow",
-    "url": "//stackoverflow.com/users/10644430/sean-lee"
+    "name": "udemy",
+    "url": "//www.udemy.com/user/sean-lee-49"
+  },
+  {
+    "name": "youtube",
+    "url": "//www.youtube.com/channel/UCUaA953J4uBtTys7km4TN_w/channels"
+  },
+  {
+    "name": "leetcode",
+    "url": "//leetcode.com/ilovepku"
+  },
+  {
+    "name": "hackerrank",
+    "url": "//www.hackerrank.com/seanleecoder"
   }
 ]

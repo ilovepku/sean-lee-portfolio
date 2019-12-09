@@ -15,7 +15,7 @@ const Header = () => {
           author
         }
       }
-      allSocialsJson(limit: 6) {
+      allSocialsJson(limit: 5) {
         nodes {
           id
           name

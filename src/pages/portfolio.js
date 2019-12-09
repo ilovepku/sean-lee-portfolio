@@ -70,7 +70,8 @@ const PortfolioPage = () => {
             <p>
               Welcome to my online portfolio, a compilation of my freelance
               works, open source projects, as well as featured study practices.
-              Interested in having me in your project? Feel free to give me a holler!
+              Interested in having me in your project? Feel free to give me a
+              holler!
             </p>
           </div>
           <Link to="/contact" className="btn btn-primary">
@@ -89,6 +90,7 @@ const PortfolioPage = () => {
                   className={`type mb-3 mb-lg-0 ${keyword === filterKey &&
                     "active"}`}
                   onClick={() => setFilterKey(keyword)}
+                  onKeyDown={() => setFilterKey(keyword)}
                 >
                   {name}
                 </li>
