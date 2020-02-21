@@ -6,7 +6,7 @@ name: "Wordpress on LAMP Stack"
 intro: "Wordpress news site for an organization"
 pics: [../../images/projects/caeda-wordpress.jpg]
 madeFor: "China-Asia Economic Development Association"
-url: "//chinaasia.org"
+url: "//18.162.55.49"
 code:
 desc:
 highlights:
