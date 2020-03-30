@@ -79,7 +79,7 @@ const Header = () => {
 
                 <div className="bio mb-3">
                   Hi, my name is {author} and I'm an full stack developer /
-                  mentor. Welcome to my personal website!
+                  mentor. Welcome to my personal portfolio and blog site!
                 </div>
                 <ul className="social-list list-inline py-2 mx-auto">
                   {data.allSocialsJson.nodes.map(({ id, name, url }) => (

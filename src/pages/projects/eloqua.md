@@ -29,8 +29,8 @@ testimonial:
     text: "Sean opened the doors for me to the world of web development, and has been providing constant support in the building of Eloqua - a speech listening app of our joint effort. Sean has the ingenuity to efficiently tackle tricky problems and the patience to thoroughly answer all the questions from a curious beginner.",
     avatar: ../../images/layla.jpg,
     person: "Layla",
-    position: "Web Developer",
-    company: "Part-time Freelancer",
+    position: "Junior Software Developer",
+    company: "Futurice GmbH",
   }
 featured: true
 ---

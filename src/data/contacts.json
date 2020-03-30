@@ -2,8 +2,8 @@
   {
     "name": "phone",
     "icon": "phone-square",
-    "url": "tel:8613911066746",
-    "content": "+86 139 1106 6746"
+    "url": "tel:4917669686162",
+    "content": "+49 176 6968 6162"
   },
   {
     "name": "email",
@@ -21,6 +21,6 @@
     "name": "location",
     "icon": "map-marker-alt",
     "url": "",
-    "content": "Beijing"
+    "content": "Munich, Germany"
   }
 ]

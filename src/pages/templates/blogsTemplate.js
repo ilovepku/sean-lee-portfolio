@@ -24,7 +24,7 @@ const BlogsTemplate = ({
       <section className="cta-section theme-bg-light py-5">
         <div className="container text-center">
           <h2 className="heading">
-            Sean Lee's Blog About Full Stack Development
+            Sean Lee's Blog On Coding and Expat Life in Germany
           </h2>
           <div className="intro">
             Welcome to my blog. Subscribe and get my latest blog post in your
@@ -36,7 +36,7 @@ const BlogsTemplate = ({
               <MailchimpForm
                 status={status}
                 message={message}
-                onValidated={formData => subscribe(formData)}
+                onValidated={(formData) => subscribe(formData)}
               />
             )}
           />

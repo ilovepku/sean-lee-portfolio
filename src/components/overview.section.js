@@ -22,8 +22,10 @@ const OverviewSection = () => {
         <div className="section-intro mb-5">
           I do freelance works, contribute to open source projects, and mentor
           aspiring developers. Below is a quick overview of my main technical
-          skill sets and technologies I use. Want to find out more about my
-          experience? Check out my <Link to="/resume">online resume</Link> and{" "}
+          skill sets and the technologies I use. I'm currently looking for new
+          job opportunities in Munich, Germany. Want to know how I may
+          contribute to your team and project? Check out my{" "}
+          <Link to="/resume">online resume</Link> and{" "}
           <Link to="/portfolio">project portfolio</Link>.
         </div>
         <div className="row">

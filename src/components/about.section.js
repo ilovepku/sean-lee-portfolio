@@ -30,19 +30,20 @@ const AboutSection = () => {
             </h2>
             <div className="tagline mb-3">Full Stack Developer / Mentor</div>
             <div className="bio mb-4">
-              I'm an full stack developer / mentor specialised in frontend and
-              backend development for complex scalable web apps. I write about
-              software development on{" "}
+              I'm a Munich based full stack developer / mentor specialised in
+              frontend and backend development for complex scalable web apps,
+              currently looking for new job opportunities. I also write about
+              coding and expat life in Germany on{" "}
               <Link to="/blogs" className="link-on-bg">
                 my blog
               </Link>
-              . Want to know how I may help you? Check out my project{" "}
+              . Want to find out more about my experience? Check out my project{" "}
               <Link to="/portfolio" className="link-on-bg">
                 portfolio
               </Link>{" "}
               and{" "}
               <Link to="/resume" className="link-on-bg">
-                online resume
+                resume
               </Link>
               .
             </div>

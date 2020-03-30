@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="footer text-center py-4">
       <div>
         <small className="copyright">
-          Copyright 2019 by{" "}
+          Copyright {new Date().getFullYear()} by{" "}
           <Link to="/contact">{data.site.siteMetadata.author}</Link>
         </small>
       </div>

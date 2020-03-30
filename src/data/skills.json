@@ -1,13 +1,13 @@
 [
   {
     "name": "Vanilla JavaScript",
-    "techs": ["JavaScript", "TypeScript", "Babel", "Webpack"],
-    "desc": "Solid foundations of vanilla JavaScript, its newest additions (ES6,7,8,9), superset TypeScript, and modern workflow (Babel & Webpack)."
+    "techs": ["JavaScript", "TypeScript", "Webpack", "Jest"],
+    "desc": "Solid foundations of vanilla JavaScript, its newest additions (ES6,7,8,9,10), superset TypeScript, modern workflow (Babel & Webpack), and testing with Jest."
   },
   {
     "name": "React Ecosystem",
-    "techs": ["React", "Redux", "Gatsby", "Jest"],
-    "desc": "Adept at building intereactive, performant, and large-scale applications with React, its latest features (Hooks, Context...) and ecosystem (Redux, Gatsby...)."
+    "techs": ["React", "Redux", "ReactNative", "Gatsby"],
+    "desc": "Adept at building intereactive, performant, and large-scale web apps with React, its latest features (Hooks, Context...) and ecosystem (Redux, React Native, Gatsby...)."
   },
   {
     "name": "Full Stack with MERN",
@@ -27,7 +27,7 @@
   {
     "name": "LA/NMP & Wordpress",
     "techs": ["Linux", "Apache", "MySQL", "Wordpress"],
-    "desc": "Customized, deployed and maintained: corporate websites w/ Wordpress, an Uni department forum w/ Discuz! and a polling app w/ LimeSurvey, all on LA/NMP."
+    "desc": "Customized, deployed and maintained: corporate websites w/ Wordpress, an Uni department forum w/ Discuz! and a polling app w/ LimeSurvey."
   },
   {
     "name": "CSS Styling",
@@ -37,6 +37,6 @@
   {
     "name": "Python Web Scraping",
     "techs": ["Python", "Scrapy"],
-    "desc": "Experienced with basic Python syntaxes and the Scrapy web crawling framework to scrape multi-layered information with media files attached into a structured database."
+    "desc": "Experienced with Python and the Scrapy web crawling framework to scrape multi-layered information with attached media files into a structured database."
   }
 ]
