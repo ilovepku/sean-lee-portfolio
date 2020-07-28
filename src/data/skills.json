@@ -1,13 +1,13 @@
 [
   {
-    "name": "Vanilla JavaScript",
+    "name": "JavaScript & TypeScript",
     "techs": ["JavaScript", "TypeScript", "Webpack", "Jest"],
-    "desc": "Solid foundations of vanilla JavaScript, its newest additions (ES6,7,8,9,10), superset TypeScript, modern workflow (Babel & Webpack), and testing with Jest."
+    "desc": "Solid foundations of vanilla JavaScript, its newest additions (ES6+), superset TypeScript, modern workflow (Babel & Webpack), and testing with Jest."
   },
   {
     "name": "React Ecosystem",
-    "techs": ["React", "Redux", "ReactNative", "Gatsby"],
-    "desc": "Adept at building intereactive, performant, and large-scale web apps with React, its latest features (Hooks, Context...) and ecosystem (Redux, React Native, Gatsby...)."
+    "techs": ["React", "Redux", "Expo", "Gatsby"],
+    "desc": "Adept at building performant and large-scale apps with React, its latest features (Hooks, Context...) and ecosystem (Redux, React Native, Expo, Gatsby...)."
   },
   {
     "name": "Full Stack with MERN",
@@ -17,7 +17,7 @@
   {
     "name": "Serverless & Cloud",
     "techs": ["Firebase", "AWS", "GoogleCloud"],
-    "desc": "Familiar with Firebase Auth, Firestore, Functions, and Hosting. Long-time user of AWS, Google Cloud Engine, both for hosting and proxy tunneling."
+    "desc": "Familiar with Firebase Auth, Firestore, Functions, and Hosting. Also long-time user of AWS, Google Cloud Engine, for both hosting and proxy tunneling."
   },
   {
     "name": "Data Visualization",

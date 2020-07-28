@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/pwa-quanto"
-type: "frontend dataviz backend production"
-order: 100
+type: "frontend mobile dataviz backend production"
+order: 101
 name: "Quanto Time Tracking PWA"
 intro: "Get a handle on where your time goes."
 pics:
@@ -179,7 +179,7 @@ After enabling notification in the Settings View on an Android Device, you will 
 
 Special thanks to [Natara Software, Inc](https://twitter.com/natara)'s discontinued original **Quanto for Palm OS** from 2006 for inspiration.
 
-| Libraries                                                               |                                                            For |
+| Third-party projects that helped                                                              |                                                            For |
 | ----------------------------------------------------------------------- | -------------------------------------------------------------: |
 | [react](https://github.com/facebook/react/)                             |                                                   UI interface |
 | [redux](https://github.com/reduxjs/redux)                               |                                               state management |

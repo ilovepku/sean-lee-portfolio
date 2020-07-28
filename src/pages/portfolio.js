@@ -87,8 +87,9 @@ const PortfolioPage = () => {
               {data.allFilterJson.nodes.map(({ id, name, keyword }) => (
                 <li
                   key={id}
-                  className={`type mb-3 mb-lg-0 ${keyword === filterKey &&
-                    "active"}`}
+                  className={`type mb-3 mb-lg-0 ${
+                    keyword === filterKey && "active"
+                  }`}
                   onClick={() => setFilterKey(keyword)}
                   onKeyDown={() => setFilterKey(keyword)}
                 >

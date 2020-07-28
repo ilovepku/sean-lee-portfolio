@@ -57,9 +57,9 @@ module.exports = {
           `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-images`,
-            /* options: {
-              maxWidth: 309,
-            }, */
+            options: {
+              maxWidth: 300,
+            },
           },
           `gatsby-remark-autolink-headers`,
           {

@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/eloqua"
-type: "frontend backend production"
-order: 101
+type: "frontend mobile backend production"
+order: 102
 name: "Eloqua Speech Listening PWA"
 intro: "Listen to great speeches on your smartphone."
 pics:
@@ -99,7 +99,7 @@ Don’t forget to take better care of your eyes. Toggle dark mode in the Setting
 
 Eloqua is a collaborative effort between myself, as creator-director-senior developer, and my protégée, as junior developer [Layla](https://github.com/laylapku/).
 
-##### Libraries
+##### Third-party projects that helped
 
 - [react](https://github.com/facebook/react/)
 - [react-player](https://github.com/facebook/react/)

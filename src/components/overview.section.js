@@ -20,11 +20,11 @@ const OverviewSection = () => {
       <div className="container">
         <h2 className="section-title font-weight-bold mb-3">What I do</h2>
         <div className="section-intro mb-5">
-          I do freelance works, contribute to open source projects, and mentor
-          aspiring developers. Below is a quick overview of my main technical
-          skill sets and the technologies I use. I'm currently looking for new
-          job opportunities in Munich, Germany. Want to know how I may
-          contribute to your team and project? Check out my{" "}
+          I do freelance work, build interesting side projects, contribute to
+          open source, and mentor aspiring developers. Below is a quick overview
+          of my main technical skill sets and the technologies I use. I'm
+          currently looking for new job opportunities in Munich, Germany. Want
+          to know how I may contribute to your team and project? Check out my{" "}
           <Link to="/resume">online resume</Link> and{" "}
           <Link to="/portfolio">project portfolio</Link>.
         </div>
