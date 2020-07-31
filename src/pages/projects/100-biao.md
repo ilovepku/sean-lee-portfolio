@@ -1,8 +1,8 @@
 ---
 path: "/portfolio/biao"
-type: "frontend mobile backend production"
+type: "frontend mobile production"
 order: 100
-name: "BIAO! StoryMap"
+name: "BIAO! StoryMap (React Native Mobile App)"
 intro: "Historical events on a modern map."
 pics:
   [
@@ -18,11 +18,11 @@ pics:
 madeFor: "Open Source"
 url: "//exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40seanlee/biao-283e69c9e22a40079957c24db4d9f93c-signed.apk"
 code: "//github.com/Sean-Layla/biao"
-desc: "I'm the creator of the 'BIAO!: StoryMap', a free native mobile app to help people follow stories that highlight the locations of a series of events."
+desc: "Creator of 'BIAO!: StoryMap', a React Native mobile app to help people follow stories that highlight the locations of a series of events, built on Expo with TypeScript. Highlights: close integration of Google Maps SDK, GeoJSON data, modal and tab views; marker clustering to improve visibility and performance; drawer navigation; drak mode."
 highlights:
   [
     "Universal native apps for Android and iOS built on the Expo platform with TypeScript and React Native",
-    "Close integration of Google Maps Platform, GeoJSON geographic data format, modal and tab views, to produce interactive maps with timeline",
+    "Close integration of Google Maps SDK, GeoJSON geographic data format, modal and tab views, to produce interactive maps with timeline",
     "Map marker clustering to improve visibility and performance",
     "Drawer navigation",
   ]

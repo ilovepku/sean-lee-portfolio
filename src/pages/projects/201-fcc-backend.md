@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/fcc-backend"
 type: "backend practice"
-order: 104
+order: 201
 name: "FCC Back End Projects"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/backend.jpg]
@@ -29,7 +29,7 @@ techs:
     "Glitch",
   ]
 testimonial: { text: "" }
-featured: true
+featured: false
 ---
 
 ## Anonymous Message Board

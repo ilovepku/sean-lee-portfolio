@@ -61,7 +61,7 @@ const NotificationSettings = () => {
 
 Next comes a Redux (or React Context API) action type to actually display the notification.
 
-```javascript
+```js
 case DISPLAY_NOTIFICATION:
   if (Notification.permission === "granted") { // sanity check for permission again
     if ("serviceWorker" in navigator) { // check for service worker since notification reply on it
@@ -103,7 +103,7 @@ With the DISPLAY_NOTIFICATION action type in place, I can just dispatch the corr
 
 Then, we come to the actual servicer worker file:
 
-```javascript
+```js
 // listen for interaction with notification
 self.addEventListener(
   "notificationclick",
@@ -123,7 +123,7 @@ Again, the need to use the BroadcastChannel API is a result of the service worke
 
 ##### Listen to the service worker communication in the main app and trigger a Redux action
 
-```javascript
+```js
 // index.js
 const channel = new BroadcastChannel("service-worker-channel")
 channel.onmessage = msg => {

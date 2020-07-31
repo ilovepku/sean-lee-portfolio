@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/txtbtz-scrapy"
 type: "other production"
-order: 200
+order: 300
 name: "Python Web Scraper"
 intro: "Web scraper for product listing info from a goverment website"
 pics: [../../images/projects/scrapy/scrapy-txtbtz.png]

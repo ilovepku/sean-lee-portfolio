@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/caeda-wordpress"
 type: "other production"
-order: 201
+order: 301
 name: "Wordpress on LAMP Stack"
 intro: "Wordpress news site for an organization"
 pics: [../../images/projects/caeda-wordpress.jpg]
@@ -14,10 +14,7 @@ highlights:
 techs: ["Wordpress", "CSS", "AWS", "Ubuntu", "Apache", "MySQL", "PHP"]
 testimonial:
   {
-    text:
-      "We are very satisfied with Sean's work on this news site of our branch. We particularly like the color theme which matches our logo, as well as the responsive design.
-      We understand that the server is abroad, exempting us from a Chinese ICP license, yet still provides quick enough access, which is exactly what we needed.
-      ",
+    text: "We are very satisfied with Sean's work on our news site. We particularly like the color theme which matches our logo, as well as the responsive design. The overseas server exempted us from a Chinese ICP license, yet still provides fast enough access, which is exactly what we need.",
     avatar: ../../images/fan.jpg,
     person: "FAN Ze",
     position: "Vice-chairwoman",

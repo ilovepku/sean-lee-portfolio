@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/react-redux-firebase"
 type: "frontend backend practice"
-order: 106
+order: 203
 name: "React-Redux-Firebase Practice"
 intro: "Mini full-stack collaborative project management tool"
 pics: [../../images/projects/react-redux-firebase.jpg]

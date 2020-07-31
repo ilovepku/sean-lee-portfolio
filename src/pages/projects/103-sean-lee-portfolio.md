@@ -1,14 +1,14 @@
 ---
 path: "/portfolio/portfolio"
 type: "frontend production"
-order: 102
+order: 103
 name: "Developer Portfolio Site"
 intro: "Static site generated with Gatsby"
 pics: [../../images/projects/portfolio.jpg]
 madeFor: "Myself"
 url: "//seanlee.netlify.com"
 code: "//github.com/ilovepku/sean-lee-portfolio"
-desc: "Static Gatsby site. Highlights: dynamically generated pages from markdown files, isotope filter layout, blog pagination, and blog commenting / subscription / form handling through 3rd-party API integrations."
+desc: "Static Gatsby site. Highlights: dynamically generated pages from markdown files, isotope filter layout, blog pagination, and blog commenting / subscription / form handling via 3rd-party API integrations."
 highlights:
   [
     "Dynamically generated pages and blogs from markdown files",

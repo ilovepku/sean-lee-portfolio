@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/graphql"
 type: "backend practice"
-order: 105
+order: 202
 name: "GraphQL Full-stack Practice"
 intro: "Mini full-stack reading list app"
 pics: [../../images/projects/graphql.jpg]

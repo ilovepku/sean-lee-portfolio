@@ -26,7 +26,7 @@ highlights:
 techs: ["React", "Firebase", "Redux", "JavaScript", "MaterialUI"]
 testimonial:
   {
-    text: "Sean opened the doors for me to the world of web development, and has been providing constant support in the building of Eloqua - a speech listening app of our joint effort. Sean has the ingenuity to efficiently tackle tricky problems and the patience to thoroughly answer all the questions from a curious beginner.",
+    text: "Sean introduced me to the wonderful world of coding and provided constant support in the building of Eloqua, a speech listening PWA of our joint effort. Sean's mentoring and assistance were instrumental in my landing my first developer job in Germany.",
     avatar: ../../images/layla.jpg,
     person: "Layla",
     position: "Junior Software Developer",

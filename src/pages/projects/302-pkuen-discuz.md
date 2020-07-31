@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/pkuen-discuz"
 type: "other production"
-order: 202
+order: 302
 name: "Forum on LAMP Stack"
 intro: "Forum for English Department, Peking University (now archived and inactive)"
 pics: [../../images/projects/pkuen-discuz.png]

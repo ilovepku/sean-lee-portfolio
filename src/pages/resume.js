@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import photo from "../images/photo.jpg"
 import { reqSocialSvgs } from "../utils/svgs.util"
-import pdf from "../assets/sean-lee-full-stack-resume-v1.1.pdf"
+import pdf from "../assets/sean-lee-full-stack-resume-v1.3.1.pdf"
 import SEO from "../components/seo"
 
 const ResumePage = () => {
@@ -28,6 +28,7 @@ const ResumePage = () => {
           id
           role
           company
+          link
           start
           end
           desc
@@ -125,16 +126,15 @@ const ResumePage = () => {
               />
               <div className="media-body text-left">
                 <p className="mb-0">
-                  I'm a frontend focused fullstack developer with hands-on
-                  experience building production-level web applications from the
-                  ground up. My strengths lie within React and its ecosystem
-                  (Redux, Gatsby, etc.). I'm familiar with React design
-                  patterns, best practices, newer features, testing,
-                  optimization, and how to implement them in real-life
-                  situations. I've also had backend practices building RESTful
-                  APIs following a microservice architecture with Node.js,
-                  MongoDB, and GraphQL, as well as going serverless with
-                  Firebase.
+                  I'm a fullstack developer with hands-on experience building
+                  production-level web and mobile applications from the ground
+                  up. My strengths lie within React and its ecosystem (Redux,
+                  Expo, Gatsby, etc.). I'm familiar with React design patterns,
+                  best practices, newer features, testing, optimization, and how
+                  to implement them in real-life situations. I've also had
+                  backend practices building RESTful APIs following a
+                  microservice architecture with Node.js, MongoDB, and GraphQL,
+                  as well as going serverless with Firebase.
                 </p>
               </div>
             </div>
@@ -175,14 +175,26 @@ const ResumePage = () => {
                     Work Experiences
                   </h3>
                   {data.allExpJson.nodes.map(
-                    ({ id, role, company, start, end, desc }) => (
+                    ({ id, role, company, link, start, end, desc }) => (
                       <div className="item mb-3" key={id}>
                         <div className="item-heading row align-items-center mb-2">
                           <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
                             {role}
                           </h4>
                           <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">
-                            {company} | {start} - {end ? end : "Present"}
+                            {link ? (
+                              <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="theme-link"
+                              >
+                                {company}
+                              </a>
+                            ) : (
+                              company
+                            )}{" "}
+                            | {start} - {end ? end : "Present"}
                           </div>
                         </div>
                         <div className="item-content">
@@ -297,8 +309,8 @@ const ResumePage = () => {
                     Interests
                   </h3>
                   <ul className="list-unstyled resume-interests-list mb-0">
-                    <li className="mb-2">Learning / Reading</li>
-                    <li className="mb-2">Chess / Yoga</li>
+                    <li className="mb-2">Learning / Reading / Films</li>
+                    <li className="mb-2">Chess / Yoga / Football</li>
                     <li>Music / Piano</li>
                   </ul>
                 </section>

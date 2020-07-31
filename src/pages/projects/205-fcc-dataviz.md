@@ -1,7 +1,7 @@
 ---
 path: "/portfolio/fcc-dataviz"
 type: "dataviz practice"
-order: 108
+order: 205
 name: "FCC Dataviz Practices"
 intro: "5 data visualization projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/dataviz.jpg]

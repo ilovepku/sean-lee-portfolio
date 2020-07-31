@@ -1,14 +1,16 @@
 [
   {
     "role": "Full-stack Developer / Mentor",
-    "company": "Freelance",
+    "company": "(Part-time) Freelance",
+    "link": "",
     "start": "2019",
     "end": "",
-    "desc": "Multiple contract jobs, 2 production-level open source projects. Also mentored someone from complete beginner level all the way to getting a full-time software developer job in Germany."
+    "desc": "Multiple contract jobs, 3 production-level open source projects. Also mentored someone from complete beginner level all the way to landing a full-time software developer job in Germany."
   },
   {
     "role": "Certification Consulting Manager",
     "company": "China-Asia Econ. Dev. Assoc.",
+    "link": "//www.caeda.org.cn",
     "start": "2016",
     "end": "2020",
     "desc": "Led a team that helped dozens of overseas companies successfully obtain import licenses for food / recyclable materials from Chinese government authorities."
@@ -16,6 +18,7 @@
   {
     "role": "Business Developer / Operations Manager",
     "company": "INFIPLAY LLC",
+    "link": "//infiplay.com",
     "start": "2014",
     "end": "2016",
     "desc": "Oversaw and facilitated the selection, signing, localization, technical integration, and operational processes of the introduction of several Chinese online games into the European market, with the one title I was most closely involved having grossed over half a million USD."
