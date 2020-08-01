@@ -17,8 +17,8 @@ pics:
   ]
 madeFor: "Open Source"
 url: "//exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40seanlee/biao-283e69c9e22a40079957c24db4d9f93c-signed.apk"
-code: "//github.com/Sean-Layla/biao"
-desc: "Creator of 'BIAO!: StoryMap', a React Native mobile app to help people follow stories that highlight the locations of a series of events, built on Expo with TypeScript. Highlights: close integration of Google Maps SDK, GeoJSON data, modal and tab views; marker clustering to improve visibility and performance; drawer navigation; drak mode."
+code: "github.com/ilovepku/biao"
+desc: "Creator of 'BIAO!: StoryMap', a React Native mobile app to help people follow stories that highlight the locations of a series of events, built on Expo with TypeScript. Highlights: close integration of Google Maps SDK, GeoJSON data, modal and tab views; marker clustering to improve visibility and performance; drawer navigation; dark mode."
 highlights:
   [
     "Universal native apps for Android and iOS built on the Expo platform with TypeScript and React Native",
