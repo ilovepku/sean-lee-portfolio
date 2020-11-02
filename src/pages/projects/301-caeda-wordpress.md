@@ -9,8 +9,7 @@ madeFor: "China-Asia Economic Development Association"
 url: "//18.162.55.49"
 code:
 desc:
-highlights:
-  ["Automated whole site backup to Google Drive", "Basic copy projection"]
+highlights: ["Automated whole site backup to Google Drive", "Copy protection"]
 techs: ["Wordpress", "CSS", "AWS", "Ubuntu", "Apache", "MySQL", "PHP"]
 testimonial:
   {
@@ -22,3 +21,5 @@ testimonial:
   }
 featured: false
 ---
+
+Note: link goes to a backup showcase as original site has been moved to a server in China with unstable access from overseas.

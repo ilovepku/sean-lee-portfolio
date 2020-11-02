@@ -1,9 +1,9 @@
 ---
 path: "/portfolio/eloqua"
 type: "frontend mobile backend production"
-order: 102
-name: "Eloqua Speech Listening PWA"
-intro: "Listen to great speeches on your smartphone."
+order: 101
+name: "Eloqua Speech Player"
+intro: "Listen to great speeches on your smartphone. Porting in progress from PWA to React Native App."
 pics:
   [
     ../../images/projects/eloqua/speaker-list.jpg,
@@ -13,17 +13,31 @@ pics:
   ]
 madeFor: "Open Source"
 url: "//speech-pwa.web.app"
-code: "//github.com/laylapku/eloqua-pwa"
+code: "//github.com/ilovepku/EloquaNative"
 desc: "Creator/senior developer of React PWA Eloqua, made in collaboration with my protégée—junior developer Layla. Highlights: full player control from notification, many-to-many relationship data on Firestore, filter thru speaker/topic/keyword, playlist, favlist, loop, playback speed switch, dark mode."
 highlights:
   [
+    "Porting in progress to React Native + Typescript w/ PostgresSQL + GraphQL on Hasura Cloud",
     "Multilayered many-to-many relationship data stored on Firebase Firestore for real-time content updates",
     "Full player control from notification with Media Session API",
     "State management with React Hooks and Context API (replacing Redux)",
     "Speeches filterable by speaker, theme, or just a custom keyword",
     "Common features like playlist, favorites list, loop toggle, playback speed switch, dark mode",
   ]
-techs: ["React", "Firebase", "Redux", "JavaScript", "MaterialUI"]
+techs:
+  [
+    "ReactNative",
+    "ReactNavigation",
+    "Redux",
+    "PostgreSQL",
+    "GraphQL",
+    "TypeScript",
+    "Tailwind",
+    "React",
+    "Firebase",
+    "JavaScript",
+    "MaterialUI",
+  ]
 testimonial:
   {
     text: "Sean introduced me to the wonderful world of coding and provided constant support in the building of Eloqua, a speech listening PWA of our joint effort. Sean's mentoring and assistance were instrumental in my landing my first developer job in Germany.",
