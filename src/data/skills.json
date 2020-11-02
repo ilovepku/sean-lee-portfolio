@@ -21,7 +21,7 @@
   },
   {
     "name": "Data Visualization",
-    "techs": ["D3"],
+    "techs": ["D3", "Victory"],
     "desc": "Proficient maker of data-driven, interative, responsive, and real-time updating visualizations (graphs, charts, diagrams) with D3.js or Victory.js."
   },
   {
@@ -31,8 +31,8 @@
   },
   {
     "name": "CSS Styling",
-    "techs": ["CSS", "MaterialUI", "Bootstrap", "Sass"],
-    "desc": "Competent in vanilla CSS, frameworks (MaterialUI, Bootstrap...), CSS-in-JS with Styled Components or JSS, and the SASS extention."
+    "techs": ["CSS", "MaterialUI", "Bootstrap", "Tailwind"],
+    "desc": "Competent in vanilla CSS, frameworks (MaterialUI, Bootstrap, Tailwind...), CSS-in-JS with Styled Components or JSS, and the SASS extention."
   },
   {
     "name": "Python Web Scraping",
