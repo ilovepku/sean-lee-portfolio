@@ -1,15 +1,17 @@
 ---
 path: "/portfolio/eloqua"
 type: "frontend mobile backend production"
-order: 101
+order: 100
 name: "Eloqua Speech Player"
 intro: "Listen to great speeches on your smartphone. Porting in progress from PWA to React Native App."
 pics:
   [
-    ../../images/projects/eloqua/speaker-list.jpg,
-    ../../images/projects/eloqua/category-list.png,
-    ../../images/projects/eloqua/filtered-by-ctg.png,
-    ../../images/projects/eloqua/script.png,
+    ../../images/projects/eloqua/explore.png,
+    ../../images/projects/eloqua/transcript.png,
+    ../../images/projects/eloqua/speakers.png,
+    ../../images/projects/eloqua/categories.png,
+    ../../images/projects/eloqua/playlist.png,
+    ../../images/projects/eloqua/notification.png,
   ]
 madeFor: "Open Source"
 url: "//speech-pwa.web.app"
@@ -89,7 +91,7 @@ Extended control features like loop toggle and playback speed switch are also in
 Showing the queued speeches to be played.
 You can remove any/all speech(es) from the playlist or add one/all to the favorites list.
 
-![Playlist](../../images/projects/eloqua/playlist.png "Playlist")
+![Playlist](../../images/projects/eloqua/pwa-playlist.png "Playlist")
 
 ## Favorites View
 
