@@ -6,11 +6,20 @@ name: "D3-Firebase Dataviz Practices"
 intro: "3 mini full-stack data visualization projects"
 pics: [../../images/projects/dataviz.jpg]
 madeFor:
-url: "//codepen.io/collection/XEwQmo/"
-code:
-desc: 
+links:
+  [
+    {
+      label: "Projects collection on CodePen",
+      url: "//codepen.io/collection/XEwQmo/",
+    },
+  ]
+code: { label: "CodePen", url: "//codepen.io/collection/XEwQmo/" }
+desc:
 highlights:
-  ["Interactive, real-time updating data and graphs", "Data stored in Firebase Firestore"]
+  [
+    "Interactive, real-time updating data and graphs",
+    "Data stored in Firebase Firestore",
+  ]
 techs: ["D3", "Firebase", "Materialize", "JavaScript", "CSS", "Codepen"]
 testimonial: { text: "" }
 featured: false

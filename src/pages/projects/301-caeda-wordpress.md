@@ -6,7 +6,13 @@ name: "Wordpress on LAMP Stack"
 intro: "Wordpress news site for an organization"
 pics: [../../images/projects/caeda-wordpress.jpg]
 madeFor: "China-Asia Economic Development Association"
-url: "//18.162.55.49"
+links:
+  [
+    {
+      label: "Backup showcase (production site moved back to China)",
+      url: "//18.162.55.49",
+    },
+  ]
 code:
 desc:
 highlights: ["Automated whole site backup to Google Drive", "Copy protection"]
@@ -21,5 +27,3 @@ testimonial:
   }
 featured: false
 ---
-
-Note: link goes to a backup showcase as original site has been moved to a server in China with unstable access from overseas.

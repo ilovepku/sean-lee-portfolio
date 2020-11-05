@@ -6,8 +6,12 @@ name: "Python Web Scraper"
 intro: "Web scraper for product listing info from a goverment website"
 pics: [../../images/projects/scrapy/scrapy-txtbtz.png]
 madeFor: "Broadlink Supply Chain Co., Ltd"
-url:
-code: "//github.com/ilovepku/scrapy-for-txtbtz.cnca.gov.cn"
+links:
+code:
+  {
+    label: "GitHub",
+    url: "//github.com/ilovepku/scrapy-for-txtbtz.cnca.gov.cn",
+  }
 desc:
 highlights:
   [

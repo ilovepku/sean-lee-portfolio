@@ -19,7 +19,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
         intro,
         pics,
         madeFor,
-        url,
+        links,
         code,
         highlights,
         techs,
@@ -71,15 +71,16 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                       {madeFor}
                     </li>
                   )}
-                  {url && (
-                    <li className="mb-2">
-                      <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
-                      <strong>Link: </strong>
-                      <a className="theme-link" href={url}>
-                        {url.slice(2)}
-                      </a>
-                    </li>
-                  )}
+                  {links &&
+                    links.map(({ label, url }) => (
+                      <li key={`link-${url}`} className="mb-2">
+                        <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
+                        <strong>Link: </strong>
+                        <a className="theme-link" href={url}>
+                          {label}
+                        </a>
+                      </li>
+                    ))}
                   {code && (
                     <li className="mb-2">
                       <FontAwesomeIcon
@@ -87,8 +88,8 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                         className="fa-fw mr-2"
                       />
                       <strong>Code: </strong>
-                      <a className="theme-link" href={code}>
-                        {code && code.slice(2)}
+                      <a className="theme-link" href={code.url}>
+                        {code.label}
                       </a>
                     </li>
                   )}
@@ -174,8 +175,16 @@ ProjectTemplate.propTypes = {
           })
         ),
         madeFor: PropTypes.string,
-        url: PropTypes.string,
-        code: PropTypes.string,
+        links: PropTypes.arrayOf(
+          PropTypes.shape({
+            label: PropTypes.string,
+            url: PropTypes.string,
+          })
+        ),
+        code: PropTypes.shape({
+          label: PropTypes.string,
+          url: PropTypes.string,
+        }),
         highlights: PropTypes.arrayOf(PropTypes.string.isRequired),
         techs: PropTypes.arrayOf(PropTypes.string.isRequired),
         testimonial: PropTypes.exact({
@@ -210,8 +219,14 @@ export const pageQuery = graphql`
           }
         }
         madeFor
-        url
-        code
+        links {
+          label
+          url
+        }
+        code {
+          label
+          url
+        }
         highlights
         techs
         testimonial {

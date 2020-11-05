@@ -6,9 +6,10 @@ name: "GraphQL Full-stack Practice"
 intro: "Mini full-stack reading list app"
 pics: [../../images/projects/graphql.jpg]
 madeFor: "freeCodeCamp"
-url: "//graphql-apollo-practice.glitch.me"
-code: "//github.com/ilovepku/graphql-apollo-practice"
-desc: 
+links:
+  [{ label: "Showcase on Glitch", url: "//graphql-apollo-practice.glitch.me" }]
+code: { label: "Glitch", url: "//glitch.com/edit/#!/graphql-apollo-practice" }
+desc:
 highlights:
   [
     "GraphQL managing data retrieval and manipulation",

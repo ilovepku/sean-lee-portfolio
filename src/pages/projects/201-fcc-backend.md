@@ -6,8 +6,18 @@ name: "FCC Back End Projects"
 intro: "10 backend projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/backend.jpg]
 madeFor: "freeCodeCamp Practice"
-url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
-code: "//glitch.com/@ilovepku/free-code-camp-back-end-projects"
+links:
+  [
+    {
+      label: "Projects collection on Glitch",
+      url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects",
+    },
+  ]
+code:
+  {
+    label: "Glitch",
+    url: "//glitch.com/@ilovepku/free-code-camp-back-end-projects",
+  }
 desc: "Highlights: CRUD on mLab MongoDB with Mongoose (one-to-many relationship data models), unit/functional testing with Chai/Mocha/Zombie, security with Helmet, and uploaded file processing."
 highlights:
   [

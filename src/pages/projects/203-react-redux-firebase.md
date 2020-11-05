@@ -6,8 +6,8 @@ name: "React-Redux-Firebase Practice"
 intro: "Mini full-stack collaborative project management tool"
 pics: [../../images/projects/react-redux-firebase.jpg]
 madeFor:
-url: "//sean-planner.web.app"
-code: "//github.com/ilovepku/planner"
+links: [{ label: "Showcase on Firebase", url: "//sean-planner.web.app" }]
+code:
 desc:
 highlights:
   [
@@ -23,7 +23,7 @@ featured: false
 
 ![Planner View](../../images/projects/react-redux-firebase-view.jpg "Planner View")
 
-A mini full-stack project management tool built mainly around React, Redux and Firebase's serverless services, features include: 
+A mini full-stack project management tool built mainly around React, Redux and Firebase's serverless services, features include:
 
 - User sign up/in/out with Firebase Authentication
 - Project creation for logged in users

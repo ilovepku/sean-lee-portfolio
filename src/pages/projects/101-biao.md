@@ -13,8 +13,14 @@ pics:
     ../../images/projects/biao/landscape.png,
   ]
 madeFor: "Open Source"
-url: "//drive.google.com/file/d/15FlTY9Qpx-oG2Xn5OY0JTtEx5Sp5mfGA/view?usp=sharing"
-code: "//github.com/ilovepku/biao"
+links:
+  [
+    {
+      label: "Android Package (APK)",
+      url: "//drive.google.com/file/d/15FlTY9Qpx-oG2Xn5OY0JTtEx5Sp5mfGA/view?usp=sharing",
+    },
+  ]
+code: { label: "GitHub", url: "//github.com/ilovepku/biao" }
 desc: "Creator of 'BIAO!: StoryMap', a React Native mobile app to help people follow stories that highlight the locations of a series of events, built on Expo with TypeScript. Highlights: close integration of Google Maps SDK, GeoJSON data, modal and tab views; marker clustering to improve visibility and performance; drawer navigation; dark mode."
 highlights:
   [

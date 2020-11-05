@@ -6,7 +6,7 @@ name: "Forum on LAMP Stack"
 intro: "Forum for English Department, Peking University (now archived and inactive)"
 pics: [../../images/projects/pkuen-discuz.png]
 madeFor: "Department of English, Peking University"
-url:
+links:
 code:
 desc:
 highlights: ["IPv6 support since early 2012", "Online donation feature"]

@@ -6,9 +6,15 @@ name: "FCC Front End Practices"
 intro: "5 frontend practice projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/frontend.jpg]
 madeFor: "freeCodeCamp"
-url: "//codepen.io/collection/XRgbBK"
-code: "//codepen.io/collection/XRgbBK"
-desc: 
+links:
+  [
+    {
+      label: "Projects collection on CodePen",
+      url: "//codepen.io/collection/XRgbBK",
+    },
+  ]
+code: { label: "CodePen", url: "//codepen.io/collection/XRgbBK" }
+desc:
 highlights:
 techs: ["React", "Bootstrap", "JavaScript", "CSS", "Codepen"]
 testimonial: { text: "" }

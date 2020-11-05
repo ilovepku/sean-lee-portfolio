@@ -6,8 +6,8 @@ name: "Full-stack E-commerce Site"
 intro: "Shopify-like online shopping site with Stripe payment processing"
 pics: [../../images/projects/nile/nile.png]
 madeFor: "Udemy Practice"
-url: "//nile-db.web.app"
-code: "//github.com/ilovepku/nile"
+links: [{ label: "Website", url: "//nile-db.web.app" }]
+code: { label: "GitHub", url: "//github.com/ilovepku/nile" }
 desc: "Shopify-like shopping site with Stripe payment processing, user auth, and data storage via Firebase."
 highlights:
   [

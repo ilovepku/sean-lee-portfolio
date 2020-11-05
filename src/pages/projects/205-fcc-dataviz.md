@@ -6,8 +6,14 @@ name: "FCC Dataviz Practices"
 intro: "5 data visualization projects, part of freeCodeCamp's curriculum"
 pics: [../../images/projects/dataviz.jpg]
 madeFor: "freeCodeCamp"
-url: "//codepen.io/collection/nMoKdK"
-code:
+links:
+  [
+    {
+      label: "Projects collection on CodePen",
+      url: "//codepen.io/collection/nMoKdK",
+    },
+  ]
+code: { label: "CodePen", url: "//codepen.io/collection/nMoKdK" }
 desc:
 highlights:
   ["Interactive tooltips", "Responsive with viewBox and preserveAspectRatio"]
