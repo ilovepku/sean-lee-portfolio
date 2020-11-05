@@ -2,18 +2,15 @@
 path: "/portfolio/biao"
 type: "frontend mobile production"
 order: 101
-name: "BIAO! StoryMap (React Native Mobile App)"
-intro: "Historical events on a modern map."
+name: "BIAO! StoryMap"
+intro: "Follow locations of historical events on a modern map with timeline."
 pics:
   [
-    ../../images/projects/biao/timeline-view.jpg,
-    ../../images/projects/biao/maptype-switch.jpg,
-    ../../images/projects/biao/marker-cluster-and-filter.jpg,
-    ../../images/projects/biao/full-screen-dark-mode-link.jpg,
-    ../../images/projects/biao/landscape.jpg,
-    ../../images/projects/biao/legend.jpg,
-    ../../images/projects/biao/drawer.jpg,
-    ../../images/projects/biao/fabs.jpg,
+    ../../images/projects/biao/timeline.png,
+    ../../images/projects/biao/details.png,
+    ../../images/projects/biao/strategic.png,
+    ../../images/projects/biao/legends.png,
+    ../../images/projects/biao/landscape.png,
   ]
 madeFor: "Open Source"
 url: "//drive.google.com/file/d/15FlTY9Qpx-oG2Xn5OY0JTtEx5Sp5mfGA/view?usp=sharing"
