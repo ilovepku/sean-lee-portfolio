@@ -14,7 +14,14 @@ pics:
     ../../images/projects/eloqua/notification.png,
   ]
 madeFor: "Open Source"
-links: [{ label: "Original PWA version", url: "//speech-pwa.web.app" }]
+links:
+  [
+    {
+      label: "Android Package (APK)",
+      url: "//drive.google.com/file/d/1oEVs5n8L1lJzzHCdxim97Dvx8388nBtW/view?usp=sharing",
+    },
+    { label: "Original PWA version", url: "//speech-pwa.web.app" },
+  ]
 code: { label: "GitHub", url: "//github.com/ilovepku/Eloqua" }
 desc: "Creator/senior developer of React PWA Eloqua, made in collaboration with my protégée—junior developer Layla. Highlights: full player control from notification, many-to-many relationship data on Firestore, filter thru speaker/topic/keyword, playlist, favlist, loop, playback speed switch, dark mode."
 highlights:
