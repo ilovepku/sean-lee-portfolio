@@ -71,16 +71,19 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                       {madeFor}
                     </li>
                   )}
-                  {links &&
-                    links.map(({ label, url }) => (
-                      <li key={`link-${url}`} className="mb-2">
-                        <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
-                        <strong>Link: </strong>
-                        <a className="theme-link" href={url}>
-                          {label}
-                        </a>
-                      </li>
-                    ))}
+                  {links && (
+                    <li className="mb-2">
+                      <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
+                      <strong>Links: </strong>
+                      {links.map(({ label, url }) => (
+                        <span key={`link-${url}`}>
+                          <a className="theme-link" href={url}>
+                            {label}
+                          </a>{" "}
+                        </span>
+                      ))}
+                    </li>
+                  )}
                   {code && (
                     <li className="mb-2">
                       <FontAwesomeIcon

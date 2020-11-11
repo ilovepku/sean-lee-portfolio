@@ -16,7 +16,7 @@ madeFor: "Open Source"
 links:
   [
     {
-      label: "Android Package (APK)",
+      label: "Android package (APK)",
       url: "//drive.google.com/file/d/15FlTY9Qpx-oG2Xn5OY0JTtEx5Sp5mfGA/view?usp=sharing",
     },
   ]

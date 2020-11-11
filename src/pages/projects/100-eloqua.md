@@ -17,7 +17,7 @@ madeFor: "Open Source"
 links:
   [
     {
-      label: "Android Package (APK)",
+      label: "Android package (APK)",
       url: "//drive.google.com/file/d/1oEVs5n8L1lJzzHCdxim97Dvx8388nBtW/view?usp=sharing",
     },
     { label: "Original PWA version", url: "//speech-pwa.web.app" },
