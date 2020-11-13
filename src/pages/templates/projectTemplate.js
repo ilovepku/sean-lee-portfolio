@@ -147,11 +147,7 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
       <section className="promo-section theme-bg-light py-5 text-center">
         <div className="container single-col-max-width">
           <h2 className="title">Want me to help with your project?</h2>
-          <p>
-            If you take on freelance work, you can use this section to prompt
-            any potential clients to get in touch with you with their project
-            requirements.
-          </p>
+          <p>Feel free to give me a holler!</p>
           <div className="text-center">
             <Link to="/contact" className="btn btn-primary">
               <FontAwesomeIcon icon="envelope-open-text" className="mr-2" />

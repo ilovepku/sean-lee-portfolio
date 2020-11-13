@@ -31,9 +31,8 @@ const AboutSection = () => {
             <div className="tagline mb-3">Full Stack Developer / Mentor</div>
             <div className="bio mb-4">
               I'm a Munich based full stack developer / mentor specialised in
-              frontend and backend development for web and mobile apps,
-              currently looking for new job opportunities. I also write about
-              coding and expat life in Germany on{" "}
+              frontend and backend development for web and mobile apps. I also
+              write about coding and expat life in Germany on{" "}
               <Link to="/blogs" className="link-on-bg">
                 my blog
               </Link>
