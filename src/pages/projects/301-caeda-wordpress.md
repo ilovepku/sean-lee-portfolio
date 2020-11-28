@@ -7,12 +7,6 @@ intro: "Wordpress news site for an organization"
 pics: [../../images/projects/caeda-wordpress.jpg]
 madeFor: "China-Asia Economic Development Association"
 links:
-  [
-    {
-      label: "Backup showcase (production site moved back to China)",
-      url: "//18.162.55.49",
-    },
-  ]
 code:
 desc:
 highlights: ["Automated whole site backup to Google Drive", "Copy protection"]
