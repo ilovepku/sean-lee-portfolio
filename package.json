@@ -25,7 +25,6 @@
     "gatsby-transformer-json": "^2.8.0",
     "gatsby-transformer-remark": "^2.13.1",
     "gatsby-transformer-sharp": "^2.9.0",
-    "isotope-layout": "^3.0.6",
     "prismjs": "^1.23.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",

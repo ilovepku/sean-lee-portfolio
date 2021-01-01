@@ -40,12 +40,10 @@ techs:
     "Redux",
     "PostgreSQL",
     "GraphQL",
+    "Apollo",
     "TypeScript",
     "Tailwind",
-    "React",
     "Firebase",
-    "JavaScript",
-    "MaterialUI",
   ]
 testimonial:
   {

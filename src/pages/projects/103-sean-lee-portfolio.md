@@ -34,5 +34,5 @@ techs:
     "MailChimp",
   ]
 testimonial: { text: "" }
-featured: false
+featured: true
 ---
