@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { reqWebDevSvgs } from "../utils/svgs.util"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { reqWebDevSvgs } from '../utils/svgs.util';
 
 const OverviewSection = () => {
   const data = useStaticQuery(graphql`
@@ -14,7 +14,7 @@ const OverviewSection = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <section className="overview-section p-3 p-lg-5">
       <div className="container">
@@ -32,11 +32,11 @@ const OverviewSection = () => {
                 <div className="item-icon">
                   {techs.map((tech, idx, arr) => (
                     <img
-                      key={id + "_tech_" + idx}
+                      key={tech}
                       alt=""
                       title={tech}
                       className={`tech-icon rounded ${
-                        idx === arr.length - 1 ? "" : "mr-2"
+                        idx === arr.length - 1 ? '' : 'mr-2'
                       }`}
                       src={reqWebDevSvgs(`./${tech.toLowerCase()}.svg`)}
                     />
@@ -50,7 +50,7 @@ const OverviewSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default OverviewSection
+export default OverviewSection;

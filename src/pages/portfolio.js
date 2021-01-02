@@ -1,9 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Layout from "../components/layout"
-import PortfolioItem from "../components/portfolio.item"
-import SEO from "../components/seo"
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Layout from '../components/layout';
+import PortfolioItem from '../components/portfolio.item';
+import SEO from '../components/seo';
 
 const PortfolioPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +31,7 @@ const PortfolioPage = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Layout>
@@ -42,8 +42,7 @@ const PortfolioPage = () => {
           <div className="intro">
             <p>
               Welcome to my online portfolio, a compilation of my open source
-              projects and featured study practices. Interested in having me in
-              your project? Feel free to give me a holler!
+              projects and featured study practices.
             </p>
           </div>
           <Link to="/contact" className="btn btn-primary">
@@ -62,7 +61,7 @@ const PortfolioPage = () => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default PortfolioPage
+export default PortfolioPage;

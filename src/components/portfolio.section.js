@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import PortfolioItem from "./portfolio.item"
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PortfolioItem from './portfolio.item';
 
 const PortfolioSection = () => {
   const data = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ const PortfolioSection = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <>
       <div className="container">
@@ -58,7 +58,7 @@ const PortfolioSection = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default PortfolioSection
+export default PortfolioSection;

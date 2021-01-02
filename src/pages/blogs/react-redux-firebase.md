@@ -1,9 +1,9 @@
 ---
-path: "/blogs/react-redux-firebase"
-date: "Fri Oct 22 2019 22:00:00 GMT+0800 (China Standard Time)"
-title: "Migrating an old project to react-redux-firebase v3"
+path: '/blogs/react-redux-firebase'
+date: 'Fri Oct 22 2019 22:00:00 GMT+0800 (China Standard Time)'
+title: 'Migrating an old project to react-redux-firebase v3'
 pic: ../../images/blogs/react-redux-firebase.jpg
-intro: "Addressing a bunch of problems I ran into while migrating an old project to react-redux-firebase v3"
+intro: 'Addressing a bunch of problems I ran into while migrating an old project to react-redux-firebase v3'
 ---
 
 ## Overview

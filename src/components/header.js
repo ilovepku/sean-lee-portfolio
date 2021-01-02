@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { Navbar } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { reqSocialSvgs } from "../utils/svgs.util"
+import React, { useState, useEffect } from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import Img from 'gatsby-image';
+import { Helmet } from 'react-helmet';
+import { Navbar } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { reqSocialSvgs } from '../utils/svgs.util';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -39,26 +38,24 @@ const Header = () => {
         }
       }
     }
-  `)
-  const { author } = data.site.siteMetadata
+  `);
+  const { author } = data.site.siteMetadata;
 
   // dark mode related
-  const [darkmodeToggle, setDarkmodeToggle] = useState(false)
+  const [darkmodeToggle, setDarkmodeToggle] = useState(false);
   useEffect(() => {
-    setDarkmodeToggle(
-      localStorage.getItem("darkmodeToggle") === "true" ? true : false
-    )
-  }, [])
+    setDarkmodeToggle(localStorage.getItem('darkmodeToggle') === 'true');
+  }, []);
 
   const handleDarkmodeChange = ({ target: { checked } }) => {
-    setDarkmodeToggle(checked)
-    localStorage.setItem("darkmodeToggle", checked)
-  }
+    setDarkmodeToggle(checked);
+    localStorage.setItem('darkmodeToggle', checked);
+  };
 
   return (
     <>
       <Helmet>
-        <body className={darkmodeToggle ? "dark-mode" : ""} />
+        <body className={darkmodeToggle ? 'dark-mode' : ''} />
       </Helmet>
       <header className="header text-center">
         <div className="force-overflow">
@@ -78,8 +75,9 @@ const Header = () => {
                 />
 
                 <div className="bio mb-3">
-                  Hi, my name is {author} and I'm an full stack developer /
-                  mentor. Welcome to my personal portfolio and blog site!
+                  {`Hi, my name is ${author} `}
+                  and I&apos;m an full stack developer / mentor. Welcome to my
+                  personal portfolio and blog site!
                 </div>
                 <ul className="social-list list-inline py-2 mx-auto">
                   {data.allSocialsJson.nodes.map(({ id, name, url }) => (
@@ -105,7 +103,7 @@ const Header = () => {
                         to={url}
                         className="nav-link"
                         activeClassName="active"
-                        partiallyActive={true}
+                        partiallyActive
                       >
                         <FontAwesomeIcon icon={icon} className="fa-fw mr-2" />
                         {name}
@@ -140,25 +138,16 @@ const Header = () => {
                   checked={darkmodeToggle}
                   onChange={handleDarkmodeChange}
                 />
-                <label
-                  className="toggle-btn mx-auto mb-0"
-                  htmlFor="darkmode"
-                ></label>
+                <label className="toggle-btn mx-auto mb-0" htmlFor="darkmode">
+                  {` `}
+                </label>
               </div>
             </Navbar.Collapse>
           </Navbar>
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

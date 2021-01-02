@@ -1,12 +1,12 @@
 ---
-path: "/blogs/isotope-react"
-date: "Fri Oct 18 2019 22:00:00 GMT+0800 (China Standard Time)"
-title: "Isotope in React with Ease"
+path: '/blogs/isotope-react'
+date: 'Fri Oct 18 2019 22:00:00 GMT+0800 (China Standard Time)'
+title: 'Isotope in React with Ease'
 pic: ../../images/blogs/isotope.png
-intro: "With a couple of hooks, you can easily make the filter & sort layout library Isotope work in React."
+intro: 'With a couple of hooks, you can easily make the filter & sort layout library Isotope work in React.'
 ---
 
-![Isotope](../../images/blogs/isotope.png "Isotope")
+![Isotope](../../images/blogs/isotope.png 'Isotope')
 
 ## The Challenge
 
@@ -33,9 +33,9 @@ Firstly, we create two states with `useState`:
 
 ```jsx
 // state for storing the isotope object, with an initial value of null
-const [isotope, setIsotope] = React.useState(null)
+const [isotope, setIsotope] = React.useState(null);
 // state for storing the filter keyword, with an initial value of *, which matches everything
-const [filterKey, setFilterKey] = React.useState("*")
+const [filterKey, setFilterKey] = React.useState('*');
 ```
 
 Next, we initialize Isotope with configs after the component is mounted with the first `useEffect`:
@@ -43,13 +43,13 @@ Next, we initialize Isotope with configs after the component is mounted with the
 ```jsx
 React.useEffect(() => {
   setIsotope(
-    new Isotope(".filter-container", {
+    new Isotope('.filter-container', {
       // filter-container: className of the parent of the isotope elements
-      itemSelector: ".filter-item", // filter-item: className of the isotope elements
-      layoutMode: "fitRows", // for horizontal isotope
+      itemSelector: '.filter-item', // filter-item: className of the isotope elements
+      layoutMode: 'fitRows', // for horizontal isotope
     })
-  )
-}, []) // [] makes this useEffect work like a componentDidMount in a class component
+  );
+}, []); // [] makes this useEffect work like a componentDidMount in a class component
 ```
 
 Then, we have another `useEffect` handling filter key change, calling the `arrange` method of the isotope object to reorganize the item layout when a change to the filterKey is detected:
@@ -58,11 +58,11 @@ Then, we have another `useEffect` handling filter key change, calling the `arran
 React.useEffect(() => {
   if (isotope) {
     // sanity check
-    filterKey === "*"
+    filterKey === '*'
       ? isotope.arrange({ filter: `*` })
-      : isotope.arrange({ filter: `.${filterKey}` })
+      : isotope.arrange({ filter: `.${filterKey}` });
   }
-}, [isotope, filterKey])
+}, [isotope, filterKey]);
 ```
 
 The `[isotope, filterKey]` makes this useEffect work like an
@@ -79,9 +79,9 @@ Last but not least, here comes:
 
 ```jsx
 <ul>
-  <li onClick={() => setFilterKey("*")}>Show Both</li>
-  <li onClick={() => setFilterKey("vege")}>Show Veges</li>
-  <li onClick={() => setFilterKey("fruit")}>Show Fruits</li>
+  <li onClick={() => setFilterKey('*')}>Show Both</li>
+  <li onClick={() => setFilterKey('vege')}>Show Veges</li>
+  <li onClick={() => setFilterKey('fruit')}>Show Fruits</li>
 </ul>
 ```
 

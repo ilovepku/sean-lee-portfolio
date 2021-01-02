@@ -1,12 +1,12 @@
 ---
-path: "/blogs/pwa-interactive-notification"
-date: "Fri Sep 3 2019 22:00:00 GMT+0800 (China Standard Time)"
-title: "Interactive Notification for Progressive Web Apps"
+path: '/blogs/pwa-interactive-notification'
+date: 'Fri Sep 3 2019 22:00:00 GMT+0800 (China Standard Time)'
+title: 'Interactive Notification for Progressive Web Apps'
 pic: ../../images/blogs/pwa.png
-intro: "Interact with your PWA from the notification bar/lockscreen."
+intro: 'Interact with your PWA from the notification bar/lockscreen.'
 ---
 
-![Notification](../../images/projects/quanto/quanto-notification.png "Notification")
+![Notification](../../images/projects/quanto/quanto-notification.png 'Notification')
 
 ## Notes
 
@@ -38,23 +38,23 @@ Firstly, I have a simple switch component which when clicked prompts the user to
 ```jsx
 const NotificationSettings = () => {
   const [notificationEnabled, setNotificationEnabled] = useState(
-    Notification.permission === "granted" ? true : false
-  )
+    Notification.permission === 'granted' ? true : false
+  );
   const handlePermissionRequestClick = () => {
     Notification.requestPermission(result => {
-      if (result === "granted") {
-        setNotificationEnabled(true)
+      if (result === 'granted') {
+        setNotificationEnabled(true);
       }
-    })
-  }
+    });
+  };
   return (
     <Switch
       onChange={handlePermissionRequestClick}
       checked={notificationEnabled}
       disabled={notificationEnabled}
     />
-  )
-}
+  );
+};
 ```
 
 ---
@@ -106,15 +106,15 @@ Then, we come to the actual servicer worker file:
 ```js
 // listen for interaction with notification
 self.addEventListener(
-  "notificationclick",
+  'notificationclick',
   e => {
-    const channel = new BroadcastChannel("service-worker-channel")
-    if (e.action === "new") channel.postMessage("new")
-    if (e.action === "pause") channel.postMessage("pause")
-    channel.close()
+    const channel = new BroadcastChannel('service-worker-channel');
+    if (e.action === 'new') channel.postMessage('new');
+    if (e.action === 'pause') channel.postMessage('pause');
+    channel.close();
   },
   false
-)
+);
 ```
 
 Two things are accomplished here, the one is the listening of clicks on the two notification actions defined just above. The other is to send the action info to the main browser thread where the app runs with the BroadcastChannel API. One can manually add this part of code to the service worker file generated in the build process(of create-react-app, or equivalent tools), or better yet, use workbox to automate the injection during the build process. The use of workbox to customize the service worker is another interesting topic, but its scope rightly justifies a blog post of its own, and I apologize for its omission here.
@@ -125,12 +125,12 @@ Again, the need to use the BroadcastChannel API is a result of the service worke
 
 ```js
 // index.js
-const channel = new BroadcastChannel("service-worker-channel")
+const channel = new BroadcastChannel('service-worker-channel');
 channel.onmessage = msg => {
-  if (msg.data === "new") store.dispatch(newActivity())
-  if (msg.data === "pause") store.dispatch(puaseActivity())
-}
-channel.close()
+  if (msg.data === 'new') store.dispatch(newActivity());
+  if (msg.data === 'pause') store.dispatch(puaseActivity());
+};
+channel.close();
 ```
 
 I put this block in the index.js file after the `store` is created with `createStore(someReducer)`, and before `<Provider store={store}>`. It listens to messages sent from the service worker on the BroadcastChannel, and then directly dispatches a corresponding redux action, thereby allowing the user to interact with the app outside the app by clicking on a notification action, either from the notification bar or the lockscreen.
@@ -146,13 +146,13 @@ This problem can be easily addressed by moving the above code block in index.js 
 ```jsx
 // someContext.js or someComponentWithContextAccess.js
 useEffect(() => {
-  const channel = new BroadcastChannel("service-worker-channel")
+  const channel = new BroadcastChannel('service-worker-channel');
   channel.onmessage = msg => {
-    if (msg.data === "new") dispatch({ type: "ADD_ACTIVITY" })
-    if (msg.data === "interrupt") dispatch({ type: "INTERRUPT_ACTIVITY" })
-  }
-  return channel.close // code in return will run before the component unmounts
-}, [dispatch]) // having nothing but dispatch in this array makes useEffect() work like componentDidMount
+    if (msg.data === 'new') dispatch({ type: 'ADD_ACTIVITY' });
+    if (msg.data === 'interrupt') dispatch({ type: 'INTERRUPT_ACTIVITY' });
+  };
+  return channel.close; // code in return will run before the component unmounts
+}, [dispatch]); // having nothing but dispatch in this array makes useEffect() work like componentDidMount
 ```
 
 `useEffect()` can be substituted by a pair of `componentDidMount` and `componentWillUnmount()` to achieve a similar result if you have a class component.

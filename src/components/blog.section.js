@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import BlogItem from "./blog.item"
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BlogItem from './blog.item';
 
 const BlogSection = () => {
   const data = useStaticQuery(graphql`
@@ -29,7 +29,7 @@ const BlogSection = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <>
       <div className="container">
@@ -55,7 +55,7 @@ const BlogSection = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default BlogSection
+export default BlogSection;

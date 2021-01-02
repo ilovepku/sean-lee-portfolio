@@ -1,11 +1,11 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Layout from "../components/layout"
-import photo from "../images/photo.jpg"
-import { reqSocialSvgs } from "../utils/svgs.util"
-import pdf from "../assets/sean-lee-full-stack-resume-v1.3.1.pdf"
-import SEO from "../components/seo"
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Layout from '../components/layout';
+import photo from '../images/photo.jpg';
+import { reqSocialSvgs } from '../utils/svgs.util';
+import pdf from '../assets/sean-lee-full-stack-resume-v1.3.1.pdf';
+import SEO from '../components/seo';
 
 const ResumePage = () => {
   const data = useStaticQuery(graphql`
@@ -65,7 +65,7 @@ const ResumePage = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <Layout>
       <SEO title="Resume" />
@@ -95,7 +95,7 @@ const ResumePage = () => {
                   {data.allContactsJson.nodes.map(
                     ({ id, icon, url, content }, idx, arr) => (
                       <li
-                        className={idx === arr.length ? "mb-0" : "mb-2"}
+                        className={idx === arr.length ? 'mb-0' : 'mb-2'}
                         key={id}
                       >
                         <FontAwesomeIcon
@@ -126,15 +126,16 @@ const ResumePage = () => {
               />
               <div className="media-body text-left">
                 <p className="mb-0">
-                  I'm a fullstack developer with hands-on experience building
-                  production-level web and mobile applications from the ground
-                  up. My strengths lie within React and its ecosystem (Redux,
-                  Expo, Gatsby, etc.). I'm familiar with React design patterns,
-                  best practices, newer features, testing, optimization, and how
-                  to implement them in real-life situations. I've also had
-                  backend practices building RESTful APIs following a
-                  microservice architecture with Node.js, MongoDB, and GraphQL,
-                  as well as going serverless with Firebase.
+                  I&apos;m a fullstack developer with hands-on experience
+                  building production-level web and mobile applications from the
+                  ground up. My strengths lie within React and its ecosystem
+                  (Redux, Expo, Gatsby, etc.). I&apos;m familiar with React
+                  design patterns, best practices, newer features, testing,
+                  optimization, and how to implement them in real-life
+                  situations. I&apos;ve also had backend practices building
+                  RESTful APIs following a microservice architecture with
+                  Node.js, MongoDB, and GraphQL, as well as going serverless
+                  with Firebase.
                 </p>
               </div>
             </div>
@@ -193,8 +194,8 @@ const ResumePage = () => {
                               </a>
                             ) : (
                               company
-                            )}{" "}
-                            | {start} - {end ? end : "Present"}
+                            )}
+                            {` | ${start} - ${end || 'Present'}`}
                           </div>
                         </div>
                         <div className="item-content">
@@ -213,15 +214,15 @@ const ResumePage = () => {
                   <div className="item">
                     <ul className="list-unstyled resume-skills-list">
                       {data.allSkillsJson.nodes.map(
-                        ({ id, techs }, idx, arr) => (
+                        ({ id, techs }, outIdx, outArr) => (
                           <li
                             className={`tech-icon rounded ${
-                              idx === arr.length - 1 ? "" : "mb-2"
+                              outIdx === outArr.length - 1 ? '' : 'mb-2'
                             }`}
                             key={id}
                           >
-                            {techs.map((tech, idx, arr) =>
-                              idx === arr.length - 1 ? tech : tech + "/"
+                            {techs.map((tech, inIdx, inArr) =>
+                              inIdx === inArr.length - 1 ? tech : `${tech}/`
                             )}
                           </li>
                         )
@@ -294,13 +295,16 @@ const ResumePage = () => {
                   </h3>
                   <ul className="list-unstyled resume-lang-list">
                     <li className="mb-2">
-                      Chinese <span className="text-muted">(Native)</span>
+                      {`Chinese `}
+                      <span className="text-muted">(Native)</span>
                     </li>
                     <li className="mb-2">
-                      English <span className="text-muted">(Advanced)</span>
+                      {`English `}
+                      <span className="text-muted">(Advanced)</span>
                     </li>
                     <li>
-                      German <span className="text-muted">(Intermediate)</span>
+                      {`German `}
+                      <span className="text-muted">(Intermediate)</span>
                     </li>
                   </ul>
                 </section>
@@ -323,7 +327,7 @@ const ResumePage = () => {
               {data.allSocialsJson.nodes.map(({ id, name, url }, idx, arr) => (
                 <li
                   className={`list-inline-item mb-lg-0 ${
-                    idx === arr.length - 1 ? "mr-lg-3" : "mr-3"
+                    idx === arr.length - 1 ? 'mr-lg-3' : 'mr-3'
                   }`}
                   key={id}
                 >
@@ -345,7 +349,7 @@ const ResumePage = () => {
         </article>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default ResumePage
+export default ResumePage;

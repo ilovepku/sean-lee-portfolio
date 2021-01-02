@@ -1,5 +1,5 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -10,18 +10,18 @@ const Footer = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <footer className="footer text-center py-4">
       <div>
         <small className="copyright">
-          Copyright {new Date().getFullYear()} by{" "}
+          {`Copyright ${new Date().getFullYear()} by `}
           <Link to="/contact">{data.site.siteMetadata.author}</Link>
         </small>
       </div>
       <div>
         <small className="copyright">
-          Theme designs from{" "}
+          {`Theme designs from `}
           <a
             className=""
             href="//github.com/xriley"
@@ -33,7 +33,7 @@ const Footer = () => {
         </small>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

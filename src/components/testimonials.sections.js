@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import TestimonialItem from "./testimonial.item"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import TestimonialItem from './testimonial.item';
 
 const TestimonialsSection = () => {
   const data = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ const TestimonialsSection = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <>
       <div className="container">
@@ -43,8 +43,8 @@ const TestimonialsSection = () => {
           <h2 className="section-title font-weight-bold mb-5">Testimonials</h2>
           <div className="testimonial-carousel row">
             {data.allMarkdownRemark.nodes.map(
-              ({ id, frontmatter: { testimonial } }, idx) => (
-                <div className="col-md-4 mb-3" key={`${id}-testimonial-${idx}`}>
+              ({ id, frontmatter: { testimonial } }) => (
+                <div className="col-md-4 mb-3" key={`${id}-testimonial`}>
                   <div className="item">
                     <TestimonialItem testimonial={testimonial} />
                   </div>
@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default TestimonialsSection
+export default TestimonialsSection;

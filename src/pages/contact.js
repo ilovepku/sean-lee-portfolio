@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
-import { reqSocialSvgs } from "../utils/svgs.util"
-import SEO from "../components/seo"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Layout from '../components/layout';
+import { reqSocialSvgs } from '../utils/svgs.util';
+import SEO from '../components/seo';
 
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
@@ -20,8 +20,8 @@ const ContactPage = () => {
         }
       }
     }
-  `)
-  const { email } = data.site.siteMetadata
+  `);
+  const { email } = data.site.siteMetadata;
   return (
     <Layout>
       <SEO title="Contact" />
@@ -30,8 +30,8 @@ const ContactPage = () => {
           <h2 className="heading">Contact</h2>
           <div className="intro">
             <p>
-              Thanks for taking the time to reach out. How can I help you today?
-              You can fill in the contact form below or send me an email to{" "}
+              {`Thanks for taking the time to reach out. How can I help you today?
+              You can fill in the contact form below or send me an email to `}
               <a href={`mailto:${email}`}>{email}</a>
             </p>
             <p>
@@ -41,7 +41,7 @@ const ContactPage = () => {
               {data.allSocialsJson.nodes.map(({ id, name, url }, idx, arr) => (
                 <li
                   className={`list-inline-item ${
-                    idx === arr.length - 1 ? "" : "mr-3"
+                    idx === arr.length - 1 ? '' : 'mr-3'
                   }`}
                   key={id}
                 >
@@ -112,7 +112,7 @@ const ContactPage = () => {
                   rows="10"
                   required=""
                   aria-required="true"
-                ></textarea>
+                />
               </div>
               <div className="form-group col-12">
                 <button
@@ -127,7 +127,7 @@ const ContactPage = () => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

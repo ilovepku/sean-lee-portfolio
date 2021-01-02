@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Img from "gatsby-image"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import Img from 'gatsby-image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const AboutSection = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const AboutSection = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <section className="about-me-section p-3 p-lg-5 theme-bg-light">
       <div className="container">
@@ -30,17 +30,17 @@ const AboutSection = () => {
             </h2>
             <div className="tagline mb-3">Full Stack Developer / Mentor</div>
             <div className="bio mb-4">
-              I'm a Munich based full stack developer / mentor specialised in
-              frontend and backend development for web and mobile apps. I also
-              write about coding and expat life in Germany on{" "}
+              {`I'm a Munich based full stack developer / mentor specialised in frontend and backend development for web and mobile apps. I also write about coding and expat life in Germany on `}
               <Link to="/blogs" className="link-on-bg">
                 my blog
               </Link>
-              . Want to find out more about my experience? Check out my project{" "}
+              {
+                '. Want to find out more about my experience? Check out my project '
+              }
               <Link to="/portfolio" className="link-on-bg">
                 portfolio
-              </Link>{" "}
-              and{" "}
+              </Link>
+              {' and '}
               <Link to="/resume" className="link-on-bg">
                 resume
               </Link>
@@ -52,11 +52,13 @@ const AboutSection = () => {
                   icon="arrow-alt-circle-right"
                   className="mr-2"
                 />
-                <span className="d-none d-md-inline">View</span> Portfolio
+                <span className="d-none d-md-inline">View</span>
+                {` Portfolio`}
               </Link>
               <Link to="/resume" className="btn btn-secondary mb-3">
                 <FontAwesomeIcon icon="file-alt" className="mr-2" />
-                <span className="d-none d-md-inline">View</span> Resume
+                <span className="d-none d-md-inline">View</span>
+                {` Resume`}
               </Link>
             </div>
           </div>
@@ -68,7 +70,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

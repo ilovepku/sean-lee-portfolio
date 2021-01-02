@@ -5,18 +5,11 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from "./header"
-import Footer from "./footer"
-
-import "../css/bootstrap.min.css"
-import "../css/theme.css"
-import "../css/svg.css"
-
-import { library } from "@fortawesome/fontawesome-svg-core"
+import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faUser,
   faLaptopCode,
@@ -37,7 +30,15 @@ import {
   faCodeBranch,
   faLongArrowAltLeft,
   faLongArrowAltRight,
-} from "@fortawesome/free-solid-svg-icons"
+} from '@fortawesome/free-solid-svg-icons';
+
+import '../css/bootstrap.min.css';
+import '../css/theme.css';
+import '../css/svg.css';
+
+import Header from './header';
+import Footer from './footer';
+
 library.add(
   // menu items
   faUser,
@@ -67,7 +68,7 @@ library.add(
   // blog pagination buttons
   faLongArrowAltLeft,
   faLongArrowAltRight
-)
+);
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -78,7 +79,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -87,11 +88,11 @@ const Layout = ({ children }) => {
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

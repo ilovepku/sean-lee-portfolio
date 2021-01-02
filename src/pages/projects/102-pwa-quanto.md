@@ -1,31 +1,31 @@
 ---
-path: "/portfolio/pwa-quanto"
-type: "frontend mobile dataviz backend production"
+path: '/portfolio/pwa-quanto'
+type: 'frontend mobile dataviz backend production'
 order: 102
-name: "Quanto Time Tracking PWA"
-intro: "Get a handle on where your time goes."
+name: 'Quanto Time Tracking PWA'
+intro: 'Get a handle on where your time goes.'
 pics:
   [
     ../../images/projects/quanto/quanto-charts.png,
     ../../images/projects/quanto/quanto-history.png,
     ../../images/projects/quanto/quanto-settings.png,
   ]
-madeFor: "Open Source"
-links: [{ label: "PWA", url: "//pwa-quanto.web.app" }]
-code: { label: "GitHub", url: "//github.com/ilovepku/pwa-quanto" }
-desc: "I led the remake of the discontinued Natara Quanto for Palm OS into a React Progressive Web App for modern smartphones. Highlights: actionable notification, 2-level drag-n-droppable categories, filterable data visualizations, big list lazy-loading, user auth, and data backup with Google Firebase."
+madeFor: 'Open Source'
+links: [{ label: 'PWA', url: '//pwa-quanto.web.app' }]
+code: { label: 'GitHub', url: '//github.com/ilovepku/pwa-quanto' }
+desc: 'I led the remake of the discontinued Natara Quanto for Palm OS into a React Progressive Web App for modern smartphones. Highlights: actionable notification, 2-level drag-n-droppable categories, filterable data visualizations, big list lazy-loading, user auth, and data backup with Google Firebase.'
 highlights:
   [
-    "Re-engagable notification",
-    "Interative, data-driven charts, filterable with both date range and keywords",
-    "2-level drag-n-drag support for ordering categories",
-    "Lazy loading large list",
-    "Backup/restore data serverlessly with Firebase",
-    "State management with React Hooks and Context API (replacing Redux)",
-    "Migrated to TypeScript",
+    'Re-engagable notification',
+    'Interative, data-driven charts, filterable with both date range and keywords',
+    '2-level drag-n-drag support for ordering categories',
+    'Lazy loading large list',
+    'Backup/restore data serverlessly with Firebase',
+    'State management with React Hooks and Context API (replacing Redux)',
+    'Migrated to TypeScript',
   ]
-techs: ["React", "Firebase", "Redux", "TypeScript", "JavaScript", "MaterialUI"]
-testimonial: { text: "" }
+techs: ['React', 'Firebase', 'Redux', 'TypeScript', 'JavaScript', 'MaterialUI']
+testimonial: { text: '' }
 featured: true
 ---
 
@@ -73,7 +73,7 @@ Switching between the 4 main views is done by tapping one of the bottom navigati
 We recommend that you customize your list of activities before starting to track your time with PWA Quanto.
 The list of activity names that you use will depend on what aspect of your life you are analyzing. PWA Quanto installs with a default set of activity and detail names. By customizing the lists you can get the most out of the application.
 
-![Categories View](../../images/projects/quanto/quanto-categories.png "Categories View")
+![Categories View](../../images/projects/quanto/quanto-categories.png 'Categories View')
 
 In "Categories" View, you can customize both the list of activity names and the separate lists of detail names associated with each activity name. Either add new activity/detail names to the list from the respective input fields, delete current activities/details, or change their order by simply dragging them around.
 
@@ -83,7 +83,7 @@ Note: Changing the names in this category list does not affect existing activity
 
 ## Current Activity Bar
 
-![Current Activity Bar](../../images/projects/quanto/quanto-current-activity.png "Current Activity Bar")
+![Current Activity Bar](../../images/projects/quanto/quanto-current-activity.png 'Current Activity Bar')
 
 This bar is present at all times and displays the current activity.
 
@@ -103,7 +103,7 @@ Tip: If the interrupt was started by accident, or does not last long enough to m
 
 ## History View
 
-![History View](../../images/projects/quanto/quanto-history.png "History View")
+![History View](../../images/projects/quanto/quanto-history.png 'History View')
 
 This view is used to review the sequence of past activities. The start time and date of each activity are shown.
 
@@ -111,19 +111,19 @@ In addition to changing an activity using the details dialog, you can delete or 
 
 ##### Edit Activity
 
-![Edit Activity](../../images/projects/quanto/quanto-edit-activity.png "Edit Activity")
+![Edit Activity](../../images/projects/quanto/quanto-edit-activity.png 'Edit Activity')
 
 This dialog shows the details of a single activity. You can change the activity and details selections. You can also change the start and finish times. When you change the start or finish times the activities that precede or follow the activity are updated so that there is no gap or overlap.
 
 ##### Split Activity
 
-![Split Activity](../../images/projects/quanto/quanto-split-activity.png "Split Activity")
+![Split Activity](../../images/projects/quanto/quanto-split-activity.png 'Split Activity')
 
 This dialog is used to split an activity into two activities. The "split at-time" will be used to set the end time of the first activity and the start time of the second activity. After the activity has been split you can change the activity names to reflect what was done during each period.
 
 ## Charts View
 
-![Charts View](../../images/projects/quanto/quanto-charts.png "Charts View")
+![Charts View](../../images/projects/quanto/quanto-charts.png 'Charts View')
 
 This view displays the total time in minutes and the percentage of each activity and also the statistics in the form of a pie chart.
 
@@ -135,7 +135,7 @@ If you want a view that shows how you spent your 'waking hours' use the settings
 
 ## Settings View
 
-![Settings View](../../images/projects/quanto/quanto-settings.png "Settings View")
+![Settings View](../../images/projects/quanto/quanto-settings.png 'Settings View')
 
 ##### Sign In & Backup/Restore Data
 
@@ -167,7 +167,7 @@ Note: All your customary category changes will be undone.
 
 ## Notification
 
-![Notification](../../images/projects/quanto/quanto-notification.png "Notification")
+![Notification](../../images/projects/quanto/quanto-notification.png 'Notification')
 
 After enabling notification in the Settings View on an Android Device, you will get a persistent notification that shows you your current activity category, start time, and elapsed time. You can also start a new activity or pause/resume the current activity by interacting with the notification actions. With the necessary permission, you can even do this from your lock screen without unlocking your device, making time tracking even easier.
 
