@@ -77,12 +77,10 @@ const ProjectTemplate = ({ data: { markdownRemark } }) => {
                         <FontAwesomeIcon icon="link" className="fa-fw mr-2" />
                         <strong>Links: </strong>
                         {links.map(({ label, url }) => (
-                          <span key={`link-${url}`}>
-                            {`${(
-                              <a className="theme-link" href={url}>
-                                {label}
-                              </a>
-                            )} `}
+                          <span className="mr-2" key={`link-${url}`}>
+                            <a className="theme-link" href={url}>
+                              {label}
+                            </a>
                           </span>
                         ))}
                       </li>
